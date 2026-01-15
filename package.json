@@ -1,0 +1,25 @@
+{
+  "name": "zinggrid-cem",
+  "version": "1.0.0",
+  "zinggridVersion": "2.1.5",
+  "description": "Custom Elements Manifest (CEM) metadata for ZingGrid components.",
+  "keywords": [
+    "zinggrid",
+    "custom-elements",
+    "cem",
+    "metadata",
+    "web-components"
+  ],
+  "main": "custom-elements.json",
+  "files": [
+    "custom-elements.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZingGrid/zinggrid-cem.git"
+  },
+  "author": "ZingSoft",
+  "peerDependencies": {
+    "zinggrid": ">=2.1.5"
+  }
+}
