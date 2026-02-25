@@ -1,6 +1,6 @@
 {
   "name": "zinggrid-cem",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "zinggridVersion": "2.1.5",
   "description": "Custom Elements Manifest (CEM) metadata for ZingGrid components.",
   "keywords": [

@@ -65,107 +65,6 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "`<zg-body>` is created dynamically by the ZingGrid library, and as such should not be manually added by the\ndeveloper.  However the user can style `<zg-body>` using CSS.",
-          "name": "ZGBody",
-          "cssProperties": [
-            {
-              "description": "Styles the left border of grid body",
-              "name": "--zg-body-border-left"
-            },
-            {
-              "description": "Styles the right border of grid body",
-              "name": "--zg-body-border-right"
-            },
-            {
-              "description": "Sets the font family of contents inside grid body",
-              "name": "--zg-body-font-family"
-            },
-            {
-              "description": "Sets the font size of contents inside grid body",
-              "name": "--zg-body-font-size"
-            },
-            {
-              "description": "Sets the font style of contents inside grid body",
-              "name": "--zg-body-font-style"
-            },
-            {
-              "description": "Sets the font weight of contents inside grid body",
-              "name": "--zg-body-font-weight"
-            },
-            {
-              "description": "Sets the line-height of contents inside of grid body",
-              "name": "--zg-body-line-height"
-            },
-            {
-              "description": "Styles the background of grid body in 'card' layout-mode",
-              "name": "--zg-body-card-background"
-            },
-            {
-              "description": "Styles the border of grid body in 'card' layout-mode",
-              "name": "--zg-body-card-border"
-            },
-            {
-              "description": "Styles the bottom border of grid body in 'card' layout-mode",
-              "name": "--zg-body-card-border-bottom"
-            },
-            {
-              "description": "Styles the left border of grid body in 'card' layout-mode",
-              "name": "--zg-body-card-border-left"
-            },
-            {
-              "description": "Styles the right border of grid body in 'card' layout-mode",
-              "name": "--zg-body-card-border-right"
-            },
-            {
-              "description": "Styles the top border of grid body in 'card' layout-mode. Note: If `--zg-row-border-top` set in 'card' layout-mode it will override `--zg-body-border-top`.",
-              "name": "--zg-body-card-border-top"
-            },
-            {
-              "description": "Sets display of grid body in 'card' layout-mode",
-              "name": "--zg-body-card-display"
-            },
-            {
-              "description": "Styles the top border of grid body. Note: If `--zg-row-border-top` set, it will override `--zg-body-border-top`.",
-              "name": "--zg-body-border-top"
-            },
-            {
-              "description": "Styles the border of grid body",
-              "name": "--zg-body-border"
-            },
-            {
-              "description": "Styles the bottom border of grid body",
-              "name": "--zg-body-border-bottom"
-            },
-            {
-              "description": "Styles the background of grid body",
-              "name": "--zg-body-background"
-            },
-            {
-              "description": "Sets the font color of contents inside grid body",
-              "name": "--zg-body-color"
-            }
-          ],
-          "tagName": "zg-body",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZGBody",
-          "declaration": {
-            "name": "ZGBody",
-            "module": "dist/zinggrid.min.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/zinggrid.min.js",
-      "declarations": [
-        {
-          "kind": "class",
           "description": "A custom, styled button that can be used both for internal grid-related action and for user-specific\nactions. It is stylable via CSS. Some buttons are automatically inserted when a feature that uses it enabled, like `pager`, while\nothers are inserted manually by the user.",
           "name": "ZGButton",
           "cssProperties": [
@@ -542,6 +441,107 @@
           "name": "ZGButton",
           "declaration": {
             "name": "ZGButton",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "`<zg-body>` is created dynamically by the ZingGrid library, and as such should not be manually added by the\ndeveloper.  However the user can style `<zg-body>` using CSS.",
+          "name": "ZGBody",
+          "cssProperties": [
+            {
+              "description": "Styles the left border of grid body",
+              "name": "--zg-body-border-left"
+            },
+            {
+              "description": "Styles the right border of grid body",
+              "name": "--zg-body-border-right"
+            },
+            {
+              "description": "Sets the font family of contents inside grid body",
+              "name": "--zg-body-font-family"
+            },
+            {
+              "description": "Sets the font size of contents inside grid body",
+              "name": "--zg-body-font-size"
+            },
+            {
+              "description": "Sets the font style of contents inside grid body",
+              "name": "--zg-body-font-style"
+            },
+            {
+              "description": "Sets the font weight of contents inside grid body",
+              "name": "--zg-body-font-weight"
+            },
+            {
+              "description": "Sets the line-height of contents inside of grid body",
+              "name": "--zg-body-line-height"
+            },
+            {
+              "description": "Styles the background of grid body in 'card' layout-mode",
+              "name": "--zg-body-card-background"
+            },
+            {
+              "description": "Styles the border of grid body in 'card' layout-mode",
+              "name": "--zg-body-card-border"
+            },
+            {
+              "description": "Styles the bottom border of grid body in 'card' layout-mode",
+              "name": "--zg-body-card-border-bottom"
+            },
+            {
+              "description": "Styles the left border of grid body in 'card' layout-mode",
+              "name": "--zg-body-card-border-left"
+            },
+            {
+              "description": "Styles the right border of grid body in 'card' layout-mode",
+              "name": "--zg-body-card-border-right"
+            },
+            {
+              "description": "Styles the top border of grid body in 'card' layout-mode. Note: If `--zg-row-border-top` set in 'card' layout-mode it will override `--zg-body-border-top`.",
+              "name": "--zg-body-card-border-top"
+            },
+            {
+              "description": "Sets display of grid body in 'card' layout-mode",
+              "name": "--zg-body-card-display"
+            },
+            {
+              "description": "Styles the top border of grid body. Note: If `--zg-row-border-top` set, it will override `--zg-body-border-top`.",
+              "name": "--zg-body-border-top"
+            },
+            {
+              "description": "Styles the border of grid body",
+              "name": "--zg-body-border"
+            },
+            {
+              "description": "Styles the bottom border of grid body",
+              "name": "--zg-body-border-bottom"
+            },
+            {
+              "description": "Styles the background of grid body",
+              "name": "--zg-body-background"
+            },
+            {
+              "description": "Sets the font color of contents inside grid body",
+              "name": "--zg-body-color"
+            }
+          ],
+          "tagName": "zg-body",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGBody",
+          "declaration": {
+            "name": "ZGBody",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -7743,7 +7743,7 @@
             },
             {
               "type": {
-                "text": "object"
+                "text": "array"
               },
               "description": "Specifies the columns of the grid.  More appropriate to use `<zg-column>` in most cases or set the property programmatically.",
               "name": "columns"
@@ -8792,7 +8792,7 @@
               "kind": "field",
               "name": "columns",
               "type": {
-                "text": "object"
+                "text": "array"
               },
               "description": "Specifies the columns of the grid.  More appropriate to use `<zg-column>` in most cases or set the property programmatically.",
               "attribute": "columns"
