@@ -407,7 +407,7 @@
           "attributes": [
             {
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checkbox\" | \"closerowdetails\" | \"closerowgroup\" | \"copycell\" | \"createrecord\" | \"createrecordend\" | \"createrecordstart\" | \"deselect\" | \"duplicaterecord\" | \"editcell\" | \"editrecord\" | \"editrow\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"freezecolumnleft\" | \"freezecolumnright\" | \"unfreezecolumn\" | \"hidecolumn\" | \"freezerowtop\" | \"freezerowbottom\" | \"unfreezerow\" | \"getselection\" | \"insertrecord\" | \"layoutrow\" | \"layoutcard\" | \"resetstate\" | \"lastpage\" | \"menu\" | \"nextpage\" | \"openrowdetails\" | \"openrowgroup\" | \"pastecell\" | \"prevpage\" | \"reload\" | \"removerecord\" | \"undoremoverecord\" | \"search\" | \"selectall\" | \"selectcell\" | \"selectrow\" | \"sortcolumn\" | \"submitrecord\" | \"about\" | "
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checkbox\" | \"closerowdetails\" | \"closerowgroup\" | \"copycell\" | \"createrecord\" | \"createrecordend\" | \"createrecordstart\" | \"deselect\" | \"duplicaterecord\" | \"editcell\" | \"editrecord\" | \"editrow\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"freezecolumnleft\" | \"freezecolumnright\" | \"unfreezecolumn\" | \"hidecolumn\" | \"freezerowtop\" | \"freezerowbottom\" | \"unfreezerow\" | \"getselection\" | \"insertrecord\" | \"layoutrow\" | \"layoutcard\" | \"resetstate\" | \"lastpage\" | \"menu\" | \"nextpage\" | \"openrowdetails\" | \"openrowgroup\" | \"page\" | \"pastecell\" | \"prevpage\" | \"reload\" | \"removerecord\" | \"undoremoverecord\" | \"search\" | \"selectall\" | \"selectcell\" | \"selectrow\" | \"sortcolumn\" | \"submitrecord\" | \"about\""
               },
               "description": "The action of the button",
               "name": "action"
@@ -449,7 +449,7 @@
             },
             {
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"firstpage\" | \"fixedmenu\" | \"filter\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\" | "
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"firstpage\" | \"fixedmenu\" | \"filter\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
               },
               "description": "The icon for the button to enable styling",
               "name": "icon"
@@ -460,7 +460,7 @@
               "kind": "field",
               "name": "action",
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checkbox\" | \"closerowdetails\" | \"closerowgroup\" | \"copycell\" | \"createrecord\" | \"createrecordend\" | \"createrecordstart\" | \"deselect\" | \"duplicaterecord\" | \"editcell\" | \"editrecord\" | \"editrow\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"freezecolumnleft\" | \"freezecolumnright\" | \"unfreezecolumn\" | \"hidecolumn\" | \"freezerowtop\" | \"freezerowbottom\" | \"unfreezerow\" | \"getselection\" | \"insertrecord\" | \"layoutrow\" | \"layoutcard\" | \"resetstate\" | \"lastpage\" | \"menu\" | \"nextpage\" | \"openrowdetails\" | \"openrowgroup\" | \"pastecell\" | \"prevpage\" | \"reload\" | \"removerecord\" | \"undoremoverecord\" | \"search\" | \"selectall\" | \"selectcell\" | \"selectrow\" | \"sortcolumn\" | \"submitrecord\" | \"about\" | "
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checkbox\" | \"closerowdetails\" | \"closerowgroup\" | \"copycell\" | \"createrecord\" | \"createrecordend\" | \"createrecordstart\" | \"deselect\" | \"duplicaterecord\" | \"editcell\" | \"editrecord\" | \"editrow\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"freezecolumnleft\" | \"freezecolumnright\" | \"unfreezecolumn\" | \"hidecolumn\" | \"freezerowtop\" | \"freezerowbottom\" | \"unfreezerow\" | \"getselection\" | \"insertrecord\" | \"layoutrow\" | \"layoutcard\" | \"resetstate\" | \"lastpage\" | \"menu\" | \"nextpage\" | \"openrowdetails\" | \"openrowgroup\" | \"page\" | \"pastecell\" | \"prevpage\" | \"reload\" | \"removerecord\" | \"undoremoverecord\" | \"search\" | \"selectall\" | \"selectcell\" | \"selectrow\" | \"sortcolumn\" | \"submitrecord\" | \"about\""
               },
               "description": "The action of the button",
               "attribute": "action"
@@ -514,7 +514,7 @@
               "kind": "field",
               "name": "icon",
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"firstpage\" | \"fixedmenu\" | \"filter\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\" | "
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"firstpage\" | \"fixedmenu\" | \"filter\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
               },
               "description": "The icon for the button to enable styling",
               "attribute": "icon"
@@ -542,295 +542,6 @@
           "name": "ZGButton",
           "declaration": {
             "name": "ZGButton",
-            "module": "dist/zinggrid.min.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/zinggrid.min.js",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "A caption can be manually inserted inside the `<zing-grid>` tag as slotted content or automatically\ninserted when the `caption` is enabled.  `<zg-caption>` is stylable via CSS.",
-          "name": "ZGCaption",
-          "cssProperties": [
-            {
-              "description": "Styles the background of caption",
-              "name": "--zg-caption-background"
-            },
-            {
-              "description": "Styles the border of caption",
-              "name": "--zg-caption-border"
-            },
-            {
-              "description": "Styles the bottom border of caption",
-              "name": "--zg-caption-border-bottom"
-            },
-            {
-              "description": "Styles the left border of caption",
-              "name": "--zg-caption-border-left"
-            },
-            {
-              "description": "Styles the right border of caption",
-              "name": "--zg-caption-border-right"
-            },
-            {
-              "description": "Styles the top border of caption",
-              "name": "--zg-caption-border-top"
-            },
-            {
-              "description": "Applies a border-radius to the caption",
-              "name": "--zg-caption-border-radius"
-            },
-            {
-              "description": "Applies a top-left border-radius to the caption",
-              "name": "--zg-caption-border-top-left-radius"
-            },
-            {
-              "description": "Applies a top-right border-radius to the caption",
-              "name": "--zg-caption-border-top-right-radius"
-            },
-            {
-              "description": "Applies a bottom-left border-radius to the caption",
-              "name": "--zg-caption-border-bottom-left-radius"
-            },
-            {
-              "description": "Applies a bottom-right border-radius to the caption",
-              "name": "--zg-caption-border-bottom-right-radius"
-            },
-            {
-              "description": "Applies a box shadow behind caption",
-              "name": "--zg-caption-box-shadow"
-            },
-            {
-              "description": "Sets the font color of caption",
-              "name": "--zg-caption-color"
-            },
-            {
-              "description": "Sets the font family of caption",
-              "name": "--zg-caption-font-family"
-            },
-            {
-              "description": "Sets the font size of caption",
-              "name": "--zg-caption-font-size"
-            },
-            {
-              "description": "Sets the font style of caption",
-              "name": "--zg-caption-font-style"
-            },
-            {
-              "description": "Sets the font weight of caption",
-              "name": "--zg-caption-font-weight"
-            },
-            {
-              "description": "Sets the margin of caption",
-              "name": "--zg-caption-margin"
-            },
-            {
-              "description": "Sets the opacity of caption",
-              "name": "--zg-caption-opacity"
-            },
-            {
-              "description": "Sets the padding of caption",
-              "name": "--zg-caption-padding"
-            },
-            {
-              "description": "Sets the transition of caption",
-              "name": "--zg-caption-transition"
-            },
-            {
-              "description": "Sets the vertical alignment of items (title and toolbar) in caption",
-              "name": "--zg-caption-align-items"
-            },
-            {
-              "description": "Sets the flex direction of items (title and toolbar) in caption",
-              "name": "--zg-caption-flex-direction"
-            },
-            {
-              "description": "Sets the height of caption",
-              "name": "--zg-caption-height"
-            },
-            {
-              "description": "Sets vertical alignment of items in caption title",
-              "name": "--zg-caption-title-align-self"
-            },
-            {
-              "description": "Sets how items are flexed in caption title",
-              "name": "--zg-caption-title-flex"
-            },
-            {
-              "description": "Sets the font-family of caption title",
-              "name": "--zg-caption-title-font-family"
-            },
-            {
-              "description": "Sets the font size of caption title",
-              "name": "--zg-caption-title-font-size"
-            },
-            {
-              "description": "Sets the font style of caption title",
-              "name": "--zg-caption-title-font-style"
-            },
-            {
-              "description": "Sets the font weight of caption title",
-              "name": "--zg-caption-title-font-weight"
-            },
-            {
-              "description": "Sets the margin of caption title",
-              "name": "--zg-caption-title-margin"
-            },
-            {
-              "description": "Sets the padding of caption title",
-              "name": "--zg-caption-title-padding"
-            },
-            {
-              "description": "Sets the order of caption title with respect to caption toolbar",
-              "name": "--zg-caption-title-order"
-            },
-            {
-              "description": "Sets the text alignment of caption title",
-              "name": "--zg-caption-title-text-align"
-            },
-            {
-              "description": "Sets the transform of caption title",
-              "name": "--zg-caption-title-transform"
-            },
-            {
-              "description": "Sets the width of caption title",
-              "name": "--zg-caption-title-width"
-            },
-            {
-              "description": "Sets vertical alignment of items in caption toolbar",
-              "name": "--zg-caption-toolbar-align-self"
-            },
-            {
-              "description": "Sets the position from bottom of caption toolbar. To apply, set --zg-caption-toolbar-position.",
-              "name": "--zg-caption-toolbar-bottom"
-            },
-            {
-              "description": "Sets the horizontal alignment of contents in caption toolbar",
-              "name": "--zg-caption-toolbar-justify-content"
-            },
-            {
-              "description": "Sets the left of caption toolbar. To apply, set --zg-caption-toolbar-position.",
-              "name": "--zg-caption-toolbar-left"
-            },
-            {
-              "description": "Sets the margin of caption toolbar",
-              "name": "--zg-caption-toolbar-margin"
-            },
-            {
-              "description": "Sets the position of caption toolbar",
-              "name": "--zg-caption-toolbar-position"
-            },
-            {
-              "description": "Sets the right of caption toolbar. To apply, set --zg-caption-toolbar-position.",
-              "name": "--zg-caption-toolbar-right"
-            },
-            {
-              "description": "Sets the top of caption toolbar. To apply, set --zg-caption-toolbar-position.",
-              "name": "--zg-caption-toolbar-top"
-            },
-            {
-              "description": "Sets the transform of caption toolbar",
-              "name": "--zg-caption-toolbar-transform"
-            },
-            {
-              "description": "Sets the width of caption toolbar",
-              "name": "--zg-caption-toolbar-width"
-            },
-            {
-              "description": "Styles the background of button in caption",
-              "name": "--zg-caption-button-background"
-            },
-            {
-              "description": "Styles the background of button in caption when the button is in a `focus` state",
-              "name": "--zg-caption-button-background_focus"
-            },
-            {
-              "description": "Styles the background of button in caption when the button is in a `hover` state",
-              "name": "--zg-caption-button-background_hover"
-            },
-            {
-              "description": "Styles the background of button in caption when the button is in an `active` state",
-              "name": "--zg-caption-button-background_active"
-            }
-          ],
-          "tagName": "zg-caption",
-          "customElement": true,
-          "attributes": [
-            {
-              "type": {
-                "text": "\"start\" | \"left\" | \"right\" | \"center\" | "
-              },
-              "description": "The alignment of the default content in the caption",
-              "name": "align"
-            },
-            {
-              "type": {
-                "text": "\"top\" | \"bottom\" | \"both\" | "
-              },
-              "description": "Indicates whether to attach the caption to the top or the bottom of the grid",
-              "name": "position"
-            }
-          ],
-          "cssParts": [
-            {
-              "description": "Caption container",
-              "name": "caption"
-            },
-            {
-              "description": "The title container",
-              "name": "title"
-            },
-            {
-              "description": "The toolbar container",
-              "name": "toolbar"
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "align",
-              "type": {
-                "text": "\"start\" | \"left\" | \"right\" | \"center\" | "
-              },
-              "description": "The alignment of the default content in the caption",
-              "attribute": "align"
-            },
-            {
-              "kind": "field",
-              "name": "position",
-              "type": {
-                "text": "\"top\" | \"bottom\" | \"both\" | "
-              },
-              "description": "Indicates whether to attach the caption to the top or the bottom of the grid",
-              "attribute": "position"
-            }
-          ],
-          "slots": [
-            {
-              "description": "Caption title.",
-              "name": ""
-            },
-            {
-              "description": "Caption title. Use when using a feature that enables caption toolbar ([contextMenu], [search], [staticMenu]).",
-              "name": "message"
-            },
-            {
-              "description": "Caption toolbar, which is added to the rightmost of caption by default.",
-              "name": "tool"
-            }
-          ]
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZGCaption",
-          "declaration": {
-            "name": "ZGCaption",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -911,7 +622,81 @@
             }
           ],
           "tagName": "zg-card",
-          "customElement": true
+          "customElement": true,
+          "attributes": [
+            {
+              "type": {
+                "text": "string"
+              },
+              "description": "Sets the custom editor",
+              "name": "editor"
+            },
+            {
+              "type": {
+                "text": "string"
+              },
+              "description": "Points to an external template element to be used as the template for the card's editor",
+              "name": "editor-template"
+            },
+            {
+              "type": {
+                "text": "string"
+              },
+              "description": "Whatever is returned from the method will be set as the innerHTMl of the card",
+              "name": "renderer"
+            },
+            {
+              "type": {
+                "text": "string"
+              },
+              "description": "Points to an external template element to be used as the template for the card's renderer",
+              "name": "renderer-template"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "editor",
+              "type": {
+                "text": "string"
+              },
+              "description": "Sets the custom editor",
+              "attribute": "editor"
+            },
+            {
+              "kind": "field",
+              "name": "editorTemplate",
+              "type": {
+                "text": "string"
+              },
+              "description": "Points to an external template element to be used as the template for the card's editor",
+              "attribute": "editorTemplate"
+            },
+            {
+              "kind": "field",
+              "name": "renderer",
+              "type": {
+                "text": "string"
+              },
+              "description": "Whatever is returned from the method will be set as the innerHTMl of the card",
+              "attribute": "renderer"
+            },
+            {
+              "kind": "field",
+              "name": "rendererTemplate",
+              "type": {
+                "text": "string"
+              },
+              "description": "Points to an external template element to be used as the template for the card's renderer",
+              "attribute": "rendererTemplate"
+            }
+          ],
+          "slots": [
+            {
+              "description": "Card content.",
+              "name": ""
+            }
+          ]
         }
       ],
       "exports": [
@@ -1172,6 +957,295 @@
       "declarations": [
         {
           "kind": "class",
+          "description": "A caption can be manually inserted inside the `<zing-grid>` tag as slotted content or automatically\ninserted when the `caption` is enabled.  `<zg-caption>` is stylable via CSS.",
+          "name": "ZGCaption",
+          "cssProperties": [
+            {
+              "description": "Styles the background of caption",
+              "name": "--zg-caption-background"
+            },
+            {
+              "description": "Styles the border of caption",
+              "name": "--zg-caption-border"
+            },
+            {
+              "description": "Styles the bottom border of caption",
+              "name": "--zg-caption-border-bottom"
+            },
+            {
+              "description": "Styles the left border of caption",
+              "name": "--zg-caption-border-left"
+            },
+            {
+              "description": "Styles the right border of caption",
+              "name": "--zg-caption-border-right"
+            },
+            {
+              "description": "Styles the top border of caption",
+              "name": "--zg-caption-border-top"
+            },
+            {
+              "description": "Applies a border-radius to the caption",
+              "name": "--zg-caption-border-radius"
+            },
+            {
+              "description": "Applies a top-left border-radius to the caption",
+              "name": "--zg-caption-border-top-left-radius"
+            },
+            {
+              "description": "Applies a top-right border-radius to the caption",
+              "name": "--zg-caption-border-top-right-radius"
+            },
+            {
+              "description": "Applies a bottom-left border-radius to the caption",
+              "name": "--zg-caption-border-bottom-left-radius"
+            },
+            {
+              "description": "Applies a bottom-right border-radius to the caption",
+              "name": "--zg-caption-border-bottom-right-radius"
+            },
+            {
+              "description": "Applies a box shadow behind caption",
+              "name": "--zg-caption-box-shadow"
+            },
+            {
+              "description": "Sets the font color of caption",
+              "name": "--zg-caption-color"
+            },
+            {
+              "description": "Sets the font family of caption",
+              "name": "--zg-caption-font-family"
+            },
+            {
+              "description": "Sets the font size of caption",
+              "name": "--zg-caption-font-size"
+            },
+            {
+              "description": "Sets the font style of caption",
+              "name": "--zg-caption-font-style"
+            },
+            {
+              "description": "Sets the font weight of caption",
+              "name": "--zg-caption-font-weight"
+            },
+            {
+              "description": "Sets the margin of caption",
+              "name": "--zg-caption-margin"
+            },
+            {
+              "description": "Sets the opacity of caption",
+              "name": "--zg-caption-opacity"
+            },
+            {
+              "description": "Sets the padding of caption",
+              "name": "--zg-caption-padding"
+            },
+            {
+              "description": "Sets the transition of caption",
+              "name": "--zg-caption-transition"
+            },
+            {
+              "description": "Sets the vertical alignment of items (title and toolbar) in caption",
+              "name": "--zg-caption-align-items"
+            },
+            {
+              "description": "Sets the flex direction of items (title and toolbar) in caption",
+              "name": "--zg-caption-flex-direction"
+            },
+            {
+              "description": "Sets the height of caption",
+              "name": "--zg-caption-height"
+            },
+            {
+              "description": "Sets vertical alignment of items in caption title",
+              "name": "--zg-caption-title-align-self"
+            },
+            {
+              "description": "Sets how items are flexed in caption title",
+              "name": "--zg-caption-title-flex"
+            },
+            {
+              "description": "Sets the font-family of caption title",
+              "name": "--zg-caption-title-font-family"
+            },
+            {
+              "description": "Sets the font size of caption title",
+              "name": "--zg-caption-title-font-size"
+            },
+            {
+              "description": "Sets the font style of caption title",
+              "name": "--zg-caption-title-font-style"
+            },
+            {
+              "description": "Sets the font weight of caption title",
+              "name": "--zg-caption-title-font-weight"
+            },
+            {
+              "description": "Sets the margin of caption title",
+              "name": "--zg-caption-title-margin"
+            },
+            {
+              "description": "Sets the padding of caption title",
+              "name": "--zg-caption-title-padding"
+            },
+            {
+              "description": "Sets the order of caption title with respect to caption toolbar",
+              "name": "--zg-caption-title-order"
+            },
+            {
+              "description": "Sets the text alignment of caption title",
+              "name": "--zg-caption-title-text-align"
+            },
+            {
+              "description": "Sets the transform of caption title",
+              "name": "--zg-caption-title-transform"
+            },
+            {
+              "description": "Sets the width of caption title",
+              "name": "--zg-caption-title-width"
+            },
+            {
+              "description": "Sets vertical alignment of items in caption toolbar",
+              "name": "--zg-caption-toolbar-align-self"
+            },
+            {
+              "description": "Sets the position from bottom of caption toolbar. To apply, set --zg-caption-toolbar-position.",
+              "name": "--zg-caption-toolbar-bottom"
+            },
+            {
+              "description": "Sets the horizontal alignment of contents in caption toolbar",
+              "name": "--zg-caption-toolbar-justify-content"
+            },
+            {
+              "description": "Sets the left of caption toolbar. To apply, set --zg-caption-toolbar-position.",
+              "name": "--zg-caption-toolbar-left"
+            },
+            {
+              "description": "Sets the margin of caption toolbar",
+              "name": "--zg-caption-toolbar-margin"
+            },
+            {
+              "description": "Sets the position of caption toolbar",
+              "name": "--zg-caption-toolbar-position"
+            },
+            {
+              "description": "Sets the right of caption toolbar. To apply, set --zg-caption-toolbar-position.",
+              "name": "--zg-caption-toolbar-right"
+            },
+            {
+              "description": "Sets the top of caption toolbar. To apply, set --zg-caption-toolbar-position.",
+              "name": "--zg-caption-toolbar-top"
+            },
+            {
+              "description": "Sets the transform of caption toolbar",
+              "name": "--zg-caption-toolbar-transform"
+            },
+            {
+              "description": "Sets the width of caption toolbar",
+              "name": "--zg-caption-toolbar-width"
+            },
+            {
+              "description": "Styles the background of button in caption",
+              "name": "--zg-caption-button-background"
+            },
+            {
+              "description": "Styles the background of button in caption when the button is in a `focus` state",
+              "name": "--zg-caption-button-background_focus"
+            },
+            {
+              "description": "Styles the background of button in caption when the button is in a `hover` state",
+              "name": "--zg-caption-button-background_hover"
+            },
+            {
+              "description": "Styles the background of button in caption when the button is in an `active` state",
+              "name": "--zg-caption-button-background_active"
+            }
+          ],
+          "tagName": "zg-caption",
+          "customElement": true,
+          "attributes": [
+            {
+              "type": {
+                "text": "\"start\" | \"left\" | \"right\" | \"center\""
+              },
+              "description": "The alignment of the default content in the caption",
+              "name": "align"
+            },
+            {
+              "type": {
+                "text": "\"top\" | \"bottom\" | \"both\""
+              },
+              "description": "Indicates whether to attach the caption to the top or the bottom of the grid",
+              "name": "position"
+            }
+          ],
+          "cssParts": [
+            {
+              "description": "Caption container",
+              "name": "caption"
+            },
+            {
+              "description": "The title container",
+              "name": "title"
+            },
+            {
+              "description": "The toolbar container",
+              "name": "toolbar"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "align",
+              "type": {
+                "text": "\"start\" | \"left\" | \"right\" | \"center\""
+              },
+              "description": "The alignment of the default content in the caption",
+              "attribute": "align"
+            },
+            {
+              "kind": "field",
+              "name": "position",
+              "type": {
+                "text": "\"top\" | \"bottom\" | \"both\""
+              },
+              "description": "Indicates whether to attach the caption to the top or the bottom of the grid",
+              "attribute": "position"
+            }
+          ],
+          "slots": [
+            {
+              "description": "Caption title.",
+              "name": ""
+            },
+            {
+              "description": "Caption title. Use when using a feature that enables caption toolbar ([contextMenu], [search], [staticMenu]).",
+              "name": "message"
+            },
+            {
+              "description": "Caption toolbar, which is added to the rightmost of caption by default.",
+              "name": "tool"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGCaption",
+          "declaration": {
+            "name": "ZGCaption",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
           "description": "`<zg-cell-overflow>` elements can be used to add popup data to each cell on a user action.  Typical use would\nbe a custom element select and optionlist.  As a generated element, developers\nshould not manually place `<zg-cell-overflow>` in their grid; however, they may style the tooltips and\nits internal elements using CSS.",
           "name": "ZGCellOverflow",
           "tagName": "zg-cell-overflow",
@@ -1362,7 +1436,7 @@
             },
             {
               "type": {
-                "text": "boolean | string"
+                "text": "\"disabled\""
               },
               "description": "Presence of attribute forces a border on the button.  Setting to `disabled` removes the default border.",
               "name": "button-border"
@@ -1397,7 +1471,7 @@
             },
             {
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"undoremoverecord\" | \"search\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"up\" | \"warning\" | "
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"undoremoverecord\" | \"search\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"up\" | \"warning\""
               },
               "description": "Sets the icon to display on the info column type",
               "name": "cell-tooltip-icon"
@@ -1495,14 +1569,14 @@
             },
             {
               "type": {
-                "text": "\"menu\" | \"inline\" | \"both\" | \"disabled\" | boolean | string | boolean"
+                "text": "\"menu\" | \"inline\" | \"both\" | \"disabled\" | boolean | string"
               },
               "description": "Whether the filter is enabled for the column",
               "name": "filter"
             },
             {
               "type": {
-                "text": "string | array"
+                "text": "\"reset\" | \"close\" | \"apply\" | string"
               },
               "description": "Comma separated list of buttons to display on the filter menu",
               "name": "filter-buttons"
@@ -1607,14 +1681,14 @@
             },
             {
               "type": {
-                "text": "string"
+                "text": "\"sum\" | \"avg\" | \"max\" | \"min\" | \"count\" | string"
               },
               "description": "The aggregate function to evaluate for the head cell of the column in a grouped row.",
               "name": "group-head-cell"
             },
             {
               "type": {
-                "text": "string"
+                "text": "\"sum\" | \"avg\" | \"max\" | \"min\" | \"count\" | string"
               },
               "description": "The aggregate function to evaluate for the head cell of the column.",
               "name": "head-cell"
@@ -1628,7 +1702,7 @@
             },
             {
               "type": {
-                "text": "string"
+                "text": "\"disabled\" | string"
               },
               "description": "By default, header will convert camel, dash, and kebab case to properly spaced and capitalized typography. Set to `disabled` to turn off formatting of header.",
               "name": "header-auto-format"
@@ -1642,7 +1716,7 @@
             },
             {
               "type": {
-                "text": "string"
+                "text": "\"left\" | \"right\" | \"after-text\""
               },
               "description": "Sets the header icon position in the header cells",
               "name": "header-icon-position"
@@ -1852,7 +1926,7 @@
             },
             {
               "type": {
-                "text": "\"aggregate\" | \"boolean\" | \"button\" | \"checkbox\" | \"color\" | \"currency\" | \"custom\" | \"date\" | \"duplicate\" | \"editor\" | \"element\" | \"email\" | \"emoji\" | \"icon\" | \"image\" | \"iframe\" | \"number\" | \"password\" | \"percentage\" | \"radio\" | \"range\" | \"remover\" | \"row-group\" | \"row-number\" | \"select\" | \"selector\" | \"tel\" | \"text\" | \"toggle\" | \"url\""
+                "text": "\"aggregate\" | \"boolean\" | \"button\" | \"checkbox\" | \"color\" | \"currency\" | \"custom\" | \"date\" | \"duplicate\" | \"editor\" | \"element\" | \"email\" | \"emoji\" | \"icon\" | \"image\" | \"iframe\" | \"number\" | \"password\" | \"percentage\" | \"radio\" | \"range\" | \"remover\" | \"row-details\" | \"row-group\" | \"row-number\" | \"select\" | \"selector\" | \"tel\" | \"text\" | \"toggle\" | \"url\""
               },
               "description": "The type of the data stored in the column.  The column renderer/editor will behave based on the column type.",
               "name": "type"
@@ -1929,14 +2003,14 @@
             },
             {
               "type": {
-                "text": "boolean"
+                "text": "\"disabled\""
               },
               "description": "Sets the color mode to configure the color picker. Choose between HSL, RGBA, and the default Hex",
               "name": "type-color-preview"
             },
             {
               "type": {
-                "text": "string"
+                "text": "\"\""
               },
               "description": "By default, spaces are added into the color when in RGB or HSL mode.  Turn the spaces off by setting to `disabled`",
               "name": "type-color-spaces"
@@ -1999,7 +2073,7 @@
             },
             {
               "type": {
-                "text": "string"
+                "text": "\"square\""
               },
               "description": "Sets a `square` ratio instead of the default `16:9`",
               "name": "type-iframe-ratio"
@@ -2013,7 +2087,7 @@
             },
             {
               "type": {
-                "text": "string"
+                "text": "\"circle\""
               },
               "description": "The alternative shape to mask the image",
               "name": "type-image-mask"
@@ -2111,7 +2185,7 @@
             },
             {
               "type": {
-                "text": "string | array"
+                "text": "array | string"
               },
               "description": "The comma separated list of strings for the select box. Used with the `select` column type.",
               "name": "type-select-options"
@@ -2234,7 +2308,7 @@
               "kind": "field",
               "name": "buttonBorder",
               "type": {
-                "text": "boolean | string"
+                "text": "\"disabled\""
               },
               "description": "Presence of attribute forces a border on the button.  Setting to `disabled` removes the default border.",
               "attribute": "buttonBorder"
@@ -2279,7 +2353,7 @@
               "kind": "field",
               "name": "cellTooltipIcon",
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"undoremoverecord\" | \"search\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"up\" | \"warning\" | "
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"undoremoverecord\" | \"search\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"up\" | \"warning\""
               },
               "description": "Sets the icon to display on the info column type",
               "attribute": "cellTooltipIcon"
@@ -2405,7 +2479,7 @@
               "kind": "field",
               "name": "filter",
               "type": {
-                "text": "\"menu\" | \"inline\" | \"both\" | \"disabled\" | boolean | string | boolean"
+                "text": "\"menu\" | \"inline\" | \"both\" | \"disabled\" | boolean | string"
               },
               "description": "Whether the filter is enabled for the column",
               "attribute": "filter"
@@ -2414,7 +2488,7 @@
               "kind": "field",
               "name": "filterButtons",
               "type": {
-                "text": "string | array"
+                "text": "\"reset\" | \"close\" | \"apply\" | string"
               },
               "description": "Comma separated list of buttons to display on the filter menu",
               "attribute": "filterButtons"
@@ -2549,7 +2623,7 @@
               "kind": "field",
               "name": "groupHeadCell",
               "type": {
-                "text": "string"
+                "text": "\"sum\" | \"avg\" | \"max\" | \"min\" | \"count\" | string"
               },
               "description": "The aggregate function to evaluate for the head cell of the column in a grouped row.",
               "attribute": "groupHeadCell"
@@ -2558,7 +2632,7 @@
               "kind": "field",
               "name": "headCell",
               "type": {
-                "text": "string"
+                "text": "\"sum\" | \"avg\" | \"max\" | \"min\" | \"count\" | string"
               },
               "description": "The aggregate function to evaluate for the head cell of the column.",
               "attribute": "headCell"
@@ -2576,7 +2650,7 @@
               "kind": "field",
               "name": "headerAutoFormat",
               "type": {
-                "text": "string"
+                "text": "\"disabled\" | string"
               },
               "description": "By default, header will convert camel, dash, and kebab case to properly spaced and capitalized typography. Set to `disabled` to turn off formatting of header.",
               "attribute": "headerAutoFormat"
@@ -2594,7 +2668,7 @@
               "kind": "field",
               "name": "headerIconPosition",
               "type": {
-                "text": "string"
+                "text": "\"left\" | \"right\" | \"after-text\""
               },
               "description": "Sets the header icon position in the header cells",
               "attribute": "headerIconPosition"
@@ -2864,7 +2938,7 @@
               "kind": "field",
               "name": "type",
               "type": {
-                "text": "\"aggregate\" | \"boolean\" | \"button\" | \"checkbox\" | \"color\" | \"currency\" | \"custom\" | \"date\" | \"duplicate\" | \"editor\" | \"element\" | \"email\" | \"emoji\" | \"icon\" | \"image\" | \"iframe\" | \"number\" | \"password\" | \"percentage\" | \"radio\" | \"range\" | \"remover\" | \"row-group\" | \"row-number\" | \"select\" | \"selector\" | \"tel\" | \"text\" | \"toggle\" | \"url\""
+                "text": "\"aggregate\" | \"boolean\" | \"button\" | \"checkbox\" | \"color\" | \"currency\" | \"custom\" | \"date\" | \"duplicate\" | \"editor\" | \"element\" | \"email\" | \"emoji\" | \"icon\" | \"image\" | \"iframe\" | \"number\" | \"password\" | \"percentage\" | \"radio\" | \"range\" | \"remover\" | \"row-details\" | \"row-group\" | \"row-number\" | \"select\" | \"selector\" | \"tel\" | \"text\" | \"toggle\" | \"url\""
               },
               "description": "The type of the data stored in the column.  The column renderer/editor will behave based on the column type.",
               "attribute": "type"
@@ -2963,7 +3037,7 @@
               "kind": "field",
               "name": "typeColorPreview",
               "type": {
-                "text": "boolean"
+                "text": "\"disabled\""
               },
               "description": "Sets the color mode to configure the color picker. Choose between HSL, RGBA, and the default Hex",
               "attribute": "typeColorPreview"
@@ -2972,7 +3046,7 @@
               "kind": "field",
               "name": "typeColorSpaces",
               "type": {
-                "text": "string"
+                "text": "\"\""
               },
               "description": "By default, spaces are added into the color when in RGB or HSL mode.  Turn the spaces off by setting to `disabled`",
               "attribute": "typeColorSpaces"
@@ -3053,7 +3127,7 @@
               "kind": "field",
               "name": "typeIframeRatio",
               "type": {
-                "text": "string"
+                "text": "\"square\""
               },
               "description": "Sets a `square` ratio instead of the default `16:9`",
               "attribute": "typeIframeRatio"
@@ -3071,7 +3145,7 @@
               "kind": "field",
               "name": "typeImageMask",
               "type": {
-                "text": "string"
+                "text": "\"circle\""
               },
               "description": "The alternative shape to mask the image",
               "attribute": "typeImageMask"
@@ -3197,7 +3271,7 @@
               "kind": "field",
               "name": "typeSelectOptions",
               "type": {
-                "text": "string | array"
+                "text": "array | string"
               },
               "description": "The comma separated list of strings for the select box. Used with the `select` column type.",
               "attribute": "typeSelectOptions"
@@ -3435,14 +3509,14 @@
           "attributes": [
             {
               "type": {
-                "text": "string"
+                "text": "\"firebase\" | \"graphql\" | string"
               },
               "description": "The adapter to automatically set properties for the data. Currently supports `graphql` and  `firebase`",
               "name": "adapter"
             },
             {
               "type": {
-                "text": "object"
+                "text": "array | object"
               },
               "description": "The actual data for the grid. Accepts arrays, objects, array of objects and array of arrays.",
               "name": "data"
@@ -3476,7 +3550,7 @@
               "kind": "field",
               "name": "adapter",
               "type": {
-                "text": "string"
+                "text": "\"firebase\" | \"graphql\" | string"
               },
               "description": "The adapter to automatically set properties for the data. Currently supports `graphql` and  `firebase`",
               "attribute": "adapter"
@@ -3485,7 +3559,7 @@
               "kind": "field",
               "name": "data",
               "type": {
-                "text": "object"
+                "text": "array | object"
               },
               "description": "The actual data for the grid. Accepts arrays, objects, array of objects and array of arrays.",
               "attribute": "data"
@@ -4007,15 +4081,6 @@
           ],
           "tagName": "zg-filter",
           "customElement": true,
-          "attributes": [
-            {
-              "type": {
-                "text": "number"
-              },
-              "description": "The index of the cell with the filter",
-              "name": "cellindex"
-            }
-          ],
           "cssParts": [
             {
               "description": "Filter container.",
@@ -4024,17 +4089,6 @@
             {
               "description": "Wrapper for the filter field",
               "name": "filter-wrapper"
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "cellindex",
-              "type": {
-                "text": "number"
-              },
-              "description": "The index of the cell with the filter",
-              "attribute": "cellindex"
             }
           ]
         }
@@ -4969,7 +5023,7 @@
           "attributes": [
             {
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\" | "
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
               },
               "description": "The name of the icon",
               "name": "name"
@@ -4980,7 +5034,7 @@
               "kind": "field",
               "name": "name",
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\" | "
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
               },
               "description": "The name of the icon",
               "attribute": "name"
@@ -5128,14 +5182,14 @@
           "attributes": [
             {
               "type": {
-                "text": "\"currpage\" | "
+                "text": "\"currpage\""
               },
               "description": "The action of the input. Currently only `currpage` is accepted here.",
               "name": "action"
             },
             {
               "type": {
-                "text": "string"
+                "text": "\"button\" | \"checkbox\" | \"color\" | \"date\" | \"datetime-local\" | \"email\" | \"file\" | \"hidden\" | \"image\" | \"month\" | \"number\" | \"password\" | \"radio\" | \"range\" | \"reset\" | \"search\" | \"submit\" | \"tel\" | \"text\" | \"time\" | \"url\" | \"week\""
               },
               "description": "The type of the input if not using a built-in action",
               "name": "type"
@@ -5159,7 +5213,7 @@
               "kind": "field",
               "name": "action",
               "type": {
-                "text": "\"currpage\" | "
+                "text": "\"currpage\""
               },
               "description": "The action of the input. Currently only `currpage` is accepted here.",
               "attribute": "action"
@@ -5168,7 +5222,7 @@
               "kind": "field",
               "name": "type",
               "type": {
-                "text": "string"
+                "text": "\"button\" | \"checkbox\" | \"color\" | \"date\" | \"datetime-local\" | \"email\" | \"file\" | \"hidden\" | \"image\" | \"month\" | \"number\" | \"password\" | \"radio\" | \"range\" | \"reset\" | \"search\" | \"submit\" | \"tel\" | \"text\" | \"time\" | \"url\" | \"week\""
               },
               "description": "The type of the input if not using a built-in action",
               "attribute": "type"
@@ -5934,14 +5988,14 @@
             },
             {
               "type": {
-                "text": "\"button-text\" | \"button-arrows\" | "
+                "text": "\"button-text\" | \"button-arrows\""
               },
               "description": "Determines which type of pagination to use, input or buttons",
               "name": "pager-type"
             },
             {
               "type": {
-                "text": "\"top\" | \"bottom\" | "
+                "text": "\"top\" | \"bottom\""
               },
               "description": "Indicates whether to attach the pager to the top or the bottom of the grid",
               "name": "position"
@@ -5990,7 +6044,7 @@
               "kind": "field",
               "name": "pagerType",
               "type": {
-                "text": "\"button-text\" | \"button-arrows\" | "
+                "text": "\"button-text\" | \"button-arrows\""
               },
               "description": "Determines which type of pagination to use, input or buttons",
               "attribute": "pagerType"
@@ -6026,7 +6080,7 @@
               "kind": "field",
               "name": "position",
               "type": {
-                "text": "\"top\" | \"bottom\" | "
+                "text": "\"top\" | \"bottom\""
               },
               "description": "Indicates whether to attach the pager to the top or the bottom of the grid",
               "attribute": "position"
@@ -6623,7 +6677,7 @@
           "attributes": [
             {
               "type": {
-                "text": "\"pagesize\" | "
+                "text": "\"pagesize\""
               },
               "description": "The actions of the select dropdown. The current option is pagesize.",
               "name": "action"
@@ -6666,7 +6720,7 @@
               "kind": "field",
               "name": "action",
               "type": {
-                "text": "\"pagesize\" | "
+                "text": "\"pagesize\""
               },
               "description": "The actions of the select dropdown. The current option is pagesize.",
               "attribute": "action"
@@ -7019,7 +7073,7 @@
           "attributes": [
             {
               "type": {
-                "text": "\"top\" | \"bottom\" | \"both\" | "
+                "text": "\"top\" | \"bottom\" | \"both\""
               },
               "description": "Indicates where to position the source",
               "name": "position"
@@ -7036,7 +7090,7 @@
               "kind": "field",
               "name": "position",
               "type": {
-                "text": "\"top\" | \"bottom\" | \"both\" | "
+                "text": "\"top\" | \"bottom\" | \"both\""
               },
               "description": "Indicates where to position the source",
               "attribute": "position"
@@ -7507,7 +7561,7 @@
           "attributes": [
             {
               "type": {
-                "text": "\"sum\" | \"avg\" | \"max\" | \"min\" | \"count\" | string | string"
+                "text": "\"sum\" | \"avg\" | \"max\" | \"min\" | \"count\" | string"
               },
               "description": "Adds an aggregate column with the specifed aggregate value",
               "name": "aggregate"
@@ -7745,7 +7799,7 @@
             },
             {
               "type": {
-                "text": "object"
+                "text": "array | object"
               },
               "description": "The data for the grid",
               "name": "data"
@@ -7766,14 +7820,14 @@
             },
             {
               "type": {
-                "text": "string"
+                "text": "\"ltr\" | \"rtl\""
               },
               "description": "HTML standard direction",
               "name": "dir"
             },
             {
               "type": {
-                "text": "\"modal\" | boolean"
+                "text": "\"inline\" | \"modal\" | boolean"
               },
               "description": "Enables column editing/sets edit control. Default is double click to edit.",
               "name": "editor"
@@ -7801,7 +7855,7 @@
             },
             {
               "type": {
-                "text": "string | array"
+                "text": "\"reset\" | \"close\" | \"apply\" | string"
               },
               "description": "Comma separated list of buttons to display on the filter menu",
               "name": "filter-buttons"
@@ -7927,7 +7981,7 @@
             },
             {
               "type": {
-                "text": "string"
+                "text": "\"disabled\" | string"
               },
               "description": "Automatically converts the header's text to proper capitalization and spacing",
               "name": "header-auto-format"
@@ -8067,7 +8121,7 @@
             },
             {
               "type": {
-                "text": "string"
+                "text": "\"/\" | \"disabled\" | string"
               },
               "description": "Indicates separator that should be used for nested headers and data paths.",
               "name": "nested-data-separator"
@@ -8125,7 +8179,7 @@
               "type": {
                 "text": "\"top\" | \"bottom\""
               },
-              "description": "Determines max number of page buttons to display.  Default is 5.",
+              "description": "Sets pager controls position",
               "name": "pager-position"
             },
             {
@@ -8221,7 +8275,7 @@
             },
             {
               "type": {
-                "text": "string"
+                "text": "\"data\" | \"headers\" | \"all\""
               },
               "description": "If `[rowHeight]`  is set, it specifies which rows to apply row height to",
               "name": "row-height-scope"
@@ -8407,7 +8461,7 @@
               "kind": "field",
               "name": "aggregate",
               "type": {
-                "text": "\"sum\" | \"avg\" | \"max\" | \"min\" | \"count\" | string | string"
+                "text": "\"sum\" | \"avg\" | \"max\" | \"min\" | \"count\" | string"
               },
               "description": "Adds an aggregate column with the specifed aggregate value",
               "attribute": "aggregate"
@@ -8844,7 +8898,7 @@
               "kind": "field",
               "name": "data",
               "type": {
-                "text": "object"
+                "text": "array | object"
               },
               "description": "The data for the grid",
               "attribute": "data"
@@ -8907,7 +8961,7 @@
               "kind": "field",
               "name": "dir",
               "type": {
-                "text": "string"
+                "text": "\"ltr\" | \"rtl\""
               },
               "description": "HTML standard direction",
               "attribute": "dir"
@@ -8916,7 +8970,7 @@
               "kind": "field",
               "name": "editor",
               "type": {
-                "text": "\"modal\" | boolean"
+                "text": "\"inline\" | \"modal\" | boolean"
               },
               "description": "Enables column editing/sets edit control. Default is double click to edit.",
               "attribute": "editor"
@@ -8970,7 +9024,7 @@
               "kind": "field",
               "name": "filterButtons",
               "type": {
-                "text": "string | array"
+                "text": "\"reset\" | \"close\" | \"apply\" | string"
               },
               "description": "Comma separated list of buttons to display on the filter menu",
               "attribute": "filterButtons"
@@ -9932,7 +9986,7 @@
               "kind": "field",
               "name": "headerAutoFormat",
               "type": {
-                "text": "string"
+                "text": "\"disabled\" | string"
               },
               "description": "Automatically converts the header's text to proper capitalization and spacing",
               "attribute": "headerAutoFormat"
@@ -10219,7 +10273,7 @@
               "kind": "field",
               "name": "nestedDataSeparator",
               "type": {
-                "text": "string"
+                "text": "\"/\" | \"disabled\" | string"
               },
               "description": "Indicates separator that should be used for nested headers and data paths.",
               "attribute": "nestedDataSeparator"
@@ -10280,7 +10334,7 @@
               "type": {
                 "text": "\"top\" | \"bottom\""
               },
-              "description": "Determines max number of page buttons to display.  Default is 5.",
+              "description": "Sets pager controls position",
               "attribute": "pagerPosition"
             },
             {
@@ -10572,7 +10626,7 @@
               "kind": "field",
               "name": "rowHeightScope",
               "type": {
-                "text": "string"
+                "text": "\"data\" | \"headers\" | \"all\""
               },
               "description": "If `[rowHeight]`  is set, it specifies which rows to apply row height to",
               "attribute": "rowHeightScope"
@@ -10892,7 +10946,7 @@
                   "description": "Type of cell-break",
                   "name": "type",
                   "type": {
-                    "text": "enum"
+                    "text": "\"all\" | \"ellipsis\" | \"normal\" | \"word\""
                   }
                 }
               ],
@@ -10976,7 +11030,7 @@
                   "description": "Type of drag to enable",
                   "name": "type",
                   "type": {
-                    "text": "enum"
+                    "text": "\"reorder\" | \"hide\" | \"both\""
                   }
                 }
               ],
@@ -11169,7 +11223,7 @@
                   "description": "Type of dir",
                   "name": "type",
                   "type": {
-                    "text": "enum"
+                    "text": "\"ltr\" | \"rtl\""
                   }
                 }
               ],
@@ -11379,7 +11433,7 @@
                   "description": "Type of gridlines to set on the grid",
                   "name": "type",
                   "type": {
-                    "text": "enum"
+                    "text": "\"both\" | \"horz\" | \"horizontal\" | \"vert\" | \"vertical\""
                   }
                 }
               ],
@@ -11548,7 +11602,7 @@
                   "description": "Value to indicate the grid layout",
                   "name": "type",
                   "type": {
-                    "text": "enum"
+                    "text": "\"card\" | \"row\""
                   }
                 }
               ],
@@ -11989,7 +12043,7 @@
                   "description": "Set to 'data', 'headers', or 'all'",
                   "name": "scope",
                   "type": {
-                    "text": "enum"
+                    "text": "\"data\" | \"headers\" | \"all\""
                   }
                 }
               ],
