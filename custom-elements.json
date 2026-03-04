@@ -65,6 +65,396 @@
       "declarations": [
         {
           "kind": "class",
+          "description": "`<zg-body>` is created dynamically by the ZingGrid library, and as such should not be manually added by the\ndeveloper.  However the user can style `<zg-body>` using CSS.",
+          "name": "ZGBody",
+          "cssProperties": [
+            {
+              "description": "Styles the left border of grid body",
+              "name": "--zg-body-border-left"
+            },
+            {
+              "description": "Styles the right border of grid body",
+              "name": "--zg-body-border-right"
+            },
+            {
+              "description": "Sets the font family of contents inside grid body",
+              "name": "--zg-body-font-family"
+            },
+            {
+              "description": "Sets the font size of contents inside grid body",
+              "name": "--zg-body-font-size"
+            },
+            {
+              "description": "Sets the font style of contents inside grid body",
+              "name": "--zg-body-font-style"
+            },
+            {
+              "description": "Sets the font weight of contents inside grid body",
+              "name": "--zg-body-font-weight"
+            },
+            {
+              "description": "Sets the line-height of contents inside of grid body",
+              "name": "--zg-body-line-height"
+            },
+            {
+              "description": "Styles the background of grid body in 'card' layout-mode",
+              "name": "--zg-body-card-background"
+            },
+            {
+              "description": "Styles the border of grid body in 'card' layout-mode",
+              "name": "--zg-body-card-border"
+            },
+            {
+              "description": "Styles the bottom border of grid body in 'card' layout-mode",
+              "name": "--zg-body-card-border-bottom"
+            },
+            {
+              "description": "Styles the left border of grid body in 'card' layout-mode",
+              "name": "--zg-body-card-border-left"
+            },
+            {
+              "description": "Styles the right border of grid body in 'card' layout-mode",
+              "name": "--zg-body-card-border-right"
+            },
+            {
+              "description": "Styles the top border of grid body in 'card' layout-mode. Note: If `--zg-row-border-top` set in 'card' layout-mode it will override `--zg-body-border-top`.",
+              "name": "--zg-body-card-border-top"
+            },
+            {
+              "description": "Sets display of grid body in 'card' layout-mode",
+              "name": "--zg-body-card-display"
+            },
+            {
+              "description": "Styles the top border of grid body. Note: If `--zg-row-border-top` set, it will override `--zg-body-border-top`.",
+              "name": "--zg-body-border-top"
+            },
+            {
+              "description": "Styles the border of grid body",
+              "name": "--zg-body-border"
+            },
+            {
+              "description": "Styles the bottom border of grid body",
+              "name": "--zg-body-border-bottom"
+            },
+            {
+              "description": "Styles the background of grid body",
+              "name": "--zg-body-background"
+            },
+            {
+              "description": "Sets the font color of contents inside grid body",
+              "name": "--zg-body-color"
+            }
+          ],
+          "tagName": "zg-body",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGBody",
+          "declaration": {
+            "name": "ZGBody",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "A caption can be manually inserted inside the `<zing-grid>` tag as slotted content or automatically\ninserted when the `caption` is enabled.  `<zg-caption>` is stylable via CSS.",
+          "name": "ZGCaption",
+          "cssProperties": [
+            {
+              "description": "Styles the background of caption",
+              "name": "--zg-caption-background"
+            },
+            {
+              "description": "Styles the border of caption",
+              "name": "--zg-caption-border"
+            },
+            {
+              "description": "Styles the bottom border of caption",
+              "name": "--zg-caption-border-bottom"
+            },
+            {
+              "description": "Styles the left border of caption",
+              "name": "--zg-caption-border-left"
+            },
+            {
+              "description": "Styles the right border of caption",
+              "name": "--zg-caption-border-right"
+            },
+            {
+              "description": "Styles the top border of caption",
+              "name": "--zg-caption-border-top"
+            },
+            {
+              "description": "Applies a border-radius to the caption",
+              "name": "--zg-caption-border-radius"
+            },
+            {
+              "description": "Applies a top-left border-radius to the caption",
+              "name": "--zg-caption-border-top-left-radius"
+            },
+            {
+              "description": "Applies a top-right border-radius to the caption",
+              "name": "--zg-caption-border-top-right-radius"
+            },
+            {
+              "description": "Applies a bottom-left border-radius to the caption",
+              "name": "--zg-caption-border-bottom-left-radius"
+            },
+            {
+              "description": "Applies a bottom-right border-radius to the caption",
+              "name": "--zg-caption-border-bottom-right-radius"
+            },
+            {
+              "description": "Applies a box shadow behind caption",
+              "name": "--zg-caption-box-shadow"
+            },
+            {
+              "description": "Sets the font color of caption",
+              "name": "--zg-caption-color"
+            },
+            {
+              "description": "Sets the font family of caption",
+              "name": "--zg-caption-font-family"
+            },
+            {
+              "description": "Sets the font size of caption",
+              "name": "--zg-caption-font-size"
+            },
+            {
+              "description": "Sets the font style of caption",
+              "name": "--zg-caption-font-style"
+            },
+            {
+              "description": "Sets the font weight of caption",
+              "name": "--zg-caption-font-weight"
+            },
+            {
+              "description": "Sets the margin of caption",
+              "name": "--zg-caption-margin"
+            },
+            {
+              "description": "Sets the opacity of caption",
+              "name": "--zg-caption-opacity"
+            },
+            {
+              "description": "Sets the padding of caption",
+              "name": "--zg-caption-padding"
+            },
+            {
+              "description": "Sets the transition of caption",
+              "name": "--zg-caption-transition"
+            },
+            {
+              "description": "Sets the vertical alignment of items (title and toolbar) in caption",
+              "name": "--zg-caption-align-items"
+            },
+            {
+              "description": "Sets the flex direction of items (title and toolbar) in caption",
+              "name": "--zg-caption-flex-direction"
+            },
+            {
+              "description": "Sets the height of caption",
+              "name": "--zg-caption-height"
+            },
+            {
+              "description": "Sets vertical alignment of items in caption title",
+              "name": "--zg-caption-title-align-self"
+            },
+            {
+              "description": "Sets how items are flexed in caption title",
+              "name": "--zg-caption-title-flex"
+            },
+            {
+              "description": "Sets the font-family of caption title",
+              "name": "--zg-caption-title-font-family"
+            },
+            {
+              "description": "Sets the font size of caption title",
+              "name": "--zg-caption-title-font-size"
+            },
+            {
+              "description": "Sets the font style of caption title",
+              "name": "--zg-caption-title-font-style"
+            },
+            {
+              "description": "Sets the font weight of caption title",
+              "name": "--zg-caption-title-font-weight"
+            },
+            {
+              "description": "Sets the margin of caption title",
+              "name": "--zg-caption-title-margin"
+            },
+            {
+              "description": "Sets the padding of caption title",
+              "name": "--zg-caption-title-padding"
+            },
+            {
+              "description": "Sets the order of caption title with respect to caption toolbar",
+              "name": "--zg-caption-title-order"
+            },
+            {
+              "description": "Sets the text alignment of caption title",
+              "name": "--zg-caption-title-text-align"
+            },
+            {
+              "description": "Sets the transform of caption title",
+              "name": "--zg-caption-title-transform"
+            },
+            {
+              "description": "Sets the width of caption title",
+              "name": "--zg-caption-title-width"
+            },
+            {
+              "description": "Sets vertical alignment of items in caption toolbar",
+              "name": "--zg-caption-toolbar-align-self"
+            },
+            {
+              "description": "Sets the position from bottom of caption toolbar. To apply, set --zg-caption-toolbar-position.",
+              "name": "--zg-caption-toolbar-bottom"
+            },
+            {
+              "description": "Sets the horizontal alignment of contents in caption toolbar",
+              "name": "--zg-caption-toolbar-justify-content"
+            },
+            {
+              "description": "Sets the left of caption toolbar. To apply, set --zg-caption-toolbar-position.",
+              "name": "--zg-caption-toolbar-left"
+            },
+            {
+              "description": "Sets the margin of caption toolbar",
+              "name": "--zg-caption-toolbar-margin"
+            },
+            {
+              "description": "Sets the position of caption toolbar",
+              "name": "--zg-caption-toolbar-position"
+            },
+            {
+              "description": "Sets the right of caption toolbar. To apply, set --zg-caption-toolbar-position.",
+              "name": "--zg-caption-toolbar-right"
+            },
+            {
+              "description": "Sets the top of caption toolbar. To apply, set --zg-caption-toolbar-position.",
+              "name": "--zg-caption-toolbar-top"
+            },
+            {
+              "description": "Sets the transform of caption toolbar",
+              "name": "--zg-caption-toolbar-transform"
+            },
+            {
+              "description": "Sets the width of caption toolbar",
+              "name": "--zg-caption-toolbar-width"
+            },
+            {
+              "description": "Styles the background of button in caption",
+              "name": "--zg-caption-button-background"
+            },
+            {
+              "description": "Styles the background of button in caption when the button is in a `focus` state",
+              "name": "--zg-caption-button-background_focus"
+            },
+            {
+              "description": "Styles the background of button in caption when the button is in a `hover` state",
+              "name": "--zg-caption-button-background_hover"
+            },
+            {
+              "description": "Styles the background of button in caption when the button is in an `active` state",
+              "name": "--zg-caption-button-background_active"
+            }
+          ],
+          "tagName": "zg-caption",
+          "customElement": true,
+          "attributes": [
+            {
+              "type": {
+                "text": "\"start\" | \"center\" | \"left\" | \"right\""
+              },
+              "description": "The alignment of the default content in the caption",
+              "name": "align"
+            },
+            {
+              "type": {
+                "text": "\"top\" | \"bottom\" | \"both\""
+              },
+              "description": "Indicates whether to attach the caption to the top or the bottom of the grid",
+              "name": "position"
+            }
+          ],
+          "cssParts": [
+            {
+              "description": "Caption container",
+              "name": "caption"
+            },
+            {
+              "description": "The title container",
+              "name": "title"
+            },
+            {
+              "description": "The toolbar container",
+              "name": "toolbar"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "align",
+              "type": {
+                "text": "\"start\" | \"center\" | \"left\" | \"right\""
+              },
+              "description": "The alignment of the default content in the caption",
+              "attribute": "align"
+            },
+            {
+              "kind": "field",
+              "name": "position",
+              "type": {
+                "text": "\"top\" | \"bottom\" | \"both\""
+              },
+              "description": "Indicates whether to attach the caption to the top or the bottom of the grid",
+              "attribute": "position"
+            }
+          ],
+          "slots": [
+            {
+              "description": "Caption title.",
+              "name": ""
+            },
+            {
+              "description": "Caption title. Use when using a feature that enables caption toolbar ([contextMenu], [search], [staticMenu]).",
+              "name": "message"
+            },
+            {
+              "description": "Caption toolbar, which is added to the rightmost of caption by default.",
+              "name": "tool"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGCaption",
+          "declaration": {
+            "name": "ZGCaption",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
           "description": "A custom, styled button that can be used both for internal grid-related action and for user-specific\nactions. It is stylable via CSS. Some buttons are automatically inserted when a feature that uses it enabled, like `pager`, while\nothers are inserted manually by the user.",
           "name": "ZGButton",
           "cssProperties": [
@@ -306,7 +696,7 @@
           "attributes": [
             {
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checkbox\" | \"closerowdetails\" | \"closerowgroup\" | \"copycell\" | \"createrecord\" | \"createrecordend\" | \"createrecordstart\" | \"deselect\" | \"duplicaterecord\" | \"editcell\" | \"editrecord\" | \"editrow\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"freezecolumnleft\" | \"freezecolumnright\" | \"unfreezecolumn\" | \"hidecolumn\" | \"freezerowtop\" | \"freezerowbottom\" | \"unfreezerow\" | \"getselection\" | \"insertrecord\" | \"layoutrow\" | \"layoutcard\" | \"resetstate\" | \"lastpage\" | \"menu\" | \"nextpage\" | \"openrowdetails\" | \"openrowgroup\" | \"page\" | \"pastecell\" | \"prevpage\" | \"reload\" | \"removerecord\" | \"undoremoverecord\" | \"search\" | \"selectall\" | \"selectcell\" | \"selectrow\" | \"sortcolumn\" | \"submitrecord\" | \"about\""
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checkbox\" | \"closerowdetails\" | \"closerowgroup\" | \"copycell\" | \"createrecord\" | \"createrecordend\" | \"createrecordstart\" | \"deselect\" | \"duplicaterecord\" | \"editcell\" | \"editrecord\" | \"editrow\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"freezecolumnleft\" | \"freezecolumnright\" | \"unfreezecolumn\" | \"freezerowtop\" | \"freezerowbottom\" | \"hidecolumn\" | \"unfreezerow\" | \"getselection\" | \"insertrecord\" | \"layoutrow\" | \"layoutcard\" | \"lastpage\" | \"menu\" | \"nextpage\" | \"openrowdetails\" | \"openrowgroup\" | \"page\" | \"pastecell\" | \"prevpage\" | \"reload\" | \"removerecord\" | \"undoremoverecord\" | \"resetstate\" | \"search\" | \"selectall\" | \"selectcell\" | \"selectrow\" | \"sortcolumn\" | \"submitrecord\" | \"about\""
               },
               "description": "The action of the button",
               "name": "action"
@@ -359,7 +749,7 @@
               "kind": "field",
               "name": "action",
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checkbox\" | \"closerowdetails\" | \"closerowgroup\" | \"copycell\" | \"createrecord\" | \"createrecordend\" | \"createrecordstart\" | \"deselect\" | \"duplicaterecord\" | \"editcell\" | \"editrecord\" | \"editrow\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"freezecolumnleft\" | \"freezecolumnright\" | \"unfreezecolumn\" | \"hidecolumn\" | \"freezerowtop\" | \"freezerowbottom\" | \"unfreezerow\" | \"getselection\" | \"insertrecord\" | \"layoutrow\" | \"layoutcard\" | \"resetstate\" | \"lastpage\" | \"menu\" | \"nextpage\" | \"openrowdetails\" | \"openrowgroup\" | \"page\" | \"pastecell\" | \"prevpage\" | \"reload\" | \"removerecord\" | \"undoremoverecord\" | \"search\" | \"selectall\" | \"selectcell\" | \"selectrow\" | \"sortcolumn\" | \"submitrecord\" | \"about\""
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checkbox\" | \"closerowdetails\" | \"closerowgroup\" | \"copycell\" | \"createrecord\" | \"createrecordend\" | \"createrecordstart\" | \"deselect\" | \"duplicaterecord\" | \"editcell\" | \"editrecord\" | \"editrow\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"freezecolumnleft\" | \"freezecolumnright\" | \"unfreezecolumn\" | \"freezerowtop\" | \"freezerowbottom\" | \"hidecolumn\" | \"unfreezerow\" | \"getselection\" | \"insertrecord\" | \"layoutrow\" | \"layoutcard\" | \"lastpage\" | \"menu\" | \"nextpage\" | \"openrowdetails\" | \"openrowgroup\" | \"page\" | \"pastecell\" | \"prevpage\" | \"reload\" | \"removerecord\" | \"undoremoverecord\" | \"resetstate\" | \"search\" | \"selectall\" | \"selectcell\" | \"selectrow\" | \"sortcolumn\" | \"submitrecord\" | \"about\""
               },
               "description": "The action of the button",
               "attribute": "action"
@@ -441,107 +831,6 @@
           "name": "ZGButton",
           "declaration": {
             "name": "ZGButton",
-            "module": "dist/zinggrid.min.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/zinggrid.min.js",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "`<zg-body>` is created dynamically by the ZingGrid library, and as such should not be manually added by the\ndeveloper.  However the user can style `<zg-body>` using CSS.",
-          "name": "ZGBody",
-          "cssProperties": [
-            {
-              "description": "Styles the left border of grid body",
-              "name": "--zg-body-border-left"
-            },
-            {
-              "description": "Styles the right border of grid body",
-              "name": "--zg-body-border-right"
-            },
-            {
-              "description": "Sets the font family of contents inside grid body",
-              "name": "--zg-body-font-family"
-            },
-            {
-              "description": "Sets the font size of contents inside grid body",
-              "name": "--zg-body-font-size"
-            },
-            {
-              "description": "Sets the font style of contents inside grid body",
-              "name": "--zg-body-font-style"
-            },
-            {
-              "description": "Sets the font weight of contents inside grid body",
-              "name": "--zg-body-font-weight"
-            },
-            {
-              "description": "Sets the line-height of contents inside of grid body",
-              "name": "--zg-body-line-height"
-            },
-            {
-              "description": "Styles the background of grid body in 'card' layout-mode",
-              "name": "--zg-body-card-background"
-            },
-            {
-              "description": "Styles the border of grid body in 'card' layout-mode",
-              "name": "--zg-body-card-border"
-            },
-            {
-              "description": "Styles the bottom border of grid body in 'card' layout-mode",
-              "name": "--zg-body-card-border-bottom"
-            },
-            {
-              "description": "Styles the left border of grid body in 'card' layout-mode",
-              "name": "--zg-body-card-border-left"
-            },
-            {
-              "description": "Styles the right border of grid body in 'card' layout-mode",
-              "name": "--zg-body-card-border-right"
-            },
-            {
-              "description": "Styles the top border of grid body in 'card' layout-mode. Note: If `--zg-row-border-top` set in 'card' layout-mode it will override `--zg-body-border-top`.",
-              "name": "--zg-body-card-border-top"
-            },
-            {
-              "description": "Sets display of grid body in 'card' layout-mode",
-              "name": "--zg-body-card-display"
-            },
-            {
-              "description": "Styles the top border of grid body. Note: If `--zg-row-border-top` set, it will override `--zg-body-border-top`.",
-              "name": "--zg-body-border-top"
-            },
-            {
-              "description": "Styles the border of grid body",
-              "name": "--zg-body-border"
-            },
-            {
-              "description": "Styles the bottom border of grid body",
-              "name": "--zg-body-border-bottom"
-            },
-            {
-              "description": "Styles the background of grid body",
-              "name": "--zg-body-background"
-            },
-            {
-              "description": "Sets the font color of contents inside grid body",
-              "name": "--zg-body-color"
-            }
-          ],
-          "tagName": "zg-body",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZGBody",
-          "declaration": {
-            "name": "ZGBody",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -957,295 +1246,6 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "A caption can be manually inserted inside the `<zing-grid>` tag as slotted content or automatically\ninserted when the `caption` is enabled.  `<zg-caption>` is stylable via CSS.",
-          "name": "ZGCaption",
-          "cssProperties": [
-            {
-              "description": "Styles the background of caption",
-              "name": "--zg-caption-background"
-            },
-            {
-              "description": "Styles the border of caption",
-              "name": "--zg-caption-border"
-            },
-            {
-              "description": "Styles the bottom border of caption",
-              "name": "--zg-caption-border-bottom"
-            },
-            {
-              "description": "Styles the left border of caption",
-              "name": "--zg-caption-border-left"
-            },
-            {
-              "description": "Styles the right border of caption",
-              "name": "--zg-caption-border-right"
-            },
-            {
-              "description": "Styles the top border of caption",
-              "name": "--zg-caption-border-top"
-            },
-            {
-              "description": "Applies a border-radius to the caption",
-              "name": "--zg-caption-border-radius"
-            },
-            {
-              "description": "Applies a top-left border-radius to the caption",
-              "name": "--zg-caption-border-top-left-radius"
-            },
-            {
-              "description": "Applies a top-right border-radius to the caption",
-              "name": "--zg-caption-border-top-right-radius"
-            },
-            {
-              "description": "Applies a bottom-left border-radius to the caption",
-              "name": "--zg-caption-border-bottom-left-radius"
-            },
-            {
-              "description": "Applies a bottom-right border-radius to the caption",
-              "name": "--zg-caption-border-bottom-right-radius"
-            },
-            {
-              "description": "Applies a box shadow behind caption",
-              "name": "--zg-caption-box-shadow"
-            },
-            {
-              "description": "Sets the font color of caption",
-              "name": "--zg-caption-color"
-            },
-            {
-              "description": "Sets the font family of caption",
-              "name": "--zg-caption-font-family"
-            },
-            {
-              "description": "Sets the font size of caption",
-              "name": "--zg-caption-font-size"
-            },
-            {
-              "description": "Sets the font style of caption",
-              "name": "--zg-caption-font-style"
-            },
-            {
-              "description": "Sets the font weight of caption",
-              "name": "--zg-caption-font-weight"
-            },
-            {
-              "description": "Sets the margin of caption",
-              "name": "--zg-caption-margin"
-            },
-            {
-              "description": "Sets the opacity of caption",
-              "name": "--zg-caption-opacity"
-            },
-            {
-              "description": "Sets the padding of caption",
-              "name": "--zg-caption-padding"
-            },
-            {
-              "description": "Sets the transition of caption",
-              "name": "--zg-caption-transition"
-            },
-            {
-              "description": "Sets the vertical alignment of items (title and toolbar) in caption",
-              "name": "--zg-caption-align-items"
-            },
-            {
-              "description": "Sets the flex direction of items (title and toolbar) in caption",
-              "name": "--zg-caption-flex-direction"
-            },
-            {
-              "description": "Sets the height of caption",
-              "name": "--zg-caption-height"
-            },
-            {
-              "description": "Sets vertical alignment of items in caption title",
-              "name": "--zg-caption-title-align-self"
-            },
-            {
-              "description": "Sets how items are flexed in caption title",
-              "name": "--zg-caption-title-flex"
-            },
-            {
-              "description": "Sets the font-family of caption title",
-              "name": "--zg-caption-title-font-family"
-            },
-            {
-              "description": "Sets the font size of caption title",
-              "name": "--zg-caption-title-font-size"
-            },
-            {
-              "description": "Sets the font style of caption title",
-              "name": "--zg-caption-title-font-style"
-            },
-            {
-              "description": "Sets the font weight of caption title",
-              "name": "--zg-caption-title-font-weight"
-            },
-            {
-              "description": "Sets the margin of caption title",
-              "name": "--zg-caption-title-margin"
-            },
-            {
-              "description": "Sets the padding of caption title",
-              "name": "--zg-caption-title-padding"
-            },
-            {
-              "description": "Sets the order of caption title with respect to caption toolbar",
-              "name": "--zg-caption-title-order"
-            },
-            {
-              "description": "Sets the text alignment of caption title",
-              "name": "--zg-caption-title-text-align"
-            },
-            {
-              "description": "Sets the transform of caption title",
-              "name": "--zg-caption-title-transform"
-            },
-            {
-              "description": "Sets the width of caption title",
-              "name": "--zg-caption-title-width"
-            },
-            {
-              "description": "Sets vertical alignment of items in caption toolbar",
-              "name": "--zg-caption-toolbar-align-self"
-            },
-            {
-              "description": "Sets the position from bottom of caption toolbar. To apply, set --zg-caption-toolbar-position.",
-              "name": "--zg-caption-toolbar-bottom"
-            },
-            {
-              "description": "Sets the horizontal alignment of contents in caption toolbar",
-              "name": "--zg-caption-toolbar-justify-content"
-            },
-            {
-              "description": "Sets the left of caption toolbar. To apply, set --zg-caption-toolbar-position.",
-              "name": "--zg-caption-toolbar-left"
-            },
-            {
-              "description": "Sets the margin of caption toolbar",
-              "name": "--zg-caption-toolbar-margin"
-            },
-            {
-              "description": "Sets the position of caption toolbar",
-              "name": "--zg-caption-toolbar-position"
-            },
-            {
-              "description": "Sets the right of caption toolbar. To apply, set --zg-caption-toolbar-position.",
-              "name": "--zg-caption-toolbar-right"
-            },
-            {
-              "description": "Sets the top of caption toolbar. To apply, set --zg-caption-toolbar-position.",
-              "name": "--zg-caption-toolbar-top"
-            },
-            {
-              "description": "Sets the transform of caption toolbar",
-              "name": "--zg-caption-toolbar-transform"
-            },
-            {
-              "description": "Sets the width of caption toolbar",
-              "name": "--zg-caption-toolbar-width"
-            },
-            {
-              "description": "Styles the background of button in caption",
-              "name": "--zg-caption-button-background"
-            },
-            {
-              "description": "Styles the background of button in caption when the button is in a `focus` state",
-              "name": "--zg-caption-button-background_focus"
-            },
-            {
-              "description": "Styles the background of button in caption when the button is in a `hover` state",
-              "name": "--zg-caption-button-background_hover"
-            },
-            {
-              "description": "Styles the background of button in caption when the button is in an `active` state",
-              "name": "--zg-caption-button-background_active"
-            }
-          ],
-          "tagName": "zg-caption",
-          "customElement": true,
-          "attributes": [
-            {
-              "type": {
-                "text": "\"start\" | \"left\" | \"right\" | \"center\""
-              },
-              "description": "The alignment of the default content in the caption",
-              "name": "align"
-            },
-            {
-              "type": {
-                "text": "\"top\" | \"bottom\" | \"both\""
-              },
-              "description": "Indicates whether to attach the caption to the top or the bottom of the grid",
-              "name": "position"
-            }
-          ],
-          "cssParts": [
-            {
-              "description": "Caption container",
-              "name": "caption"
-            },
-            {
-              "description": "The title container",
-              "name": "title"
-            },
-            {
-              "description": "The toolbar container",
-              "name": "toolbar"
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "align",
-              "type": {
-                "text": "\"start\" | \"left\" | \"right\" | \"center\""
-              },
-              "description": "The alignment of the default content in the caption",
-              "attribute": "align"
-            },
-            {
-              "kind": "field",
-              "name": "position",
-              "type": {
-                "text": "\"top\" | \"bottom\" | \"both\""
-              },
-              "description": "Indicates whether to attach the caption to the top or the bottom of the grid",
-              "attribute": "position"
-            }
-          ],
-          "slots": [
-            {
-              "description": "Caption title.",
-              "name": ""
-            },
-            {
-              "description": "Caption title. Use when using a feature that enables caption toolbar ([contextMenu], [search], [staticMenu]).",
-              "name": "message"
-            },
-            {
-              "description": "Caption toolbar, which is added to the rightmost of caption by default.",
-              "name": "tool"
-            }
-          ]
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZGCaption",
-          "declaration": {
-            "name": "ZGCaption",
-            "module": "dist/zinggrid.min.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/zinggrid.min.js",
-      "declarations": [
-        {
-          "kind": "class",
           "description": "`<zg-cell-overflow>` elements can be used to add popup data to each cell on a user action.  Typical use would\nbe a custom element select and optionlist.  As a generated element, developers\nshould not manually place `<zg-cell-overflow>` in their grid; however, they may style the tooltips and\nits internal elements using CSS.",
           "name": "ZGCellOverflow",
           "tagName": "zg-cell-overflow",
@@ -1353,57 +1353,6 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "The column resize handle appears when hovering over header to\nresize the column.",
-          "name": "ZGColumnResize",
-          "cssProperties": [
-            {
-              "description": "Sets the background of the resize handle",
-              "name": "--zg-column-resize-background"
-            },
-            {
-              "description": "Sets the height of the resize handle",
-              "name": "--zg-column-resize-height"
-            },
-            {
-              "description": "Sets the top position of the resize handle",
-              "name": "--zg-column-resize-top"
-            },
-            {
-              "description": "Sets the width of the resize handle",
-              "name": "--zg-column-resize-width"
-            }
-          ],
-          "tagName": "zg-column-resize",
-          "customElement": true,
-          "cssParts": [
-            {
-              "description": "The resize handle container",
-              "name": "handle"
-            },
-            {
-              "description": "The resize icon",
-              "name": "icon"
-            }
-          ]
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZGColumnResize",
-          "declaration": {
-            "name": "ZGColumnResize",
-            "module": "dist/zinggrid.min.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/zinggrid.min.js",
-      "declarations": [
-        {
-          "kind": "class",
           "description": "The `<zg-column>` tag is used to associate the columns of the grid to the values \nin a dataset.  Attributes on the tag are used to configure both the data type, style, and function \nof the grid column.  It is possible to build grids without explicit `<zg-column>` tags, and in that \ncase ZingGrid will add a column for each index in the dataset. However, developers are encouraged to \nexplore the features available with `<zg-column>` to utilize the powerful features ZingGrid has to offer.",
           "name": "ZGColumn",
           "slots": [
@@ -1436,7 +1385,7 @@
             },
             {
               "type": {
-                "text": "\"disabled\""
+                "text": "\"disabled\" | boolean"
               },
               "description": "Presence of attribute forces a border on the button.  Setting to `disabled` removes the default border.",
               "name": "button-border"
@@ -1471,7 +1420,7 @@
             },
             {
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"undoremoverecord\" | \"search\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"up\" | \"warning\""
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
               },
               "description": "Sets the icon to display on the info column type",
               "name": "cell-tooltip-icon"
@@ -1555,7 +1504,7 @@
             },
             {
               "type": {
-                "text": "string"
+                "text": "boolean | string"
               },
               "description": "Overrides editor type (can be custom) or set false to disable editor",
               "name": "editor"
@@ -1569,7 +1518,7 @@
             },
             {
               "type": {
-                "text": "\"menu\" | \"inline\" | \"both\" | \"disabled\" | boolean | string"
+                "text": "\"menu\" | \"inline\" | \"both\" | \"disabled\" | boolean"
               },
               "description": "Whether the filter is enabled for the column",
               "name": "filter"
@@ -1604,7 +1553,7 @@
             },
             {
               "type": {
-                "text": "\"none\" | \"empty\" | \"notEmpty\" | \"equals\" | \"notEquals\" | \"beginsWith\" | \"endsWith\" | \"contains\" | \"notContains\" | \"between\" | \"notBetween\" | \"greaterThan\" | \"greaterEqualThan\" | \"lessThan\" | \"lessEqualThan\" | \"before\" | \"after\" | \"betweenDate\" | \"today\" | \"yesterday\" | \"tomorrow\" | string"
+                "text": "\"none\" | \"empty\" | \"notEmpty\" | \"equals\" | \"notEquals\" | \"beginsWith\" | \"endsWith\" | \"contains\" | \"notContains\" | \"between\" | \"notBetween\" | \"greaterThan\" | \"greaterEqualThan\" | \"lessThan\" | \"lessEqualThan\" | \"before\" | \"after\" | \"betweenDate\" | \"today\" | \"yesterday\" | \"tomorrow\" | \"break\" | \"default\" | \"trueVal\" | \"falseVal\" | string"
               },
               "description": "The condition to initially display on filter menu open.  Can also be any custom string representing a function name.",
               "name": "filter-default-condition"
@@ -1667,7 +1616,7 @@
             },
             {
               "type": {
-                "text": "\"left\" | \"right\" | string"
+                "text": "\"left\" | \"right\""
               },
               "description": "Moves the column to the frozen panel specified.",
               "name": "frozen"
@@ -1849,7 +1798,7 @@
             },
             {
               "type": {
-                "text": "\"disabled\""
+                "text": "\"disabled\" | boolean"
               },
               "description": "Modifies the default column resizable.  Set to `disabled` to turn off resizing on a single column.",
               "name": "resizable"
@@ -2005,12 +1954,12 @@
               "type": {
                 "text": "\"disabled\""
               },
-              "description": "Sets the color mode to configure the color picker. Choose between HSL, RGBA, and the default Hex",
+              "description": "Disable the default color swatch UI preview with a false value.",
               "name": "type-color-preview"
             },
             {
               "type": {
-                "text": "\"\""
+                "text": "\"disabled\""
               },
               "description": "By default, spaces are added into the color when in RGB or HSL mode.  Turn the spaces off by setting to `disabled`",
               "name": "type-color-spaces"
@@ -2308,7 +2257,7 @@
               "kind": "field",
               "name": "buttonBorder",
               "type": {
-                "text": "\"disabled\""
+                "text": "\"disabled\" | boolean"
               },
               "description": "Presence of attribute forces a border on the button.  Setting to `disabled` removes the default border.",
               "attribute": "buttonBorder"
@@ -2353,7 +2302,7 @@
               "kind": "field",
               "name": "cellTooltipIcon",
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"undoremoverecord\" | \"search\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"up\" | \"warning\""
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
               },
               "description": "Sets the icon to display on the info column type",
               "attribute": "cellTooltipIcon"
@@ -2461,7 +2410,7 @@
               "kind": "field",
               "name": "editor",
               "type": {
-                "text": "string"
+                "text": "boolean | string"
               },
               "description": "Overrides editor type (can be custom) or set false to disable editor",
               "attribute": "editor"
@@ -2479,7 +2428,7 @@
               "kind": "field",
               "name": "filter",
               "type": {
-                "text": "\"menu\" | \"inline\" | \"both\" | \"disabled\" | boolean | string"
+                "text": "\"menu\" | \"inline\" | \"both\" | \"disabled\" | boolean"
               },
               "description": "Whether the filter is enabled for the column",
               "attribute": "filter"
@@ -2524,7 +2473,7 @@
               "kind": "field",
               "name": "filterDefaultCondition",
               "type": {
-                "text": "\"none\" | \"empty\" | \"notEmpty\" | \"equals\" | \"notEquals\" | \"beginsWith\" | \"endsWith\" | \"contains\" | \"notContains\" | \"between\" | \"notBetween\" | \"greaterThan\" | \"greaterEqualThan\" | \"lessThan\" | \"lessEqualThan\" | \"before\" | \"after\" | \"betweenDate\" | \"today\" | \"yesterday\" | \"tomorrow\" | string"
+                "text": "\"none\" | \"empty\" | \"notEmpty\" | \"equals\" | \"notEquals\" | \"beginsWith\" | \"endsWith\" | \"contains\" | \"notContains\" | \"between\" | \"notBetween\" | \"greaterThan\" | \"greaterEqualThan\" | \"lessThan\" | \"lessEqualThan\" | \"before\" | \"after\" | \"betweenDate\" | \"today\" | \"yesterday\" | \"tomorrow\" | \"break\" | \"default\" | \"trueVal\" | \"falseVal\" | string"
               },
               "description": "The condition to initially display on filter menu open.  Can also be any custom string representing a function name.",
               "attribute": "filterDefaultCondition"
@@ -2605,7 +2554,7 @@
               "kind": "field",
               "name": "frozen",
               "type": {
-                "text": "\"left\" | \"right\" | string"
+                "text": "\"left\" | \"right\""
               },
               "description": "Moves the column to the frozen panel specified.",
               "attribute": "frozen"
@@ -2839,7 +2788,7 @@
               "kind": "field",
               "name": "resizable",
               "type": {
-                "text": "\"disabled\""
+                "text": "\"disabled\" | boolean"
               },
               "description": "Modifies the default column resizable.  Set to `disabled` to turn off resizing on a single column.",
               "attribute": "resizable"
@@ -3039,14 +2988,14 @@
               "type": {
                 "text": "\"disabled\""
               },
-              "description": "Sets the color mode to configure the color picker. Choose between HSL, RGBA, and the default Hex",
+              "description": "Disable the default color swatch UI preview with a false value.",
               "attribute": "typeColorPreview"
             },
             {
               "kind": "field",
               "name": "typeColorSpaces",
               "type": {
-                "text": "\"\""
+                "text": "\"disabled\""
               },
               "description": "By default, spaces are added into the color when in RGB or HSL mode.  Turn the spaces off by setting to `disabled`",
               "attribute": "typeColorSpaces"
@@ -3392,6 +3341,57 @@
           "name": "ZGColumn",
           "declaration": {
             "name": "ZGColumn",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "The column resize handle appears when hovering over header to\nresize the column.",
+          "name": "ZGColumnResize",
+          "cssProperties": [
+            {
+              "description": "Sets the background of the resize handle",
+              "name": "--zg-column-resize-background"
+            },
+            {
+              "description": "Sets the height of the resize handle",
+              "name": "--zg-column-resize-height"
+            },
+            {
+              "description": "Sets the top position of the resize handle",
+              "name": "--zg-column-resize-top"
+            },
+            {
+              "description": "Sets the width of the resize handle",
+              "name": "--zg-column-resize-width"
+            }
+          ],
+          "tagName": "zg-column-resize",
+          "customElement": true,
+          "cssParts": [
+            {
+              "description": "The resize handle container",
+              "name": "handle"
+            },
+            {
+              "description": "The resize icon",
+              "name": "icon"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGColumnResize",
+          "declaration": {
+            "name": "ZGColumnResize",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -5567,103 +5567,6 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "`<zg-no-data>` is used to display a message when there are no records.  The \nelement internally wraps any text in a `<div role=\"any\">` tag.  The\nelement is stylable with CSS like most ZingGrid elements.",
-          "name": "ZGNoData",
-          "cssProperties": [
-            {
-              "description": "Styles the background of empty message when in `<zg-header>`",
-              "name": "--zg-no-data-background"
-            },
-            {
-              "description": "Styles the border of empty message when in `<zg-header>`",
-              "name": "--zg-no-data-border"
-            },
-            {
-              "description": "Styles the bottom border of empty message when in `<zg-header>`",
-              "name": "--zg-no-data-border-bottom"
-            },
-            {
-              "description": "Styles the left border of empty message when in `<zg-header>`",
-              "name": "--zg-no-data-border-left"
-            },
-            {
-              "description": "Styles the right border of empty message when in `<zg-header>`",
-              "name": "--zg-no-data-border-right"
-            },
-            {
-              "description": "Styles the top border of empty message when in `<zg-header>`",
-              "name": "--zg-no-data-border-top"
-            },
-            {
-              "description": "Styles the border radius of empty message",
-              "name": "--zg-no-data-border-radius"
-            },
-            {
-              "description": "Sets the font color content inside of empty message when in `<zg-header>`",
-              "name": "--zg-no-data-color"
-            },
-            {
-              "description": "Sets the font size of empty message",
-              "name": "--zg-no-data-font-size"
-            },
-            {
-              "description": "Sets the font style of empty message",
-              "name": "--zg-no-data-font-style"
-            },
-            {
-              "description": "Sets the font weight of empty message",
-              "name": "--zg-no-data-font-weight"
-            },
-            {
-              "description": "Sets the line height of empty message",
-              "name": "--zg-no-data-line-height"
-            },
-            {
-              "description": "Sets the min-height of empty message",
-              "name": "--zg-no-data-min-height"
-            },
-            {
-              "description": "Sets the padding of empty message",
-              "name": "--zg-no-data-padding"
-            },
-            {
-              "description": "Sets text alignment of content inside of empty message",
-              "name": "--zg-no-data-text-align"
-            }
-          ],
-          "tagName": "zg-no-data",
-          "customElement": true,
-          "cssParts": [
-            {
-              "description": "The container for the no data status message",
-              "name": "status"
-            }
-          ],
-          "slots": [
-            {
-              "description": "No data content.",
-              "name": ""
-            }
-          ]
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZGNoData",
-          "declaration": {
-            "name": "ZGNoData",
-            "module": "dist/zinggrid.min.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/zinggrid.min.js",
-      "declarations": [
-        {
-          "kind": "class",
           "description": "An option's list to go within a `<zg-select>` element",
           "name": "ZGOptionList",
           "cssProperties": [
@@ -5772,6 +5675,103 @@
           "name": "ZGOptionList",
           "declaration": {
             "name": "ZGOptionList",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "`<zg-no-data>` is used to display a message when there are no records.  The \nelement internally wraps any text in a `<div role=\"any\">` tag.  The\nelement is stylable with CSS like most ZingGrid elements.",
+          "name": "ZGNoData",
+          "cssProperties": [
+            {
+              "description": "Styles the background of empty message when in `<zg-header>`",
+              "name": "--zg-no-data-background"
+            },
+            {
+              "description": "Styles the border of empty message when in `<zg-header>`",
+              "name": "--zg-no-data-border"
+            },
+            {
+              "description": "Styles the bottom border of empty message when in `<zg-header>`",
+              "name": "--zg-no-data-border-bottom"
+            },
+            {
+              "description": "Styles the left border of empty message when in `<zg-header>`",
+              "name": "--zg-no-data-border-left"
+            },
+            {
+              "description": "Styles the right border of empty message when in `<zg-header>`",
+              "name": "--zg-no-data-border-right"
+            },
+            {
+              "description": "Styles the top border of empty message when in `<zg-header>`",
+              "name": "--zg-no-data-border-top"
+            },
+            {
+              "description": "Styles the border radius of empty message",
+              "name": "--zg-no-data-border-radius"
+            },
+            {
+              "description": "Sets the font color content inside of empty message when in `<zg-header>`",
+              "name": "--zg-no-data-color"
+            },
+            {
+              "description": "Sets the font size of empty message",
+              "name": "--zg-no-data-font-size"
+            },
+            {
+              "description": "Sets the font style of empty message",
+              "name": "--zg-no-data-font-style"
+            },
+            {
+              "description": "Sets the font weight of empty message",
+              "name": "--zg-no-data-font-weight"
+            },
+            {
+              "description": "Sets the line height of empty message",
+              "name": "--zg-no-data-line-height"
+            },
+            {
+              "description": "Sets the min-height of empty message",
+              "name": "--zg-no-data-min-height"
+            },
+            {
+              "description": "Sets the padding of empty message",
+              "name": "--zg-no-data-padding"
+            },
+            {
+              "description": "Sets text alignment of content inside of empty message",
+              "name": "--zg-no-data-text-align"
+            }
+          ],
+          "tagName": "zg-no-data",
+          "customElement": true,
+          "cssParts": [
+            {
+              "description": "The container for the no data status message",
+              "name": "status"
+            }
+          ],
+          "slots": [
+            {
+              "description": "No data content.",
+              "name": ""
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGNoData",
+          "declaration": {
+            "name": "ZGNoData",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -7652,7 +7652,7 @@
             },
             {
               "type": {
-                "text": "string"
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
               },
               "description": "Sets the icon to display on info column types",
               "name": "cell-tooltip-icon"
@@ -7834,7 +7834,7 @@
             },
             {
               "type": {
-                "text": "\"editor\" | \"remover\" | \"creator\" | \"all\" | boolean"
+                "text": "\"all\" | \"creator\" | \"editor\" | \"remover\" | boolean"
               },
               "description": "Adds the controls to the end of the row.  By default, it adds edit and remove.  Can set individually.",
               "name": "editor-controls"
@@ -7848,7 +7848,7 @@
             },
             {
               "type": {
-                "text": "\"menu\" | \"inline\" | \"both\" | \"disabled\" | string | boolean"
+                "text": "\"menu\" | \"inline\" | \"both\" | \"disabled\" | boolean"
               },
               "description": "Enables filtering for all grid columns",
               "name": "filter"
@@ -7883,7 +7883,7 @@
             },
             {
               "type": {
-                "text": "\"none\" | \"empty\" | \"notEmpty\" | \"equals\" | \"notEquals\" | \"beginsWith\" | \"endsWith\" | \"contains\" | \"notContains\" | \"between\" | \"notBetween\" | \"greaterThan\" | \"greaterEqualThan\" | \"lessThan\" | \"lessEqualThan\" | \"before\" | \"after\" | \"betweenDate\" | \"today\" | \"yesterday\" | \"tomorrow\" | string"
+                "text": "\"none\" | \"empty\" | \"notEmpty\" | \"equals\" | \"notEquals\" | \"beginsWith\" | \"endsWith\" | \"contains\" | \"notContains\" | \"between\" | \"notBetween\" | \"greaterThan\" | \"greaterEqualThan\" | \"lessThan\" | \"lessEqualThan\" | \"before\" | \"after\" | \"betweenDate\" | \"today\" | \"yesterday\" | \"tomorrow\" | \"break\" | \"default\" | \"trueVal\" | \"falseVal\" | string"
               },
               "description": "The condition to initially display on filter menu open.  Can also be any custom string representing a function name.",
               "name": "filter-default-condition"
@@ -7988,7 +7988,7 @@
             },
             {
               "type": {
-                "text": "string"
+                "text": "boolean"
               },
               "description": "Hides any header rows",
               "name": "header-row-hide"
@@ -8268,7 +8268,7 @@
             },
             {
               "type": {
-                "text": "string | number"
+                "text": "\"auto\" | string | number"
               },
               "description": "Sets the height for each row",
               "name": "row-height"
@@ -8345,7 +8345,7 @@
             },
             {
               "type": {
-                "text": "boolean"
+                "text": "boolean | string"
               },
               "description": "Enables static menu for grid",
               "name": "static-menu"
@@ -8436,7 +8436,7 @@
             },
             {
               "type": {
-                "text": "string"
+                "text": "object"
               },
               "description": "Sets custom [viewport] breakpoints",
               "name": "viewport-types"
@@ -8641,7 +8641,7 @@
               "kind": "field",
               "name": "cellTooltipIcon",
               "type": {
-                "text": "string"
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
               },
               "description": "Sets the icon to display on info column types",
               "attribute": "cellTooltipIcon"
@@ -8979,7 +8979,7 @@
               "kind": "field",
               "name": "editorControls",
               "type": {
-                "text": "\"editor\" | \"remover\" | \"creator\" | \"all\" | boolean"
+                "text": "\"all\" | \"creator\" | \"editor\" | \"remover\" | boolean"
               },
               "description": "Adds the controls to the end of the row.  By default, it adds edit and remove.  Can set individually.",
               "attribute": "editorControls"
@@ -9015,7 +9015,7 @@
               "kind": "field",
               "name": "filter",
               "type": {
-                "text": "\"menu\" | \"inline\" | \"both\" | \"disabled\" | string | boolean"
+                "text": "\"menu\" | \"inline\" | \"both\" | \"disabled\" | boolean"
               },
               "description": "Enables filtering for all grid columns",
               "attribute": "filter"
@@ -9091,7 +9091,7 @@
               "kind": "field",
               "name": "filterDefaultCondition",
               "type": {
-                "text": "\"none\" | \"empty\" | \"notEmpty\" | \"equals\" | \"notEquals\" | \"beginsWith\" | \"endsWith\" | \"contains\" | \"notContains\" | \"between\" | \"notBetween\" | \"greaterThan\" | \"greaterEqualThan\" | \"lessThan\" | \"lessEqualThan\" | \"before\" | \"after\" | \"betweenDate\" | \"today\" | \"yesterday\" | \"tomorrow\" | string"
+                "text": "\"none\" | \"empty\" | \"notEmpty\" | \"equals\" | \"notEquals\" | \"beginsWith\" | \"endsWith\" | \"contains\" | \"notContains\" | \"between\" | \"notBetween\" | \"greaterThan\" | \"greaterEqualThan\" | \"lessThan\" | \"lessEqualThan\" | \"before\" | \"after\" | \"betweenDate\" | \"today\" | \"yesterday\" | \"tomorrow\" | \"break\" | \"default\" | \"trueVal\" | \"falseVal\" | string"
               },
               "description": "The condition to initially display on filter menu open.  Can also be any custom string representing a function name.",
               "attribute": "filterDefaultCondition"
@@ -9995,7 +9995,7 @@
               "kind": "field",
               "name": "headerRowHide",
               "type": {
-                "text": "string"
+                "text": "boolean"
               },
               "description": "Hides any header rows",
               "attribute": "headerRowHide"
@@ -10617,7 +10617,7 @@
               "kind": "field",
               "name": "rowHeight",
               "type": {
-                "text": "string | number"
+                "text": "\"auto\" | string | number"
               },
               "description": "Sets the height for each row",
               "attribute": "rowHeight"
@@ -11286,7 +11286,7 @@
                   "description": "Value to add or remove",
                   "name": "activate",
                   "type": {
-                    "text": "boolean"
+                    "text": "\"menu\" | \"inline\" | \"both\" | \"disabled\" | boolean"
                   }
                 }
               ],
@@ -12022,7 +12022,7 @@
                   "description": "CSS height to set for the row height",
                   "name": "height",
                   "type": {
-                    "text": "string"
+                    "text": "\"auto\" | string | number"
                   }
                 }
               ],
@@ -12253,7 +12253,7 @@
                   "description": "Value to add or remove",
                   "name": "activate",
                   "type": {
-                    "text": "boolean"
+                    "text": "boolean | string"
                   }
                 }
               ],
@@ -12316,7 +12316,7 @@
                   "description": "Value to indicate which theme to set",
                   "name": "theme",
                   "type": {
-                    "text": "string"
+                    "text": "\"android\" | \"black\" | \"default\" | \"dark\" | \"ios\" | string"
                   }
                 }
               ],
@@ -12461,7 +12461,7 @@
                   "description": "Sort Direction: asc, desc, or none",
                   "name": "direction",
                   "type": {
-                    "text": "string"
+                    "text": "\"asc\" | \"desc\" | \"none\""
                   }
                 }
               ],
@@ -12511,7 +12511,7 @@
               "kind": "field",
               "name": "staticMenu",
               "type": {
-                "text": "boolean"
+                "text": "boolean | string"
               },
               "description": "Enables static menu for grid",
               "attribute": "staticMenu"
@@ -12866,7 +12866,7 @@
               "kind": "field",
               "name": "viewportTypes",
               "type": {
-                "text": "string"
+                "text": "object"
               },
               "description": "Sets custom [viewport] breakpoints",
               "attribute": "viewportTypes"
