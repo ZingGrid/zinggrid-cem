@@ -166,6 +166,169 @@
       "declarations": [
         {
           "kind": "class",
+          "description": "The container for a card template that holds a custom template for card mode.  This custom template\nwill be rendered per row.  `<zg-card>` can be styled via CSS or the `--zg-card-*` selectors.  Please reference\nthe \"Template\" section for more details on templates.",
+          "name": "ZGCard",
+          "cssProperties": [
+            {
+              "description": "Styles the background of cards in 'card' layout-mode",
+              "name": "--zg-cell-background_layout_card"
+            },
+            {
+              "description": "Styles the border of cards in 'card' layout-mode",
+              "name": "--zg-cell-border_layout_card"
+            },
+            {
+              "description": "Styles the bottom border of cards in 'card' layout-mode",
+              "name": "--zg-cell-border-bottom_layout_card"
+            },
+            {
+              "description": "Styles the left border of cards in 'card' layout-mode",
+              "name": "--zg-cell-border-left_layout_card"
+            },
+            {
+              "description": "Styles the right border of cards in 'card' layout-mode",
+              "name": "--zg-cell-border-right_layout_card"
+            },
+            {
+              "description": "Styles the top border of cards in 'card' layout-mode",
+              "name": "--zg-cell-border-top_layout_card"
+            },
+            {
+              "description": "Sets the font color of cards in 'card' layout-mode",
+              "name": "--zg-cell-color_layout_card"
+            },
+            {
+              "description": "Sets the font family of cards in 'card' layout-mode",
+              "name": "--zg-cell-font-family_layout_card"
+            },
+            {
+              "description": "Sets the font size of cards in 'card' layout-mode",
+              "name": "--zg-cell-font-size_layout_card"
+            },
+            {
+              "description": "Sets the font family of cards in 'card' layout-mode",
+              "name": "--zg-cell-font-style_layout_card"
+            },
+            {
+              "description": "Sets the font weight of cards in 'card' layout-mode",
+              "name": "--zg-cell-font-weight_layout_card"
+            },
+            {
+              "description": "Sets the height of cards in 'card' layout-mode",
+              "name": "--zg-cell-height_layout_card"
+            },
+            {
+              "description": "Sets the line height of cards in 'card' layout-mode",
+              "name": "--zg-cell-line-height_layout_card"
+            },
+            {
+              "description": "Sets the padding of cards in 'card' layout-mode",
+              "name": "--zg-cell-padding_layout_card"
+            },
+            {
+              "description": "Sets the transition of cards in 'card' layout-mode",
+              "name": "--zg-cell-transition_layout_card"
+            },
+            {
+              "description": "Sets the word break of items in cards in 'card' layout-mode",
+              "name": "--zg-cell-word-break_layout_card"
+            }
+          ],
+          "tagName": "zg-card",
+          "customElement": true,
+          "attributes": [
+            {
+              "type": {
+                "text": "string"
+              },
+              "description": "Sets the custom editor",
+              "name": "editor"
+            },
+            {
+              "type": {
+                "text": "string"
+              },
+              "description": "Points to an external template element to be used as the template for the card's editor",
+              "name": "editor-template"
+            },
+            {
+              "type": {
+                "text": "string"
+              },
+              "description": "Whatever is returned from the method will be set as the innerHTMl of the card",
+              "name": "renderer"
+            },
+            {
+              "type": {
+                "text": "string"
+              },
+              "description": "Points to an external template element to be used as the template for the card's renderer",
+              "name": "renderer-template"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "editor",
+              "type": {
+                "text": "string"
+              },
+              "description": "Sets the custom editor",
+              "attribute": "editor"
+            },
+            {
+              "kind": "field",
+              "name": "editorTemplate",
+              "type": {
+                "text": "string"
+              },
+              "description": "Points to an external template element to be used as the template for the card's editor",
+              "attribute": "editorTemplate"
+            },
+            {
+              "kind": "field",
+              "name": "renderer",
+              "type": {
+                "text": "string"
+              },
+              "description": "Whatever is returned from the method will be set as the innerHTMl of the card",
+              "attribute": "renderer"
+            },
+            {
+              "kind": "field",
+              "name": "rendererTemplate",
+              "type": {
+                "text": "string"
+              },
+              "description": "Points to an external template element to be used as the template for the card's renderer",
+              "attribute": "rendererTemplate"
+            }
+          ],
+          "slots": [
+            {
+              "description": "Card content.",
+              "name": ""
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGCard",
+          "declaration": {
+            "name": "ZGCard",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
           "description": "A caption can be manually inserted inside the `<zing-grid>` tag as slotted content or automatically\ninserted when the `caption` is enabled.  `<zg-caption>` is stylable via CSS.",
           "name": "ZGCaption",
           "cssProperties": [
@@ -696,7 +859,7 @@
           "attributes": [
             {
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checkbox\" | \"closerowdetails\" | \"closerowgroup\" | \"copycell\" | \"createrecord\" | \"createrecordend\" | \"createrecordstart\" | \"deselect\" | \"duplicaterecord\" | \"editcell\" | \"editrecord\" | \"editrow\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"freezecolumnleft\" | \"freezecolumnright\" | \"unfreezecolumn\" | \"freezerowtop\" | \"freezerowbottom\" | \"hidecolumn\" | \"unfreezerow\" | \"getselection\" | \"insertrecord\" | \"layoutrow\" | \"layoutcard\" | \"lastpage\" | \"menu\" | \"nextpage\" | \"openrowdetails\" | \"openrowgroup\" | \"page\" | \"pastecell\" | \"prevpage\" | \"reload\" | \"removerecord\" | \"undoremoverecord\" | \"resetstate\" | \"search\" | \"selectall\" | \"selectcell\" | \"selectrow\" | \"sortcolumn\" | \"submitrecord\" | \"about\""
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checkbox\" | \"closerowdetails\" | \"closerowgroup\" | \"copycell\" | \"createrecord\" | \"createrecordend\" | \"createrecordstart\" | \"deselect\" | \"duplicaterecord\" | \"editcell\" | \"editrecord\" | \"editrow\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"freezecolumnleft\" | \"freezecolumnright\" | \"unfreezecolumn\" | \"freezerowtop\" | \"freezerowbottom\" | \"hidecolumn\" | \"unfreezerow\" | \"getselection\" | \"insertrecord\" | \"layoutrow\" | \"layoutcard\" | \"lastpage\" | \"menu\" | \"nextpage\" | \"openrowdetails\" | \"openrowgroup\" | \"page\" | \"pastecell\" | \"prevpage\" | \"reload\" | \"removerecord\" | \"undoremoverecord\" | \"resetstate\" | \"search\" | \"selectall\" | \"selectcell\" | \"selectrow\" | \"sortcolumn\" | \"submitrecord\" | \"clearfilter\" | \"closefilterrow\" | \"openfilterrow\" | \"about\""
               },
               "description": "The action of the button",
               "name": "action"
@@ -749,7 +912,7 @@
               "kind": "field",
               "name": "action",
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checkbox\" | \"closerowdetails\" | \"closerowgroup\" | \"copycell\" | \"createrecord\" | \"createrecordend\" | \"createrecordstart\" | \"deselect\" | \"duplicaterecord\" | \"editcell\" | \"editrecord\" | \"editrow\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"freezecolumnleft\" | \"freezecolumnright\" | \"unfreezecolumn\" | \"freezerowtop\" | \"freezerowbottom\" | \"hidecolumn\" | \"unfreezerow\" | \"getselection\" | \"insertrecord\" | \"layoutrow\" | \"layoutcard\" | \"lastpage\" | \"menu\" | \"nextpage\" | \"openrowdetails\" | \"openrowgroup\" | \"page\" | \"pastecell\" | \"prevpage\" | \"reload\" | \"removerecord\" | \"undoremoverecord\" | \"resetstate\" | \"search\" | \"selectall\" | \"selectcell\" | \"selectrow\" | \"sortcolumn\" | \"submitrecord\" | \"about\""
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checkbox\" | \"closerowdetails\" | \"closerowgroup\" | \"copycell\" | \"createrecord\" | \"createrecordend\" | \"createrecordstart\" | \"deselect\" | \"duplicaterecord\" | \"editcell\" | \"editrecord\" | \"editrow\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"freezecolumnleft\" | \"freezecolumnright\" | \"unfreezecolumn\" | \"freezerowtop\" | \"freezerowbottom\" | \"hidecolumn\" | \"unfreezerow\" | \"getselection\" | \"insertrecord\" | \"layoutrow\" | \"layoutcard\" | \"lastpage\" | \"menu\" | \"nextpage\" | \"openrowdetails\" | \"openrowgroup\" | \"page\" | \"pastecell\" | \"prevpage\" | \"reload\" | \"removerecord\" | \"undoremoverecord\" | \"resetstate\" | \"search\" | \"selectall\" | \"selectcell\" | \"selectrow\" | \"sortcolumn\" | \"submitrecord\" | \"clearfilter\" | \"closefilterrow\" | \"openfilterrow\" | \"about\""
               },
               "description": "The action of the button",
               "attribute": "action"
@@ -831,169 +994,6 @@
           "name": "ZGButton",
           "declaration": {
             "name": "ZGButton",
-            "module": "dist/zinggrid.min.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/zinggrid.min.js",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "The container for a card template that holds a custom template for card mode.  This custom template\nwill be rendered per row.  `<zg-card>` can be styled via CSS or the `--zg-card-*` selectors.  Please reference\nthe \"Template\" section for more details on templates.",
-          "name": "ZGCard",
-          "cssProperties": [
-            {
-              "description": "Styles the background of cards in 'card' layout-mode",
-              "name": "--zg-cell-background_layout_card"
-            },
-            {
-              "description": "Styles the border of cards in 'card' layout-mode",
-              "name": "--zg-cell-border_layout_card"
-            },
-            {
-              "description": "Styles the bottom border of cards in 'card' layout-mode",
-              "name": "--zg-cell-border-bottom_layout_card"
-            },
-            {
-              "description": "Styles the left border of cards in 'card' layout-mode",
-              "name": "--zg-cell-border-left_layout_card"
-            },
-            {
-              "description": "Styles the right border of cards in 'card' layout-mode",
-              "name": "--zg-cell-border-right_layout_card"
-            },
-            {
-              "description": "Styles the top border of cards in 'card' layout-mode",
-              "name": "--zg-cell-border-top_layout_card"
-            },
-            {
-              "description": "Sets the font color of cards in 'card' layout-mode",
-              "name": "--zg-cell-color_layout_card"
-            },
-            {
-              "description": "Sets the font family of cards in 'card' layout-mode",
-              "name": "--zg-cell-font-family_layout_card"
-            },
-            {
-              "description": "Sets the font size of cards in 'card' layout-mode",
-              "name": "--zg-cell-font-size_layout_card"
-            },
-            {
-              "description": "Sets the font family of cards in 'card' layout-mode",
-              "name": "--zg-cell-font-style_layout_card"
-            },
-            {
-              "description": "Sets the font weight of cards in 'card' layout-mode",
-              "name": "--zg-cell-font-weight_layout_card"
-            },
-            {
-              "description": "Sets the height of cards in 'card' layout-mode",
-              "name": "--zg-cell-height_layout_card"
-            },
-            {
-              "description": "Sets the line height of cards in 'card' layout-mode",
-              "name": "--zg-cell-line-height_layout_card"
-            },
-            {
-              "description": "Sets the padding of cards in 'card' layout-mode",
-              "name": "--zg-cell-padding_layout_card"
-            },
-            {
-              "description": "Sets the transition of cards in 'card' layout-mode",
-              "name": "--zg-cell-transition_layout_card"
-            },
-            {
-              "description": "Sets the word break of items in cards in 'card' layout-mode",
-              "name": "--zg-cell-word-break_layout_card"
-            }
-          ],
-          "tagName": "zg-card",
-          "customElement": true,
-          "attributes": [
-            {
-              "type": {
-                "text": "string"
-              },
-              "description": "Sets the custom editor",
-              "name": "editor"
-            },
-            {
-              "type": {
-                "text": "string"
-              },
-              "description": "Points to an external template element to be used as the template for the card's editor",
-              "name": "editor-template"
-            },
-            {
-              "type": {
-                "text": "string"
-              },
-              "description": "Whatever is returned from the method will be set as the innerHTMl of the card",
-              "name": "renderer"
-            },
-            {
-              "type": {
-                "text": "string"
-              },
-              "description": "Points to an external template element to be used as the template for the card's renderer",
-              "name": "renderer-template"
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "editor",
-              "type": {
-                "text": "string"
-              },
-              "description": "Sets the custom editor",
-              "attribute": "editor"
-            },
-            {
-              "kind": "field",
-              "name": "editorTemplate",
-              "type": {
-                "text": "string"
-              },
-              "description": "Points to an external template element to be used as the template for the card's editor",
-              "attribute": "editorTemplate"
-            },
-            {
-              "kind": "field",
-              "name": "renderer",
-              "type": {
-                "text": "string"
-              },
-              "description": "Whatever is returned from the method will be set as the innerHTMl of the card",
-              "attribute": "renderer"
-            },
-            {
-              "kind": "field",
-              "name": "rendererTemplate",
-              "type": {
-                "text": "string"
-              },
-              "description": "Points to an external template element to be used as the template for the card's renderer",
-              "attribute": "rendererTemplate"
-            }
-          ],
-          "slots": [
-            {
-              "description": "Card content.",
-              "name": ""
-            }
-          ]
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZGCard",
-          "declaration": {
-            "name": "ZGCard",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -1353,6 +1353,57 @@
       "declarations": [
         {
           "kind": "class",
+          "description": "The column resize handle appears when hovering over header to\nresize the column.",
+          "name": "ZGColumnResize",
+          "cssProperties": [
+            {
+              "description": "Sets the background of the resize handle",
+              "name": "--zg-column-resize-background"
+            },
+            {
+              "description": "Sets the height of the resize handle",
+              "name": "--zg-column-resize-height"
+            },
+            {
+              "description": "Sets the top position of the resize handle",
+              "name": "--zg-column-resize-top"
+            },
+            {
+              "description": "Sets the width of the resize handle",
+              "name": "--zg-column-resize-width"
+            }
+          ],
+          "tagName": "zg-column-resize",
+          "customElement": true,
+          "cssParts": [
+            {
+              "description": "The resize handle container",
+              "name": "handle"
+            },
+            {
+              "description": "The resize icon",
+              "name": "icon"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGColumnResize",
+          "declaration": {
+            "name": "ZGColumnResize",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
           "description": "The `<zg-column>` tag is used to associate the columns of the grid to the values \nin a dataset.  Attributes on the tag are used to configure both the data type, style, and function \nof the grid column.  It is possible to build grids without explicit `<zg-column>` tags, and in that \ncase ZingGrid will add a column for each index in the dataset. However, developers are encouraged to \nexplore the features available with `<zg-column>` to utilize the powerful features ZingGrid has to offer.",
           "name": "ZGColumn",
           "slots": [
@@ -1518,7 +1569,7 @@
             },
             {
               "type": {
-                "text": "\"menu\" | \"inline\" | \"both\" | \"disabled\" | boolean"
+                "text": "\"menu\" | \"inline\" | \"both\" | \"summary\" | \"all\" | \"disabled\" | boolean"
               },
               "description": "Whether the filter is enabled for the column",
               "name": "filter"
@@ -1592,6 +1643,27 @@
               },
               "description": "Determines if the selectbox in the filter menu should display the values as raw or rendered values.",
               "name": "filter-selectbox-display"
+            },
+            {
+              "type": {
+                "text": "\"bar\" | \"default\" | \"histogram\" | \"pie\""
+              },
+              "description": "Sets the filter summary chart type (bar | default | histogram | pie)",
+              "name": "filter-summary-chart"
+            },
+            {
+              "type": {
+                "text": "\"disabled\""
+              },
+              "description": "Controls whether multiple nodes can be selected in bar and pie summary charts (disabled)",
+              "name": "filter-summary-multi-node"
+            },
+            {
+              "type": {
+                "text": "\"alphabetical\" | \"'count\" | \"value\" | \"none\""
+              },
+              "description": "Sets the node sort order for filter summary chart (alphabetical | count-asc | count-desc | default | value | none)",
+              "name": "filter-summary-node-sort"
             },
             {
               "type": {
@@ -2428,7 +2500,7 @@
               "kind": "field",
               "name": "filter",
               "type": {
-                "text": "\"menu\" | \"inline\" | \"both\" | \"disabled\" | boolean"
+                "text": "\"menu\" | \"inline\" | \"both\" | \"summary\" | \"all\" | \"disabled\" | boolean"
               },
               "description": "Whether the filter is enabled for the column",
               "attribute": "filter"
@@ -2531,6 +2603,33 @@
               },
               "description": "Determines if the selectbox in the filter menu should display the values as raw or rendered values.",
               "attribute": "filterSelectboxDisplay"
+            },
+            {
+              "kind": "field",
+              "name": "filterSummaryChart",
+              "type": {
+                "text": "\"bar\" | \"default\" | \"histogram\" | \"pie\""
+              },
+              "description": "Sets the filter summary chart type (bar | default | histogram | pie)",
+              "attribute": "filterSummaryChart"
+            },
+            {
+              "kind": "field",
+              "name": "filterSummaryMultiNode",
+              "type": {
+                "text": "\"disabled\""
+              },
+              "description": "Controls whether multiple nodes can be selected in bar and pie summary charts (disabled)",
+              "attribute": "filterSummaryMultiNode"
+            },
+            {
+              "kind": "field",
+              "name": "filterSummaryNodeSort",
+              "type": {
+                "text": "\"alphabetical\" | \"'count\" | \"value\" | \"none\""
+              },
+              "description": "Sets the node sort order for filter summary chart (alphabetical | count-asc | count-desc | default | value | none)",
+              "attribute": "filterSummaryNodeSort"
             },
             {
               "kind": "field",
@@ -3341,57 +3440,6 @@
           "name": "ZGColumn",
           "declaration": {
             "name": "ZGColumn",
-            "module": "dist/zinggrid.min.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/zinggrid.min.js",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "The column resize handle appears when hovering over header to\nresize the column.",
-          "name": "ZGColumnResize",
-          "cssProperties": [
-            {
-              "description": "Sets the background of the resize handle",
-              "name": "--zg-column-resize-background"
-            },
-            {
-              "description": "Sets the height of the resize handle",
-              "name": "--zg-column-resize-height"
-            },
-            {
-              "description": "Sets the top position of the resize handle",
-              "name": "--zg-column-resize-top"
-            },
-            {
-              "description": "Sets the width of the resize handle",
-              "name": "--zg-column-resize-width"
-            }
-          ],
-          "tagName": "zg-column-resize",
-          "customElement": true,
-          "cssParts": [
-            {
-              "description": "The resize handle container",
-              "name": "handle"
-            },
-            {
-              "description": "The resize icon",
-              "name": "icon"
-            }
-          ]
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZGColumnResize",
-          "declaration": {
-            "name": "ZGColumnResize",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -4393,6 +4441,35 @@
       "declarations": [
         {
           "kind": "class",
+          "description": "`<zg-filter-summary>` is the container for a single cell in a filter summary row that may contain a filter summary chart.\n`<zg-filter-summary>` is created internally and should not be placed directly in the user's HTML; however,\nthe user can style the `<zg-filter-summary>` using the `zg-filter-summary` selector.",
+          "name": "ZGFilterSummary",
+          "cssParts": [
+            {
+              "description": "Filter chart container.",
+              "name": "chart"
+            }
+          ],
+          "tagName": "zg-filter-summary",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGFilterSummary",
+          "declaration": {
+            "name": "ZGFilterSummary",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
           "description": "The `<zg-focus>` element is a generated element added to `<zing-grid>`\nwhen the `selector` attribute is defined.  It is used as a container for the focus of cell(s) \nand used as a CSS target for styling by the developer.  It should not be accessed specifically\nbeyond styling.",
           "name": "ZGFocus",
           "cssProperties": [
@@ -5023,7 +5100,7 @@
           "attributes": [
             {
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"clearfilter\" | \"closefilterrow\" | \"openfilterrow\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
               },
               "description": "The name of the icon",
               "name": "name"
@@ -5034,7 +5111,7 @@
               "kind": "field",
               "name": "name",
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"clearfilter\" | \"closefilterrow\" | \"openfilterrow\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
               },
               "description": "The name of the icon",
               "attribute": "name"
@@ -5567,6 +5644,103 @@
       "declarations": [
         {
           "kind": "class",
+          "description": "`<zg-no-data>` is used to display a message when there are no records.  The \nelement internally wraps any text in a `<div role=\"any\">` tag.  The\nelement is stylable with CSS like most ZingGrid elements.",
+          "name": "ZGNoData",
+          "cssProperties": [
+            {
+              "description": "Styles the background of empty message when in `<zg-header>`",
+              "name": "--zg-no-data-background"
+            },
+            {
+              "description": "Styles the border of empty message when in `<zg-header>`",
+              "name": "--zg-no-data-border"
+            },
+            {
+              "description": "Styles the bottom border of empty message when in `<zg-header>`",
+              "name": "--zg-no-data-border-bottom"
+            },
+            {
+              "description": "Styles the left border of empty message when in `<zg-header>`",
+              "name": "--zg-no-data-border-left"
+            },
+            {
+              "description": "Styles the right border of empty message when in `<zg-header>`",
+              "name": "--zg-no-data-border-right"
+            },
+            {
+              "description": "Styles the top border of empty message when in `<zg-header>`",
+              "name": "--zg-no-data-border-top"
+            },
+            {
+              "description": "Styles the border radius of empty message",
+              "name": "--zg-no-data-border-radius"
+            },
+            {
+              "description": "Sets the font color content inside of empty message when in `<zg-header>`",
+              "name": "--zg-no-data-color"
+            },
+            {
+              "description": "Sets the font size of empty message",
+              "name": "--zg-no-data-font-size"
+            },
+            {
+              "description": "Sets the font style of empty message",
+              "name": "--zg-no-data-font-style"
+            },
+            {
+              "description": "Sets the font weight of empty message",
+              "name": "--zg-no-data-font-weight"
+            },
+            {
+              "description": "Sets the line height of empty message",
+              "name": "--zg-no-data-line-height"
+            },
+            {
+              "description": "Sets the min-height of empty message",
+              "name": "--zg-no-data-min-height"
+            },
+            {
+              "description": "Sets the padding of empty message",
+              "name": "--zg-no-data-padding"
+            },
+            {
+              "description": "Sets text alignment of content inside of empty message",
+              "name": "--zg-no-data-text-align"
+            }
+          ],
+          "tagName": "zg-no-data",
+          "customElement": true,
+          "cssParts": [
+            {
+              "description": "The container for the no data status message",
+              "name": "status"
+            }
+          ],
+          "slots": [
+            {
+              "description": "No data content.",
+              "name": ""
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGNoData",
+          "declaration": {
+            "name": "ZGNoData",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
           "description": "An option's list to go within a `<zg-select>` element",
           "name": "ZGOptionList",
           "cssProperties": [
@@ -5675,103 +5849,6 @@
           "name": "ZGOptionList",
           "declaration": {
             "name": "ZGOptionList",
-            "module": "dist/zinggrid.min.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/zinggrid.min.js",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "`<zg-no-data>` is used to display a message when there are no records.  The \nelement internally wraps any text in a `<div role=\"any\">` tag.  The\nelement is stylable with CSS like most ZingGrid elements.",
-          "name": "ZGNoData",
-          "cssProperties": [
-            {
-              "description": "Styles the background of empty message when in `<zg-header>`",
-              "name": "--zg-no-data-background"
-            },
-            {
-              "description": "Styles the border of empty message when in `<zg-header>`",
-              "name": "--zg-no-data-border"
-            },
-            {
-              "description": "Styles the bottom border of empty message when in `<zg-header>`",
-              "name": "--zg-no-data-border-bottom"
-            },
-            {
-              "description": "Styles the left border of empty message when in `<zg-header>`",
-              "name": "--zg-no-data-border-left"
-            },
-            {
-              "description": "Styles the right border of empty message when in `<zg-header>`",
-              "name": "--zg-no-data-border-right"
-            },
-            {
-              "description": "Styles the top border of empty message when in `<zg-header>`",
-              "name": "--zg-no-data-border-top"
-            },
-            {
-              "description": "Styles the border radius of empty message",
-              "name": "--zg-no-data-border-radius"
-            },
-            {
-              "description": "Sets the font color content inside of empty message when in `<zg-header>`",
-              "name": "--zg-no-data-color"
-            },
-            {
-              "description": "Sets the font size of empty message",
-              "name": "--zg-no-data-font-size"
-            },
-            {
-              "description": "Sets the font style of empty message",
-              "name": "--zg-no-data-font-style"
-            },
-            {
-              "description": "Sets the font weight of empty message",
-              "name": "--zg-no-data-font-weight"
-            },
-            {
-              "description": "Sets the line height of empty message",
-              "name": "--zg-no-data-line-height"
-            },
-            {
-              "description": "Sets the min-height of empty message",
-              "name": "--zg-no-data-min-height"
-            },
-            {
-              "description": "Sets the padding of empty message",
-              "name": "--zg-no-data-padding"
-            },
-            {
-              "description": "Sets text alignment of content inside of empty message",
-              "name": "--zg-no-data-text-align"
-            }
-          ],
-          "tagName": "zg-no-data",
-          "customElement": true,
-          "cssParts": [
-            {
-              "description": "The container for the no data status message",
-              "name": "status"
-            }
-          ],
-          "slots": [
-            {
-              "description": "No data content.",
-              "name": ""
-            }
-          ]
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZGNoData",
-          "declaration": {
-            "name": "ZGNoData",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -7848,7 +7925,7 @@
             },
             {
               "type": {
-                "text": "\"menu\" | \"inline\" | \"both\" | \"disabled\" | boolean"
+                "text": "\"menu\" | \"inline\" | \"both\" | \"summary\" | \"all\" | \"disabled\" | boolean"
               },
               "description": "Enables filtering for all grid columns",
               "name": "filter"
@@ -7908,6 +7985,27 @@
               },
               "description": "Determines if the selectbox in the filter menu should display the values as raw or rendered values.",
               "name": "filter-selectbox-display"
+            },
+            {
+              "type": {
+                "text": "\"bar\" | \"default\" | \"histogram\" | \"pie\""
+              },
+              "description": "Sets the filter summary chart type (bar | default | histogram | pie)",
+              "name": "filter-summary-chart"
+            },
+            {
+              "type": {
+                "text": "\"disabled\""
+              },
+              "description": "Controls whether multiple nodes can be selected in bar and pie summary charts (disabled)",
+              "name": "filter-summary-multi-node"
+            },
+            {
+              "type": {
+                "text": "\"alphabetical\" | \"'count\" | \"value\" | \"none\""
+              },
+              "description": "Sets the node sort order for filter summary chart (alphabetical | count-asc | count-desc | default | value | none)",
+              "name": "filter-summary-node-sort"
             },
             {
               "type": {
@@ -9015,7 +9113,7 @@
               "kind": "field",
               "name": "filter",
               "type": {
-                "text": "\"menu\" | \"inline\" | \"both\" | \"disabled\" | boolean"
+                "text": "\"menu\" | \"inline\" | \"both\" | \"summary\" | \"all\" | \"disabled\" | boolean"
               },
               "description": "Enables filtering for all grid columns",
               "attribute": "filter"
@@ -9126,7 +9224,7 @@
                   "description": "Advanced Filter configuration.",
                   "name": "filter",
                   "type": {
-                    "text": "@param {object[]} [filter.conditionals] - array of conditional objects to filter on\n   * @param {string} [filter.conditionals[].condition] - the key based string for the condition to apply the filter, ie contains, startswith, greaterthan\n   * @param {string} [filter.conditionals[].val1] - the first value to apply towards the condition\n   * @param {string} [filter.conditionals[].val2] - the second value to apply towards the condition\n   * @param {string} [filter.boolean] - 'and' or 'or' indicating how to filter multiple conditionals.  default is 'and'\n   * @param {boolean} [filter.matchcase] - boolean indicating if the matching should be case sensitive.  default is false\n   * @param {string[]} [filter.selectitems] - array of items to select in the filter menu selectbox\n   * "
+                    "text": "object"
                   }
                 }
               ],
@@ -9153,6 +9251,58 @@
               },
               "description": "Determines if the selectbox in the filter menu should display the values as raw or rendered values.",
               "attribute": "filterSelectboxDisplay"
+            },
+            {
+              "kind": "field",
+              "name": "filterSummaryChart",
+              "type": {
+                "text": "\"bar\" | \"default\" | \"histogram\" | \"pie\""
+              },
+              "description": "Sets the filter summary chart type (bar | default | histogram | pie)",
+              "attribute": "filterSummaryChart"
+            },
+            {
+              "kind": "method",
+              "name": "filterSummaryColumn",
+              "parameters": [
+                {
+                  "name": "sFieldIndex",
+                  "description": "Field index of column.",
+                  "type": {
+                    "text": "string"
+                  }
+                },
+                {
+                  "name": "aFilterTerms",
+                  "description": "Filter terms. For bar/pie: [sFilterTerm]. For histogram: [rangeStart, rangeEnd].",
+                  "type": {
+                    "text": "array"
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "field",
+              "name": "filterSummaryMultiNode",
+              "type": {
+                "text": "\"disabled\""
+              },
+              "description": "Controls whether multiple nodes can be selected in bar and pie summary charts (disabled)",
+              "attribute": "filterSummaryMultiNode"
+            },
+            {
+              "kind": "field",
+              "name": "filterSummaryNodeSort",
+              "type": {
+                "text": "\"alphabetical\" | \"'count\" | \"value\" | \"none\""
+              },
+              "description": "Sets the node sort order for filter summary chart (alphabetical | count-asc | count-desc | default | value | none)",
+              "attribute": "filterSummaryNodeSort"
             },
             {
               "kind": "field",
@@ -11286,7 +11436,7 @@
                   "description": "Value to add or remove",
                   "name": "activate",
                   "type": {
-                    "text": "\"menu\" | \"inline\" | \"both\" | \"disabled\" | boolean"
+                    "text": "\"menu\" | \"inline\" | \"both\" | \"summary\" | \"all\" | \"disabled\" | boolean"
                   }
                 }
               ],
@@ -12966,6 +13116,14 @@
               "name": "column:filter:menu:open"
             },
             {
+              "description": "Fires the event when the filter summary row is closed.",
+              "name": "column:filter:summary:close"
+            },
+            {
+              "description": "Fires the event when the filter summary row is opened.",
+              "name": "column:filter:summary:open"
+            },
+            {
               "description": "Fires event when mouseout on a column.",
               "name": "column:mouseout"
             },
@@ -13160,6 +13318,806 @@
         {
           "kind": "js",
           "name": "ZingGrid",
+          "declaration": {
+            "name": "ZingGrid",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-batch-edit",
+          "declaration": {
+            "name": "ZGBatchEdit",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-body",
+          "declaration": {
+            "name": "ZGBody",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-card",
+          "declaration": {
+            "name": "ZGCard",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-caption",
+          "declaration": {
+            "name": "ZGCaption",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-button",
+          "declaration": {
+            "name": "ZGButton",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-cell",
+          "declaration": {
+            "name": "ZGCell",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-cell-overflow",
+          "declaration": {
+            "name": "ZGCellOverflow",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-checkbox",
+          "declaration": {
+            "name": "ZGCheckbox",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-colgroup",
+          "declaration": {
+            "name": "ZGColgroup",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-column-resize",
+          "declaration": {
+            "name": "ZGColumnResize",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-column",
+          "declaration": {
+            "name": "ZGColumn",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-control-bar",
+          "declaration": {
+            "name": "ZGControlBar",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-data",
+          "declaration": {
+            "name": "ZGData",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-dialog",
+          "declaration": {
+            "name": "ZGDialog",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-editor-row",
+          "declaration": {
+            "name": "ZGEditorRow",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-filter",
+          "declaration": {
+            "name": "ZGFilter",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-filter-menu",
+          "declaration": {
+            "name": "ZGFilterMenu",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-filter-summary",
+          "declaration": {
+            "name": "ZGFilterSummary",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-focus",
+          "declaration": {
+            "name": "ZGFocus",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-foot",
+          "declaration": {
+            "name": "ZGFoot",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-footer",
+          "declaration": {
+            "name": "ZGFooter",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-frozen-colgroup",
+          "declaration": {
+            "name": "ZGFrozenColgroup",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-head",
+          "declaration": {
+            "name": "ZGHead",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-head-cell",
+          "declaration": {
+            "name": "ZGHeadCell",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-header",
+          "declaration": {
+            "name": "ZGHeader",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-icon",
+          "declaration": {
+            "name": "ZGIcon",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-input",
+          "declaration": {
+            "name": "ZGInput",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-layout-controls",
+          "declaration": {
+            "name": "ZGLayoutControls",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-load-mask",
+          "declaration": {
+            "name": "ZGLoadMask",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-menu",
+          "declaration": {
+            "name": "ZGMenu",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-menu-group",
+          "declaration": {
+            "name": "ZGMenuGroup",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-menu-item",
+          "declaration": {
+            "name": "ZGMenuItem",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-no-data",
+          "declaration": {
+            "name": "ZGNoData",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-option-list",
+          "declaration": {
+            "name": "ZGOptionList",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-pager",
+          "declaration": {
+            "name": "ZGPager",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-param",
+          "declaration": {
+            "name": "ZGParam",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-row",
+          "declaration": {
+            "name": "ZGRow",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-row-details",
+          "declaration": {
+            "name": "ZGRowDetails",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-search",
+          "declaration": {
+            "name": "ZGSearch",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-select",
+          "declaration": {
+            "name": "ZGSelect",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-select-mask",
+          "declaration": {
+            "name": "ZGSelectMask",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-selector-mask",
+          "declaration": {
+            "name": "ZGSelectorMask",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-separator",
+          "declaration": {
+            "name": "ZGSeparator",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-source",
+          "declaration": {
+            "name": "ZGSource",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-status",
+          "declaration": {
+            "name": "ZGStatus",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-table",
+          "declaration": {
+            "name": "ZGTable",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-text",
+          "declaration": {
+            "name": "ZGText",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-tooltip",
+          "declaration": {
+            "name": "ZGTooltip",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-watermark",
+          "declaration": {
+            "name": "ZGWatermark",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zing-grid",
           "declaration": {
             "name": "ZingGrid",
             "module": "dist/zinggrid.min.js"
