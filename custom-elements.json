@@ -8,6 +8,616 @@
       "declarations": [
         {
           "kind": "class",
+          "description": "The `<zg-batch-edit>` element is used to define the batch edit region.  \n`<zg-batch-edit>` is created internally and should not be placed directly in the user's HTML; however,\nthe user can style the `<zg-batch-edit>` using the `zg-batch-edit` selector.",
+          "name": "ZGBatchEdit",
+          "cssProperties": [
+            {
+              "description": "Styles the border of the batch edit styling element",
+              "name": "--zing-grid-batch-edit-style-border"
+            },
+            {
+              "description": "Styles the box-shadow of the frozen column styling element",
+              "name": "--zing-grid-batch-edit-style-box-shadow"
+            },
+            {
+              "description": "Sets the border width of the dirty cell marker",
+              "name": "--zg-cell-dirty-edit-border-width"
+            },
+            {
+              "description": "Sets the color of the dirty cell marker",
+              "name": "--zg-cell-dirty-edit-border-color"
+            },
+            {
+              "description": "Sets the background color of the dirty row on row delete",
+              "name": "--zg-row-dirty-delete-background-color"
+            },
+            {
+              "description": "Sets the  color of the dirty row on row delete",
+              "name": "--zg-row-dirty-delete-color"
+            },
+            {
+              "description": "Sets the background color of the dirty row on row insert",
+              "name": "--zg-row-dirty-insert-background-color"
+            },
+            {
+              "description": "Sets the color of the dirty row on row insert",
+              "name": "--zg-row-dirty-insert-color"
+            }
+          ],
+          "tagName": "zg-batch-edit",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGBatchEdit",
+          "declaration": {
+            "name": "ZGBatchEdit",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "`<zg-body>` is created dynamically by the ZingGrid library, and as such should not be manually added by the\ndeveloper.  However the user can style `<zg-body>` using CSS.",
+          "name": "ZGBody",
+          "cssProperties": [
+            {
+              "description": "Styles the left border of grid body",
+              "name": "--zg-body-border-left"
+            },
+            {
+              "description": "Styles the right border of grid body",
+              "name": "--zg-body-border-right"
+            },
+            {
+              "description": "Sets the font family of contents inside grid body",
+              "name": "--zg-body-font-family"
+            },
+            {
+              "description": "Sets the font size of contents inside grid body",
+              "name": "--zg-body-font-size"
+            },
+            {
+              "description": "Sets the font style of contents inside grid body",
+              "name": "--zg-body-font-style"
+            },
+            {
+              "description": "Sets the font weight of contents inside grid body",
+              "name": "--zg-body-font-weight"
+            },
+            {
+              "description": "Sets the line-height of contents inside of grid body",
+              "name": "--zg-body-line-height"
+            },
+            {
+              "description": "Styles the background of grid body in 'card' layout-mode",
+              "name": "--zg-body-card-background"
+            },
+            {
+              "description": "Styles the border of grid body in 'card' layout-mode",
+              "name": "--zg-body-card-border"
+            },
+            {
+              "description": "Styles the bottom border of grid body in 'card' layout-mode",
+              "name": "--zg-body-card-border-bottom"
+            },
+            {
+              "description": "Styles the left border of grid body in 'card' layout-mode",
+              "name": "--zg-body-card-border-left"
+            },
+            {
+              "description": "Styles the right border of grid body in 'card' layout-mode",
+              "name": "--zg-body-card-border-right"
+            },
+            {
+              "description": "Styles the top border of grid body in 'card' layout-mode. Note: If `--zg-row-border-top` set in 'card' layout-mode it will override `--zg-body-border-top`.",
+              "name": "--zg-body-card-border-top"
+            },
+            {
+              "description": "Sets display of grid body in 'card' layout-mode",
+              "name": "--zg-body-card-display"
+            },
+            {
+              "description": "Styles the top border of grid body. Note: If `--zg-row-border-top` set, it will override `--zg-body-border-top`.",
+              "name": "--zg-body-border-top"
+            },
+            {
+              "description": "Styles the border of grid body",
+              "name": "--zg-body-border"
+            },
+            {
+              "description": "Styles the bottom border of grid body",
+              "name": "--zg-body-border-bottom"
+            },
+            {
+              "description": "Styles the background of grid body",
+              "name": "--zg-body-background"
+            },
+            {
+              "description": "Sets the font color of contents inside grid body",
+              "name": "--zg-body-color"
+            }
+          ],
+          "tagName": "zg-body",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGBody",
+          "declaration": {
+            "name": "ZGBody",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "The container for a card template that holds a custom template for card mode.  This custom template\nwill be rendered per row.  `<zg-card>` can be styled via CSS or the `--zg-card-*` selectors.  Please reference\nthe \"Template\" section for more details on templates.",
+          "name": "ZGCard",
+          "cssProperties": [
+            {
+              "description": "Styles the background of cards in 'card' layout-mode",
+              "name": "--zg-cell-background_layout_card"
+            },
+            {
+              "description": "Styles the border of cards in 'card' layout-mode",
+              "name": "--zg-cell-border_layout_card"
+            },
+            {
+              "description": "Styles the bottom border of cards in 'card' layout-mode",
+              "name": "--zg-cell-border-bottom_layout_card"
+            },
+            {
+              "description": "Styles the left border of cards in 'card' layout-mode",
+              "name": "--zg-cell-border-left_layout_card"
+            },
+            {
+              "description": "Styles the right border of cards in 'card' layout-mode",
+              "name": "--zg-cell-border-right_layout_card"
+            },
+            {
+              "description": "Styles the top border of cards in 'card' layout-mode",
+              "name": "--zg-cell-border-top_layout_card"
+            },
+            {
+              "description": "Sets the font color of cards in 'card' layout-mode",
+              "name": "--zg-cell-color_layout_card"
+            },
+            {
+              "description": "Sets the font family of cards in 'card' layout-mode",
+              "name": "--zg-cell-font-family_layout_card"
+            },
+            {
+              "description": "Sets the font size of cards in 'card' layout-mode",
+              "name": "--zg-cell-font-size_layout_card"
+            },
+            {
+              "description": "Sets the font family of cards in 'card' layout-mode",
+              "name": "--zg-cell-font-style_layout_card"
+            },
+            {
+              "description": "Sets the font weight of cards in 'card' layout-mode",
+              "name": "--zg-cell-font-weight_layout_card"
+            },
+            {
+              "description": "Sets the height of cards in 'card' layout-mode",
+              "name": "--zg-cell-height_layout_card"
+            },
+            {
+              "description": "Sets the line height of cards in 'card' layout-mode",
+              "name": "--zg-cell-line-height_layout_card"
+            },
+            {
+              "description": "Sets the padding of cards in 'card' layout-mode",
+              "name": "--zg-cell-padding_layout_card"
+            },
+            {
+              "description": "Sets the transition of cards in 'card' layout-mode",
+              "name": "--zg-cell-transition_layout_card"
+            },
+            {
+              "description": "Sets the word break of items in cards in 'card' layout-mode",
+              "name": "--zg-cell-word-break_layout_card"
+            }
+          ],
+          "tagName": "zg-card",
+          "customElement": true,
+          "attributes": [
+            {
+              "type": {
+                "text": "string"
+              },
+              "description": "Sets the custom editor",
+              "name": "editor"
+            },
+            {
+              "type": {
+                "text": "string"
+              },
+              "description": "Points to an external template element to be used as the template for the card's editor",
+              "name": "editor-template"
+            },
+            {
+              "type": {
+                "text": "string"
+              },
+              "description": "Whatever is returned from the method will be set as the innerHTMl of the card",
+              "name": "renderer"
+            },
+            {
+              "type": {
+                "text": "string"
+              },
+              "description": "Points to an external template element to be used as the template for the card's renderer",
+              "name": "renderer-template"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "editor",
+              "type": {
+                "text": "string"
+              },
+              "description": "Sets the custom editor",
+              "attribute": "editor"
+            },
+            {
+              "kind": "field",
+              "name": "editorTemplate",
+              "type": {
+                "text": "string"
+              },
+              "description": "Points to an external template element to be used as the template for the card's editor",
+              "attribute": "editorTemplate"
+            },
+            {
+              "kind": "field",
+              "name": "renderer",
+              "type": {
+                "text": "string"
+              },
+              "description": "Whatever is returned from the method will be set as the innerHTMl of the card",
+              "attribute": "renderer"
+            },
+            {
+              "kind": "field",
+              "name": "rendererTemplate",
+              "type": {
+                "text": "string"
+              },
+              "description": "Points to an external template element to be used as the template for the card's renderer",
+              "attribute": "rendererTemplate"
+            }
+          ],
+          "slots": [
+            {
+              "description": "Card content.",
+              "name": ""
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGCard",
+          "declaration": {
+            "name": "ZGCard",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "A caption can be manually inserted inside the `<zing-grid>` tag as slotted content or automatically\ninserted when the `caption` is enabled.  `<zg-caption>` is stylable via CSS.",
+          "name": "ZGCaption",
+          "cssProperties": [
+            {
+              "description": "Styles the background of caption",
+              "name": "--zg-caption-background"
+            },
+            {
+              "description": "Styles the border of caption",
+              "name": "--zg-caption-border"
+            },
+            {
+              "description": "Styles the bottom border of caption",
+              "name": "--zg-caption-border-bottom"
+            },
+            {
+              "description": "Styles the left border of caption",
+              "name": "--zg-caption-border-left"
+            },
+            {
+              "description": "Styles the right border of caption",
+              "name": "--zg-caption-border-right"
+            },
+            {
+              "description": "Styles the top border of caption",
+              "name": "--zg-caption-border-top"
+            },
+            {
+              "description": "Applies a border-radius to the caption",
+              "name": "--zg-caption-border-radius"
+            },
+            {
+              "description": "Applies a top-left border-radius to the caption",
+              "name": "--zg-caption-border-top-left-radius"
+            },
+            {
+              "description": "Applies a top-right border-radius to the caption",
+              "name": "--zg-caption-border-top-right-radius"
+            },
+            {
+              "description": "Applies a bottom-left border-radius to the caption",
+              "name": "--zg-caption-border-bottom-left-radius"
+            },
+            {
+              "description": "Applies a bottom-right border-radius to the caption",
+              "name": "--zg-caption-border-bottom-right-radius"
+            },
+            {
+              "description": "Applies a box shadow behind caption",
+              "name": "--zg-caption-box-shadow"
+            },
+            {
+              "description": "Sets the font color of caption",
+              "name": "--zg-caption-color"
+            },
+            {
+              "description": "Sets the font family of caption",
+              "name": "--zg-caption-font-family"
+            },
+            {
+              "description": "Sets the font size of caption",
+              "name": "--zg-caption-font-size"
+            },
+            {
+              "description": "Sets the font style of caption",
+              "name": "--zg-caption-font-style"
+            },
+            {
+              "description": "Sets the font weight of caption",
+              "name": "--zg-caption-font-weight"
+            },
+            {
+              "description": "Sets the margin of caption",
+              "name": "--zg-caption-margin"
+            },
+            {
+              "description": "Sets the opacity of caption",
+              "name": "--zg-caption-opacity"
+            },
+            {
+              "description": "Sets the padding of caption",
+              "name": "--zg-caption-padding"
+            },
+            {
+              "description": "Sets the transition of caption",
+              "name": "--zg-caption-transition"
+            },
+            {
+              "description": "Sets the vertical alignment of items (title and toolbar) in caption",
+              "name": "--zg-caption-align-items"
+            },
+            {
+              "description": "Sets the flex direction of items (title and toolbar) in caption",
+              "name": "--zg-caption-flex-direction"
+            },
+            {
+              "description": "Sets the height of caption",
+              "name": "--zg-caption-height"
+            },
+            {
+              "description": "Sets vertical alignment of items in caption title",
+              "name": "--zg-caption-title-align-self"
+            },
+            {
+              "description": "Sets how items are flexed in caption title",
+              "name": "--zg-caption-title-flex"
+            },
+            {
+              "description": "Sets the font-family of caption title",
+              "name": "--zg-caption-title-font-family"
+            },
+            {
+              "description": "Sets the font size of caption title",
+              "name": "--zg-caption-title-font-size"
+            },
+            {
+              "description": "Sets the font style of caption title",
+              "name": "--zg-caption-title-font-style"
+            },
+            {
+              "description": "Sets the font weight of caption title",
+              "name": "--zg-caption-title-font-weight"
+            },
+            {
+              "description": "Sets the margin of caption title",
+              "name": "--zg-caption-title-margin"
+            },
+            {
+              "description": "Sets the padding of caption title",
+              "name": "--zg-caption-title-padding"
+            },
+            {
+              "description": "Sets the order of caption title with respect to caption toolbar",
+              "name": "--zg-caption-title-order"
+            },
+            {
+              "description": "Sets the text alignment of caption title",
+              "name": "--zg-caption-title-text-align"
+            },
+            {
+              "description": "Sets the transform of caption title",
+              "name": "--zg-caption-title-transform"
+            },
+            {
+              "description": "Sets the width of caption title",
+              "name": "--zg-caption-title-width"
+            },
+            {
+              "description": "Sets vertical alignment of items in caption toolbar",
+              "name": "--zg-caption-toolbar-align-self"
+            },
+            {
+              "description": "Sets the position from bottom of caption toolbar. To apply, set --zg-caption-toolbar-position.",
+              "name": "--zg-caption-toolbar-bottom"
+            },
+            {
+              "description": "Sets the horizontal alignment of contents in caption toolbar",
+              "name": "--zg-caption-toolbar-justify-content"
+            },
+            {
+              "description": "Sets the left of caption toolbar. To apply, set --zg-caption-toolbar-position.",
+              "name": "--zg-caption-toolbar-left"
+            },
+            {
+              "description": "Sets the margin of caption toolbar",
+              "name": "--zg-caption-toolbar-margin"
+            },
+            {
+              "description": "Sets the position of caption toolbar",
+              "name": "--zg-caption-toolbar-position"
+            },
+            {
+              "description": "Sets the right of caption toolbar. To apply, set --zg-caption-toolbar-position.",
+              "name": "--zg-caption-toolbar-right"
+            },
+            {
+              "description": "Sets the top of caption toolbar. To apply, set --zg-caption-toolbar-position.",
+              "name": "--zg-caption-toolbar-top"
+            },
+            {
+              "description": "Sets the transform of caption toolbar",
+              "name": "--zg-caption-toolbar-transform"
+            },
+            {
+              "description": "Sets the width of caption toolbar",
+              "name": "--zg-caption-toolbar-width"
+            },
+            {
+              "description": "Styles the background of button in caption",
+              "name": "--zg-caption-button-background"
+            },
+            {
+              "description": "Styles the background of button in caption when the button is in a `focus` state",
+              "name": "--zg-caption-button-background_focus"
+            },
+            {
+              "description": "Styles the background of button in caption when the button is in a `hover` state",
+              "name": "--zg-caption-button-background_hover"
+            },
+            {
+              "description": "Styles the background of button in caption when the button is in an `active` state",
+              "name": "--zg-caption-button-background_active"
+            }
+          ],
+          "tagName": "zg-caption",
+          "customElement": true,
+          "attributes": [
+            {
+              "type": {
+                "text": "\"start\" | \"center\" | \"left\" | \"right\""
+              },
+              "description": "The alignment of the default content in the caption",
+              "name": "align"
+            },
+            {
+              "type": {
+                "text": "\"top\" | \"bottom\" | \"both\""
+              },
+              "description": "Indicates whether to attach the caption to the top or the bottom of the grid",
+              "name": "position"
+            }
+          ],
+          "cssParts": [
+            {
+              "description": "Caption container",
+              "name": "caption"
+            },
+            {
+              "description": "The title container",
+              "name": "title"
+            },
+            {
+              "description": "The toolbar container",
+              "name": "toolbar"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "align",
+              "type": {
+                "text": "\"start\" | \"center\" | \"left\" | \"right\""
+              },
+              "description": "The alignment of the default content in the caption",
+              "attribute": "align"
+            },
+            {
+              "kind": "field",
+              "name": "position",
+              "type": {
+                "text": "\"top\" | \"bottom\" | \"both\""
+              },
+              "description": "Indicates whether to attach the caption to the top or the bottom of the grid",
+              "attribute": "position"
+            }
+          ],
+          "slots": [
+            {
+              "description": "Caption title.",
+              "name": ""
+            },
+            {
+              "description": "Caption title. Use when using a feature that enables caption toolbar ([contextMenu], [search], [staticMenu]).",
+              "name": "message"
+            },
+            {
+              "description": "Caption toolbar, which is added to the rightmost of caption by default.",
+              "name": "tool"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGCaption",
+          "declaration": {
+            "name": "ZGCaption",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
           "description": "A custom, styled button that can be used both for internal grid-related action and for user-specific\nactions. It is stylable via CSS. Some buttons are automatically inserted when a feature that uses it enabled, like `pager`, while\nothers are inserted manually by the user.",
           "name": "ZGButton",
           "cssProperties": [
@@ -395,616 +1005,6 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "`<zg-body>` is created dynamically by the ZingGrid library, and as such should not be manually added by the\ndeveloper.  However the user can style `<zg-body>` using CSS.",
-          "name": "ZGBody",
-          "cssProperties": [
-            {
-              "description": "Styles the left border of grid body",
-              "name": "--zg-body-border-left"
-            },
-            {
-              "description": "Styles the right border of grid body",
-              "name": "--zg-body-border-right"
-            },
-            {
-              "description": "Sets the font family of contents inside grid body",
-              "name": "--zg-body-font-family"
-            },
-            {
-              "description": "Sets the font size of contents inside grid body",
-              "name": "--zg-body-font-size"
-            },
-            {
-              "description": "Sets the font style of contents inside grid body",
-              "name": "--zg-body-font-style"
-            },
-            {
-              "description": "Sets the font weight of contents inside grid body",
-              "name": "--zg-body-font-weight"
-            },
-            {
-              "description": "Sets the line-height of contents inside of grid body",
-              "name": "--zg-body-line-height"
-            },
-            {
-              "description": "Styles the background of grid body in 'card' layout-mode",
-              "name": "--zg-body-card-background"
-            },
-            {
-              "description": "Styles the border of grid body in 'card' layout-mode",
-              "name": "--zg-body-card-border"
-            },
-            {
-              "description": "Styles the bottom border of grid body in 'card' layout-mode",
-              "name": "--zg-body-card-border-bottom"
-            },
-            {
-              "description": "Styles the left border of grid body in 'card' layout-mode",
-              "name": "--zg-body-card-border-left"
-            },
-            {
-              "description": "Styles the right border of grid body in 'card' layout-mode",
-              "name": "--zg-body-card-border-right"
-            },
-            {
-              "description": "Styles the top border of grid body in 'card' layout-mode. Note: If `--zg-row-border-top` set in 'card' layout-mode it will override `--zg-body-border-top`.",
-              "name": "--zg-body-card-border-top"
-            },
-            {
-              "description": "Sets display of grid body in 'card' layout-mode",
-              "name": "--zg-body-card-display"
-            },
-            {
-              "description": "Styles the top border of grid body. Note: If `--zg-row-border-top` set, it will override `--zg-body-border-top`.",
-              "name": "--zg-body-border-top"
-            },
-            {
-              "description": "Styles the border of grid body",
-              "name": "--zg-body-border"
-            },
-            {
-              "description": "Styles the bottom border of grid body",
-              "name": "--zg-body-border-bottom"
-            },
-            {
-              "description": "Styles the background of grid body",
-              "name": "--zg-body-background"
-            },
-            {
-              "description": "Sets the font color of contents inside grid body",
-              "name": "--zg-body-color"
-            }
-          ],
-          "tagName": "zg-body",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZGBody",
-          "declaration": {
-            "name": "ZGBody",
-            "module": "dist/zinggrid.min.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/zinggrid.min.js",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "The `<zg-batch-edit>` element is used to define the batch edit region.  \n`<zg-batch-edit>` is created internally and should not be placed directly in the user's HTML; however,\nthe user can style the `<zg-batch-edit>` using the `zg-batch-edit` selector.",
-          "name": "ZGBatchEdit",
-          "cssProperties": [
-            {
-              "description": "Styles the border of the batch edit styling element",
-              "name": "--zing-grid-batch-edit-style-border"
-            },
-            {
-              "description": "Styles the box-shadow of the frozen column styling element",
-              "name": "--zing-grid-batch-edit-style-box-shadow"
-            },
-            {
-              "description": "Sets the border width of the dirty cell marker",
-              "name": "--zg-cell-dirty-edit-border-width"
-            },
-            {
-              "description": "Sets the color of the dirty cell marker",
-              "name": "--zg-cell-dirty-edit-border-color"
-            },
-            {
-              "description": "Sets the background color of the dirty row on row delete",
-              "name": "--zg-row-dirty-delete-background-color"
-            },
-            {
-              "description": "Sets the  color of the dirty row on row delete",
-              "name": "--zg-row-dirty-delete-color"
-            },
-            {
-              "description": "Sets the background color of the dirty row on row insert",
-              "name": "--zg-row-dirty-insert-background-color"
-            },
-            {
-              "description": "Sets the color of the dirty row on row insert",
-              "name": "--zg-row-dirty-insert-color"
-            }
-          ],
-          "tagName": "zg-batch-edit",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZGBatchEdit",
-          "declaration": {
-            "name": "ZGBatchEdit",
-            "module": "dist/zinggrid.min.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/zinggrid.min.js",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "A caption can be manually inserted inside the `<zing-grid>` tag as slotted content or automatically\ninserted when the `caption` is enabled.  `<zg-caption>` is stylable via CSS.",
-          "name": "ZGCaption",
-          "cssProperties": [
-            {
-              "description": "Styles the background of caption",
-              "name": "--zg-caption-background"
-            },
-            {
-              "description": "Styles the border of caption",
-              "name": "--zg-caption-border"
-            },
-            {
-              "description": "Styles the bottom border of caption",
-              "name": "--zg-caption-border-bottom"
-            },
-            {
-              "description": "Styles the left border of caption",
-              "name": "--zg-caption-border-left"
-            },
-            {
-              "description": "Styles the right border of caption",
-              "name": "--zg-caption-border-right"
-            },
-            {
-              "description": "Styles the top border of caption",
-              "name": "--zg-caption-border-top"
-            },
-            {
-              "description": "Applies a border-radius to the caption",
-              "name": "--zg-caption-border-radius"
-            },
-            {
-              "description": "Applies a top-left border-radius to the caption",
-              "name": "--zg-caption-border-top-left-radius"
-            },
-            {
-              "description": "Applies a top-right border-radius to the caption",
-              "name": "--zg-caption-border-top-right-radius"
-            },
-            {
-              "description": "Applies a bottom-left border-radius to the caption",
-              "name": "--zg-caption-border-bottom-left-radius"
-            },
-            {
-              "description": "Applies a bottom-right border-radius to the caption",
-              "name": "--zg-caption-border-bottom-right-radius"
-            },
-            {
-              "description": "Applies a box shadow behind caption",
-              "name": "--zg-caption-box-shadow"
-            },
-            {
-              "description": "Sets the font color of caption",
-              "name": "--zg-caption-color"
-            },
-            {
-              "description": "Sets the font family of caption",
-              "name": "--zg-caption-font-family"
-            },
-            {
-              "description": "Sets the font size of caption",
-              "name": "--zg-caption-font-size"
-            },
-            {
-              "description": "Sets the font style of caption",
-              "name": "--zg-caption-font-style"
-            },
-            {
-              "description": "Sets the font weight of caption",
-              "name": "--zg-caption-font-weight"
-            },
-            {
-              "description": "Sets the margin of caption",
-              "name": "--zg-caption-margin"
-            },
-            {
-              "description": "Sets the opacity of caption",
-              "name": "--zg-caption-opacity"
-            },
-            {
-              "description": "Sets the padding of caption",
-              "name": "--zg-caption-padding"
-            },
-            {
-              "description": "Sets the transition of caption",
-              "name": "--zg-caption-transition"
-            },
-            {
-              "description": "Sets the vertical alignment of items (title and toolbar) in caption",
-              "name": "--zg-caption-align-items"
-            },
-            {
-              "description": "Sets the flex direction of items (title and toolbar) in caption",
-              "name": "--zg-caption-flex-direction"
-            },
-            {
-              "description": "Sets the height of caption",
-              "name": "--zg-caption-height"
-            },
-            {
-              "description": "Sets vertical alignment of items in caption title",
-              "name": "--zg-caption-title-align-self"
-            },
-            {
-              "description": "Sets how items are flexed in caption title",
-              "name": "--zg-caption-title-flex"
-            },
-            {
-              "description": "Sets the font-family of caption title",
-              "name": "--zg-caption-title-font-family"
-            },
-            {
-              "description": "Sets the font size of caption title",
-              "name": "--zg-caption-title-font-size"
-            },
-            {
-              "description": "Sets the font style of caption title",
-              "name": "--zg-caption-title-font-style"
-            },
-            {
-              "description": "Sets the font weight of caption title",
-              "name": "--zg-caption-title-font-weight"
-            },
-            {
-              "description": "Sets the margin of caption title",
-              "name": "--zg-caption-title-margin"
-            },
-            {
-              "description": "Sets the padding of caption title",
-              "name": "--zg-caption-title-padding"
-            },
-            {
-              "description": "Sets the order of caption title with respect to caption toolbar",
-              "name": "--zg-caption-title-order"
-            },
-            {
-              "description": "Sets the text alignment of caption title",
-              "name": "--zg-caption-title-text-align"
-            },
-            {
-              "description": "Sets the transform of caption title",
-              "name": "--zg-caption-title-transform"
-            },
-            {
-              "description": "Sets the width of caption title",
-              "name": "--zg-caption-title-width"
-            },
-            {
-              "description": "Sets vertical alignment of items in caption toolbar",
-              "name": "--zg-caption-toolbar-align-self"
-            },
-            {
-              "description": "Sets the position from bottom of caption toolbar. To apply, set --zg-caption-toolbar-position.",
-              "name": "--zg-caption-toolbar-bottom"
-            },
-            {
-              "description": "Sets the horizontal alignment of contents in caption toolbar",
-              "name": "--zg-caption-toolbar-justify-content"
-            },
-            {
-              "description": "Sets the left of caption toolbar. To apply, set --zg-caption-toolbar-position.",
-              "name": "--zg-caption-toolbar-left"
-            },
-            {
-              "description": "Sets the margin of caption toolbar",
-              "name": "--zg-caption-toolbar-margin"
-            },
-            {
-              "description": "Sets the position of caption toolbar",
-              "name": "--zg-caption-toolbar-position"
-            },
-            {
-              "description": "Sets the right of caption toolbar. To apply, set --zg-caption-toolbar-position.",
-              "name": "--zg-caption-toolbar-right"
-            },
-            {
-              "description": "Sets the top of caption toolbar. To apply, set --zg-caption-toolbar-position.",
-              "name": "--zg-caption-toolbar-top"
-            },
-            {
-              "description": "Sets the transform of caption toolbar",
-              "name": "--zg-caption-toolbar-transform"
-            },
-            {
-              "description": "Sets the width of caption toolbar",
-              "name": "--zg-caption-toolbar-width"
-            },
-            {
-              "description": "Styles the background of button in caption",
-              "name": "--zg-caption-button-background"
-            },
-            {
-              "description": "Styles the background of button in caption when the button is in a `focus` state",
-              "name": "--zg-caption-button-background_focus"
-            },
-            {
-              "description": "Styles the background of button in caption when the button is in a `hover` state",
-              "name": "--zg-caption-button-background_hover"
-            },
-            {
-              "description": "Styles the background of button in caption when the button is in an `active` state",
-              "name": "--zg-caption-button-background_active"
-            }
-          ],
-          "tagName": "zg-caption",
-          "customElement": true,
-          "attributes": [
-            {
-              "type": {
-                "text": "\"start\" | \"center\" | \"left\" | \"right\""
-              },
-              "description": "The alignment of the default content in the caption",
-              "name": "align"
-            },
-            {
-              "type": {
-                "text": "\"top\" | \"bottom\" | \"both\""
-              },
-              "description": "Indicates whether to attach the caption to the top or the bottom of the grid",
-              "name": "position"
-            }
-          ],
-          "cssParts": [
-            {
-              "description": "Caption container",
-              "name": "caption"
-            },
-            {
-              "description": "The title container",
-              "name": "title"
-            },
-            {
-              "description": "The toolbar container",
-              "name": "toolbar"
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "align",
-              "type": {
-                "text": "\"start\" | \"center\" | \"left\" | \"right\""
-              },
-              "description": "The alignment of the default content in the caption",
-              "attribute": "align"
-            },
-            {
-              "kind": "field",
-              "name": "position",
-              "type": {
-                "text": "\"top\" | \"bottom\" | \"both\""
-              },
-              "description": "Indicates whether to attach the caption to the top or the bottom of the grid",
-              "attribute": "position"
-            }
-          ],
-          "slots": [
-            {
-              "description": "Caption title.",
-              "name": ""
-            },
-            {
-              "description": "Caption title. Use when using a feature that enables caption toolbar ([contextMenu], [search], [staticMenu]).",
-              "name": "message"
-            },
-            {
-              "description": "Caption toolbar, which is added to the rightmost of caption by default.",
-              "name": "tool"
-            }
-          ]
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZGCaption",
-          "declaration": {
-            "name": "ZGCaption",
-            "module": "dist/zinggrid.min.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/zinggrid.min.js",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "The container for a card template that holds a custom template for card mode.  This custom template\nwill be rendered per row.  `<zg-card>` can be styled via CSS or the `--zg-card-*` selectors.  Please reference\nthe \"Template\" section for more details on templates.",
-          "name": "ZGCard",
-          "cssProperties": [
-            {
-              "description": "Styles the background of cards in 'card' layout-mode",
-              "name": "--zg-cell-background_layout_card"
-            },
-            {
-              "description": "Styles the border of cards in 'card' layout-mode",
-              "name": "--zg-cell-border_layout_card"
-            },
-            {
-              "description": "Styles the bottom border of cards in 'card' layout-mode",
-              "name": "--zg-cell-border-bottom_layout_card"
-            },
-            {
-              "description": "Styles the left border of cards in 'card' layout-mode",
-              "name": "--zg-cell-border-left_layout_card"
-            },
-            {
-              "description": "Styles the right border of cards in 'card' layout-mode",
-              "name": "--zg-cell-border-right_layout_card"
-            },
-            {
-              "description": "Styles the top border of cards in 'card' layout-mode",
-              "name": "--zg-cell-border-top_layout_card"
-            },
-            {
-              "description": "Sets the font color of cards in 'card' layout-mode",
-              "name": "--zg-cell-color_layout_card"
-            },
-            {
-              "description": "Sets the font family of cards in 'card' layout-mode",
-              "name": "--zg-cell-font-family_layout_card"
-            },
-            {
-              "description": "Sets the font size of cards in 'card' layout-mode",
-              "name": "--zg-cell-font-size_layout_card"
-            },
-            {
-              "description": "Sets the font family of cards in 'card' layout-mode",
-              "name": "--zg-cell-font-style_layout_card"
-            },
-            {
-              "description": "Sets the font weight of cards in 'card' layout-mode",
-              "name": "--zg-cell-font-weight_layout_card"
-            },
-            {
-              "description": "Sets the height of cards in 'card' layout-mode",
-              "name": "--zg-cell-height_layout_card"
-            },
-            {
-              "description": "Sets the line height of cards in 'card' layout-mode",
-              "name": "--zg-cell-line-height_layout_card"
-            },
-            {
-              "description": "Sets the padding of cards in 'card' layout-mode",
-              "name": "--zg-cell-padding_layout_card"
-            },
-            {
-              "description": "Sets the transition of cards in 'card' layout-mode",
-              "name": "--zg-cell-transition_layout_card"
-            },
-            {
-              "description": "Sets the word break of items in cards in 'card' layout-mode",
-              "name": "--zg-cell-word-break_layout_card"
-            }
-          ],
-          "tagName": "zg-card",
-          "customElement": true,
-          "attributes": [
-            {
-              "type": {
-                "text": "string"
-              },
-              "description": "Sets the custom editor",
-              "name": "editor"
-            },
-            {
-              "type": {
-                "text": "string"
-              },
-              "description": "Points to an external template element to be used as the template for the card's editor",
-              "name": "editor-template"
-            },
-            {
-              "type": {
-                "text": "string"
-              },
-              "description": "Whatever is returned from the method will be set as the innerHTMl of the card",
-              "name": "renderer"
-            },
-            {
-              "type": {
-                "text": "string"
-              },
-              "description": "Points to an external template element to be used as the template for the card's renderer",
-              "name": "renderer-template"
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "editor",
-              "type": {
-                "text": "string"
-              },
-              "description": "Sets the custom editor",
-              "attribute": "editor"
-            },
-            {
-              "kind": "field",
-              "name": "editorTemplate",
-              "type": {
-                "text": "string"
-              },
-              "description": "Points to an external template element to be used as the template for the card's editor",
-              "attribute": "editorTemplate"
-            },
-            {
-              "kind": "field",
-              "name": "renderer",
-              "type": {
-                "text": "string"
-              },
-              "description": "Whatever is returned from the method will be set as the innerHTMl of the card",
-              "attribute": "renderer"
-            },
-            {
-              "kind": "field",
-              "name": "rendererTemplate",
-              "type": {
-                "text": "string"
-              },
-              "description": "Points to an external template element to be used as the template for the card's renderer",
-              "attribute": "rendererTemplate"
-            }
-          ],
-          "slots": [
-            {
-              "description": "Card content.",
-              "name": ""
-            }
-          ]
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZGCard",
-          "declaration": {
-            "name": "ZGCard",
-            "module": "dist/zinggrid.min.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/zinggrid.min.js",
-      "declarations": [
-        {
-          "kind": "class",
           "description": "`<zg-cell>` is the container for a single cell;\nit corresponds to the `<td>` tag on an HTML table.  It is automatically inserted and should not \nbe placed directly in the user's HTML.  `<zg-cell>` can be styled via CSS.",
           "name": "ZGCell",
           "cssProperties": [
@@ -1342,6 +1342,57 @@
           "name": "ZGColgroup",
           "declaration": {
             "name": "ZGColgroup",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "The column resize handle appears when hovering over header to\nresize the column.",
+          "name": "ZGColumnResize",
+          "cssProperties": [
+            {
+              "description": "Sets the background of the resize handle",
+              "name": "--zg-column-resize-background"
+            },
+            {
+              "description": "Sets the height of the resize handle",
+              "name": "--zg-column-resize-height"
+            },
+            {
+              "description": "Sets the top position of the resize handle",
+              "name": "--zg-column-resize-top"
+            },
+            {
+              "description": "Sets the width of the resize handle",
+              "name": "--zg-column-resize-width"
+            }
+          ],
+          "tagName": "zg-column-resize",
+          "customElement": true,
+          "cssParts": [
+            {
+              "description": "The resize handle container",
+              "name": "handle"
+            },
+            {
+              "description": "The resize icon",
+              "name": "icon"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGColumnResize",
+          "declaration": {
+            "name": "ZGColumnResize",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -3400,57 +3451,6 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "The column resize handle appears when hovering over header to\nresize the column.",
-          "name": "ZGColumnResize",
-          "cssProperties": [
-            {
-              "description": "Sets the background of the resize handle",
-              "name": "--zg-column-resize-background"
-            },
-            {
-              "description": "Sets the height of the resize handle",
-              "name": "--zg-column-resize-height"
-            },
-            {
-              "description": "Sets the top position of the resize handle",
-              "name": "--zg-column-resize-top"
-            },
-            {
-              "description": "Sets the width of the resize handle",
-              "name": "--zg-column-resize-width"
-            }
-          ],
-          "tagName": "zg-column-resize",
-          "customElement": true,
-          "cssParts": [
-            {
-              "description": "The resize handle container",
-              "name": "handle"
-            },
-            {
-              "description": "The resize icon",
-              "name": "icon"
-            }
-          ]
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZGColumnResize",
-          "declaration": {
-            "name": "ZGColumnResize",
-            "module": "dist/zinggrid.min.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/zinggrid.min.js",
-      "declarations": [
-        {
-          "kind": "class",
           "description": "The `<zg-control-bar>` is inserted dynamically by the ZingGrid library\nand serves as a container for the grid's interface controls.  As a generated element, developers\nshould not manually place `<zg-control-bar>` in their grid; however, they may style the bar and\nits internal elements using CSS.",
           "name": "ZGControlBar",
           "cssProperties": [
@@ -4443,132 +4443,14 @@
           "kind": "class",
           "description": "`<zg-filter-summary>` is the container for a single cell in a filter summary row that may contain a filter summary chart.\n`<zg-filter-summary>` is created internally and should not be placed directly in the user's HTML; however,\nthe user can style the `<zg-filter-summary>` using the `zg-filter-summary` selector.",
           "name": "ZGFilterSummary",
-          "cssProperties": [
-            {
-              "description": "Styles fill of filter summary nodes (primary, false, NaN)",
-              "name": "--zg-filter-summary-node-fill"
-            },
-            {
-              "description": "Styles the color of toggle button for filter summary row",
-              "name": "--zg-filter-summary-toggle-icon-color"
-            },
-            {
-              "description": "Styles background of filter summary row",
-              "name": "--zg-filter-summary-background"
-            },
-            {
-              "description": "Styles bottom border of filter summary row",
-              "name": "--zg-filter-summary-border-bottom"
-            },
-            {
-              "description": "Styles left border of filter summary row",
-              "name": "--zg-filter-summary-border-left"
-            },
-            {
-              "description": "Styles right border of filter summary row",
-              "name": "--zg-row-area-border-right_context"
-            },
-            {
-              "description": "Styles top border of filter summary row",
-              "name": "--zg-filter-summary-border-top"
-            },
-            {
-              "description": "Sets the padding of filter summary row",
-              "name": "--zg-filter-summary-padding"
-            },
-            {
-              "description": "Sets background color of filter summary row when column is sorted",
-              "name": "--zg-filter-summary-background_sorted"
-            },
-            {
-              "description": "Sets bottom border of filter summary row when column is sorted",
-              "name": "--zg-filter-summary-border-bottom_sorted"
-            },
-            {
-              "description": "Sets left border of filter summary row when column is sorted",
-              "name": "--zg-filter-summary-border-left_sorted"
-            },
-            {
-              "description": "Sets right border of filter summary row when column is sorted",
-              "name": "--zg-filter-summary-border-right_sorted"
-            },
-            {
-              "description": "Sets top border of filter summary row when column is sorted",
-              "name": "--zg-filter-summary-border-top_sorted"
-            },
-            {
-              "description": "Styles the color of filter summary labels",
-              "name": "--zg-filter-summary-color"
-            },
-            {
-              "description": "Styles the color of filter summary top label",
-              "name": "--zg-filter-summary-top-color"
-            },
-            {
-              "description": "Styles the color of filter summary bottom labels",
-              "name": "--zg-filter-summary-bottom-color"
-            },
-            {
-              "description": "Styles the color of filter summary bottom max label",
-              "name": "--zg-filter-summary-bottom-max-color"
-            },
-            {
-              "description": "Styles the color of filter summary bottom min label",
-              "name": "--zg-filter-summary-bottom-min-color"
-            },
-            {
-              "description": "Styles the color of filter summary bottom NaN label",
-              "name": "--zg-filter-summary-bottom-nan-color"
-            },
-            {
-              "description": "Styles fill of filter summary primary nodes",
-              "name": "--zg-filter-summary-primary-node-fill"
-            },
-            {
-              "description": "Styles fill of filter summary nodes in color column type",
-              "name": "--zg-filter-summary-node-fill-overwrite"
-            },
-            {
-              "description": "Styles fill of filter summary boolean false nodes",
-              "name": "--zg-filter-summary-false-node-fill"
-            },
-            {
-              "description": "Styles fill of filter summary NaN nodes",
-              "name": "--zg-filter-summary-nan-node-fill"
-            },
-            {
-              "description": "Styles fill of filter summary secondary nodes",
-              "name": "--zg-filter-summary-secondary-node-fill"
-            },
-            {
-              "description": "Styles the color of filter summary axis line",
-              "name": "--zg-filter-summary-axis-color"
-            },
-            {
-              "description": "Styles the color of underline that appears when hovering filter summary histogram axis",
-              "name": "--zg-filter-summary-underline-color"
-            },
-            {
-              "description": "Styles the background of histogram chart selection element",
-              "name": "--zg-filter-summary-selection-fill"
-            },
-            {
-              "description": "Styles the outline color of histogram chart selection element",
-              "name": "--zg-filter-summary-selection-stroke"
-            },
-            {
-              "description": "Styles the color of clear button in summary charts",
-              "name": "--zg-filter-summary-clear-icon-color"
-            }
-          ],
-          "tagName": "zg-filter-summary",
-          "customElement": true,
           "cssParts": [
             {
               "description": "Filter chart container.",
               "name": "chart"
             }
-          ]
+          ],
+          "tagName": "zg-filter-summary",
+          "customElement": true
         }
       ],
       "exports": [
@@ -8113,13 +7995,6 @@
             },
             {
               "type": {
-                "text": "\"cumulative\" | \"exclusive\""
-              },
-              "description": "Controls whether applying a filter summary in one column clears the active filter summary in other columns (cumulative | exclusive)",
-              "name": "filter-summary-mode"
-            },
-            {
-              "type": {
                 "text": "\"disabled\""
               },
               "description": "Controls whether multiple nodes can be selected in bar and pie summary charts (disabled)",
@@ -8131,13 +8006,6 @@
               },
               "description": "Sets the node sort order for filter summary chart (alphabetical | count-asc | count-desc | default | value | none)",
               "name": "filter-summary-node-sort"
-            },
-            {
-              "type": {
-                "text": "boolean"
-              },
-              "description": "When true, the filter summary row starts collapsed (hidden) on initial render",
-              "name": "filter-summary-row-collapsed"
             },
             {
               "type": {
@@ -9420,15 +9288,6 @@
             },
             {
               "kind": "field",
-              "name": "filterSummaryMode",
-              "type": {
-                "text": "\"cumulative\" | \"exclusive\""
-              },
-              "description": "Controls whether applying a filter summary in one column clears the active filter summary in other columns (cumulative | exclusive)",
-              "attribute": "filterSummaryMode"
-            },
-            {
-              "kind": "field",
               "name": "filterSummaryMultiNode",
               "type": {
                 "text": "\"disabled\""
@@ -9444,15 +9303,6 @@
               },
               "description": "Sets the node sort order for filter summary chart (alphabetical | count-asc | count-desc | default | value | none)",
               "attribute": "filterSummaryNodeSort"
-            },
-            {
-              "kind": "field",
-              "name": "filterSummaryRowCollapsed",
-              "type": {
-                "text": "boolean"
-              },
-              "description": "When true, the filter summary row starts collapsed (hidden) on initial render",
-              "attribute": "filterSummaryRowCollapsed"
             },
             {
               "kind": "field",
@@ -13483,9 +13333,9 @@
       "exports": [
         {
           "kind": "custom-element-definition",
-          "name": "zg-button",
+          "name": "zg-batch-edit",
           "declaration": {
-            "name": "ZGButton",
+            "name": "ZGBatchEdit",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -13515,9 +13365,9 @@
       "exports": [
         {
           "kind": "custom-element-definition",
-          "name": "zg-batch-edit",
+          "name": "zg-card",
           "declaration": {
-            "name": "ZGBatchEdit",
+            "name": "ZGCard",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -13547,9 +13397,9 @@
       "exports": [
         {
           "kind": "custom-element-definition",
-          "name": "zg-card",
+          "name": "zg-button",
           "declaration": {
-            "name": "ZGCard",
+            "name": "ZGButton",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -13627,9 +13477,9 @@
       "exports": [
         {
           "kind": "custom-element-definition",
-          "name": "zg-column",
+          "name": "zg-column-resize",
           "declaration": {
-            "name": "ZGColumn",
+            "name": "ZGColumnResize",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -13643,9 +13493,9 @@
       "exports": [
         {
           "kind": "custom-element-definition",
-          "name": "zg-column-resize",
+          "name": "zg-column",
           "declaration": {
-            "name": "ZGColumnResize",
+            "name": "ZGColumn",
             "module": "dist/zinggrid.min.js"
           }
         }
