@@ -8,63 +8,6 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "The `<zg-batch-edit>` element is used to define the batch edit region.  \n`<zg-batch-edit>` is created internally and should not be placed directly in the user's HTML; however,\nthe user can style the `<zg-batch-edit>` using the `zg-batch-edit` selector.",
-          "name": "ZGBatchEdit",
-          "cssProperties": [
-            {
-              "description": "Styles the border of the batch edit styling element",
-              "name": "--zing-grid-batch-edit-style-border"
-            },
-            {
-              "description": "Styles the box-shadow of the frozen column styling element",
-              "name": "--zing-grid-batch-edit-style-box-shadow"
-            },
-            {
-              "description": "Sets the border width of the dirty cell marker",
-              "name": "--zg-cell-dirty-edit-border-width"
-            },
-            {
-              "description": "Sets the color of the dirty cell marker",
-              "name": "--zg-cell-dirty-edit-border-color"
-            },
-            {
-              "description": "Sets the background color of the dirty row on row delete",
-              "name": "--zg-row-dirty-delete-background-color"
-            },
-            {
-              "description": "Sets the  color of the dirty row on row delete",
-              "name": "--zg-row-dirty-delete-color"
-            },
-            {
-              "description": "Sets the background color of the dirty row on row insert",
-              "name": "--zg-row-dirty-insert-background-color"
-            },
-            {
-              "description": "Sets the color of the dirty row on row insert",
-              "name": "--zg-row-dirty-insert-color"
-            }
-          ],
-          "tagName": "zg-batch-edit",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZGBatchEdit",
-          "declaration": {
-            "name": "ZGBatchEdit",
-            "module": "dist/zinggrid.min.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/zinggrid.min.js",
-      "declarations": [
-        {
-          "kind": "class",
           "description": "`<zg-body>` is created dynamically by the ZingGrid library, and as such should not be manually added by the\ndeveloper.  However the user can style `<zg-body>` using CSS.",
           "name": "ZGBody",
           "cssProperties": [
@@ -166,148 +109,372 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "The container for a card template that holds a custom template for card mode.  This custom template\nwill be rendered per row.  `<zg-card>` can be styled via CSS or the `--zg-card-*` selectors.  Please reference\nthe \"Template\" section for more details on templates.",
-          "name": "ZGCard",
+          "description": "A custom, styled button that can be used both for internal grid-related action and for user-specific\nactions. It is stylable via CSS. Some buttons are automatically inserted when a feature that uses it enabled, like `pager`, while\nothers are inserted manually by the user.",
+          "name": "ZGButton",
           "cssProperties": [
             {
-              "description": "Styles the background of cards in 'card' layout-mode",
-              "name": "--zg-cell-background_layout_card"
+              "description": "Styles the background of button",
+              "name": "--zg-button-background"
             },
             {
-              "description": "Styles the border of cards in 'card' layout-mode",
-              "name": "--zg-cell-border_layout_card"
+              "description": "Styles the border of a button",
+              "name": "--zg-button-border"
             },
             {
-              "description": "Styles the bottom border of cards in 'card' layout-mode",
-              "name": "--zg-cell-border-bottom_layout_card"
+              "description": "Styles the bottom border of a button",
+              "name": "--zg-button-border-bottom"
             },
             {
-              "description": "Styles the left border of cards in 'card' layout-mode",
-              "name": "--zg-cell-border-left_layout_card"
+              "description": "Styles the left border of a button",
+              "name": "--zg-button-border-left"
             },
             {
-              "description": "Styles the right border of cards in 'card' layout-mode",
-              "name": "--zg-cell-border-right_layout_card"
+              "description": "Styles the right border of a button",
+              "name": "--zg-button-border-right"
             },
             {
-              "description": "Styles the top border of cards in 'card' layout-mode",
-              "name": "--zg-cell-border-top_layout_card"
+              "description": "Styles the top border of a button",
+              "name": "--zg-button-border-top"
             },
             {
-              "description": "Sets the font color of cards in 'card' layout-mode",
-              "name": "--zg-cell-color_layout_card"
+              "description": "Styles the box-shadow of the button",
+              "name": "--zg-button-box-shadow"
             },
             {
-              "description": "Sets the font family of cards in 'card' layout-mode",
-              "name": "--zg-cell-font-family_layout_card"
+              "description": "Sets the font color of button",
+              "name": "--zg-button-color"
             },
             {
-              "description": "Sets the font size of cards in 'card' layout-mode",
-              "name": "--zg-cell-font-size_layout_card"
+              "description": "Sets the font family of button",
+              "name": "--zg-button-font-family"
             },
             {
-              "description": "Sets the font family of cards in 'card' layout-mode",
-              "name": "--zg-cell-font-style_layout_card"
+              "description": "Sets the font size of button",
+              "name": "--zg-button-font-size"
             },
             {
-              "description": "Sets the font weight of cards in 'card' layout-mode",
-              "name": "--zg-cell-font-weight_layout_card"
+              "description": "Sets the font style of button",
+              "name": "--zg-button-font-style"
             },
             {
-              "description": "Sets the height of cards in 'card' layout-mode",
-              "name": "--zg-cell-height_layout_card"
+              "description": "Sets the font weight of button",
+              "name": "--zg-button-font-weight"
             },
             {
-              "description": "Sets the line height of cards in 'card' layout-mode",
-              "name": "--zg-cell-line-height_layout_card"
+              "description": "Sets the line height of button",
+              "name": "--zg-button-line-height"
             },
             {
-              "description": "Sets the padding of cards in 'card' layout-mode",
-              "name": "--zg-cell-padding_layout_card"
+              "description": "Sets the margin of button",
+              "name": "--zg-button-margin"
             },
             {
-              "description": "Sets the transition of cards in 'card' layout-mode",
-              "name": "--zg-cell-transition_layout_card"
+              "description": "Sets the padding of button",
+              "name": "--zg-button-padding"
             },
             {
-              "description": "Sets the word break of items in cards in 'card' layout-mode",
-              "name": "--zg-cell-word-break_layout_card"
+              "description": "Styles the background of the icon in a button on hover state",
+              "name": "--zg-button-icon-background_hover"
+            },
+            {
+              "description": "Styles the background of button on hover",
+              "name": "--zg-button-background_hover"
+            },
+            {
+              "description": "Styles the border of a button on hover state",
+              "name": "--zg-button-border_hover"
+            },
+            {
+              "description": "Styles the bottom border of a button on hover",
+              "name": "--zg-button-border-bottom_hover"
+            },
+            {
+              "description": "Styles the left border of a button on hover",
+              "name": "--zg-button-border-left_hover"
+            },
+            {
+              "description": "Styles the right border of a button on hover",
+              "name": "--zg-button-border-right_hover"
+            },
+            {
+              "description": "Styles the top border of a button on hover",
+              "name": "--zg-button-border-top_hover"
+            },
+            {
+              "description": "Styles the box-shadow of the button on hover",
+              "name": "--zg-button-box-shadow_hover"
+            },
+            {
+              "description": "Styles the color of the button on hover",
+              "name": "--zg-button-color_hover"
+            },
+            {
+              "description": "Sets the transition speed of button",
+              "name": "--zg-button-transition_speed"
+            },
+            {
+              "description": "Styles the background of button on focus",
+              "name": "--zg-button-background_focus"
+            },
+            {
+              "description": "Styles the border of a button on focus state",
+              "name": "--zg-button-border_focus"
+            },
+            {
+              "description": "Styles the bottom border of a button on focus",
+              "name": "--zg-button-border-bottom_focus"
+            },
+            {
+              "description": "Styles the left border of a button on focus",
+              "name": "--zg-button-border-left_focus"
+            },
+            {
+              "description": "Styles the right border of a button on focus",
+              "name": "--zg-button-border-right_focus"
+            },
+            {
+              "description": "Styles the top border of a button on focus",
+              "name": "--zg-button-border-top_focus"
+            },
+            {
+              "description": "Styles the box-shadow of the button on focus",
+              "name": "--zg-button-box-shadow_focus"
+            },
+            {
+              "description": "Styles the color of the button on focus",
+              "name": "--zg-button-color_focus"
+            },
+            {
+              "description": "Styles of background of button on active state",
+              "name": "--zg-button-background_active"
+            },
+            {
+              "description": "Styles the border of a button on active state",
+              "name": "--zg-button-border_active"
+            },
+            {
+              "description": "Styles the bottom border of a button on active state",
+              "name": "--zg-button-border-bottom_active"
+            },
+            {
+              "description": "Styles the left border of a button on active state",
+              "name": "--zg-button-border-left_active"
+            },
+            {
+              "description": "Styles the right border of a button on active state",
+              "name": "--zg-button-border-right_active"
+            },
+            {
+              "description": "Styles the top border of a button on active state",
+              "name": "--zg-button-border-top_active"
+            },
+            {
+              "description": "Styles the box-shadow of the button on activation",
+              "name": "--zg-button-box-shadow_active"
+            },
+            {
+              "description": "Styles the color of the button on active state",
+              "name": "--zg-button-color_active"
+            },
+            {
+              "description": "Styles the opacity of disabled button or button on hover",
+              "name": "--zg-button-opacity_disabled"
+            },
+            {
+              "description": "Styles the background of custom button",
+              "name": "--zg-button-background_custom"
+            },
+            {
+              "description": "Styles the border of custom button",
+              "name": "--zg-button-border_custom"
+            },
+            {
+              "description": "Applies a box shadow behind custom button",
+              "name": "--zg-button-box-shadow_custom"
+            },
+            {
+              "description": "Styles the background of custom button on focus",
+              "name": "--zg-button-background_custom_focus"
+            },
+            {
+              "description": "Styles the border of custom button on focus",
+              "name": "--zg-button-border_custom_focus"
+            },
+            {
+              "description": "Applies a box shadow behind custom button on focus",
+              "name": "--zg-button-box-shadow_custom_focus"
+            },
+            {
+              "description": "Sets the font color of custom button on focus",
+              "name": "--zg-button-color_custom_focus"
+            },
+            {
+              "description": "Styles the background of icon in custom button on hover",
+              "name": "--zg-button-icon-background_custom_hover"
+            },
+            {
+              "description": "Styles the background of custom button on hover",
+              "name": "--zg-button-background_custom_hover"
+            },
+            {
+              "description": "Styles the border of custom button on hover",
+              "name": "--zg-button-border_custom_hover"
+            },
+            {
+              "description": "Applies a box shadow behing custom button on hover",
+              "name": "--zg-button-box-shadow_custom_hover"
+            },
+            {
+              "description": "Sets the font color of custom button on hover",
+              "name": "--zg-button-color_custom_hover"
+            },
+            {
+              "description": "Styles the background of custom button on active state",
+              "name": "--zg-button-background_custom_active"
+            },
+            {
+              "description": "Styles the border of custom button on active state",
+              "name": "--zg-button-border_custom_active"
+            },
+            {
+              "description": "Applies a box shadow behind custom button on active state",
+              "name": "--zg-button-box-shadow_custom_active"
+            },
+            {
+              "description": "Sets the font color of custom button on active state",
+              "name": "--zg-button-color_custom_active"
             }
           ],
-          "tagName": "zg-card",
+          "tagName": "zg-button",
           "customElement": true,
           "attributes": [
             {
               "type": {
-                "text": "string"
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"calendarselection\" | \"cancel\" | \"cancelrecord\" | \"cardresize\" | \"checkbox\" | \"clearfilter\" | \"clearfiltersummary\" | \"closefilterrow\" | \"closerowdetails\" | \"closerowgroup\" | \"copycell\" | \"createrecord\" | \"createrecordend\" | \"createrecordstart\" | \"deselect\" | \"duplicaterecord\" | \"editcell\" | \"editrecord\" | \"editrow\" | \"filter\" | \"filtermenu\" | \"filtersummarycardmenu\" | \"filtersummarymenu\" | \"firstpage\" | \"fixedmenu\" | \"freezecolumnleft\" | \"freezecolumnright\" | \"unfreezecolumn\" | \"freezerowtop\" | \"freezerowbottom\" | \"hidecolumn\" | \"unfreezerow\" | \"freezecardtop\" | \"freezecardbottom\" | \"unfreezecard\" | \"getselection\" | \"insertrecord\" | \"layoutrow\" | \"layoutcard\" | \"lastpage\" | \"lens\" | \"closelens\" | \"menu\" | \"nextpage\" | \"openfilterrow\" | \"openrowdetails\" | \"openrowgroup\" | \"page\" | \"pastecell\" | \"prevpage\" | \"reload\" | \"removerecord\" | \"undoremoverecord\" | \"resetstate\" | \"search\" | \"selectall\" | \"selectcell\" | \"selectrow\" | \"sortcolumn\" | \"sortmenu\" | \"submitrecord\" | \"about\""
               },
-              "description": "Sets the custom editor",
-              "name": "editor"
+              "description": "The action of the button",
+              "name": "action"
             },
             {
               "type": {
                 "text": "string"
               },
-              "description": "Points to an external template element to be used as the template for the card's editor",
-              "name": "editor-template"
+              "description": "Set to a template or a function to return true or false to set the disabled state. The function's callback receives rowData and zg-cell object if in a cell",
+              "name": "custom-disabled"
             },
             {
               "type": {
                 "text": "string"
               },
-              "description": "Whatever is returned from the method will be set as the innerHTMl of the card",
-              "name": "renderer"
+              "description": "A custom tooltip to set on the button",
+              "name": "custom-tooltip"
+            },
+            {
+              "type": {
+                "text": "boolean"
+              },
+              "description": "Whether the button is disabled or not",
+              "name": "disabled"
+            },
+            {
+              "type": {
+                "text": "string | boolean"
+              },
+              "description": "By default, action buttons have no border and custom buttons do. You can force a border by setting the `[force-border]` attribute and you can force no border by setting `[force-border=\"disabled\"]`",
+              "name": "force-border"
             },
             {
               "type": {
                 "text": "string"
               },
-              "description": "Points to an external template element to be used as the template for the card's renderer",
-              "name": "renderer-template"
+              "description": "A custom function to call on button click",
+              "name": "handler"
+            },
+            {
+              "type": {
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"calendarselection\" | \"cancel\" | \"cancelrecord\" | \"cardresize\" | \"checked\" | \"checkmark\" | \"clearfilter\" | \"close\" | \"closefilterrow\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"firstpage\" | \"fixedmenu\" | \"filter\" | \"filtersummarycardmenu\" | \"filtersummarymenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"lens\" | \"closelens\" | \"link\" | \"menu\" | \"nextpage\" | \"openfilterrow\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"search\" | \"sort\" | \"sortmenu\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
+              },
+              "description": "The icon for the button to enable styling",
+              "name": "icon"
             }
           ],
           "members": [
             {
               "kind": "field",
-              "name": "editor",
+              "name": "action",
               "type": {
-                "text": "string"
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"calendarselection\" | \"cancel\" | \"cancelrecord\" | \"cardresize\" | \"checkbox\" | \"clearfilter\" | \"clearfiltersummary\" | \"closefilterrow\" | \"closerowdetails\" | \"closerowgroup\" | \"copycell\" | \"createrecord\" | \"createrecordend\" | \"createrecordstart\" | \"deselect\" | \"duplicaterecord\" | \"editcell\" | \"editrecord\" | \"editrow\" | \"filter\" | \"filtermenu\" | \"filtersummarycardmenu\" | \"filtersummarymenu\" | \"firstpage\" | \"fixedmenu\" | \"freezecolumnleft\" | \"freezecolumnright\" | \"unfreezecolumn\" | \"freezerowtop\" | \"freezerowbottom\" | \"hidecolumn\" | \"unfreezerow\" | \"freezecardtop\" | \"freezecardbottom\" | \"unfreezecard\" | \"getselection\" | \"insertrecord\" | \"layoutrow\" | \"layoutcard\" | \"lastpage\" | \"lens\" | \"closelens\" | \"menu\" | \"nextpage\" | \"openfilterrow\" | \"openrowdetails\" | \"openrowgroup\" | \"page\" | \"pastecell\" | \"prevpage\" | \"reload\" | \"removerecord\" | \"undoremoverecord\" | \"resetstate\" | \"search\" | \"selectall\" | \"selectcell\" | \"selectrow\" | \"sortcolumn\" | \"sortmenu\" | \"submitrecord\" | \"about\""
               },
-              "description": "Sets the custom editor",
-              "attribute": "editor"
+              "description": "The action of the button",
+              "attribute": "action"
             },
             {
               "kind": "field",
-              "name": "editorTemplate",
+              "name": "customDisabled",
               "type": {
                 "text": "string"
               },
-              "description": "Points to an external template element to be used as the template for the card's editor",
-              "attribute": "editorTemplate"
+              "description": "Set to a template or a function to return true or false to set the disabled state. The function's callback receives rowData and zg-cell object if in a cell",
+              "attribute": "customDisabled"
             },
             {
               "kind": "field",
-              "name": "renderer",
+              "name": "customTooltip",
               "type": {
                 "text": "string"
               },
-              "description": "Whatever is returned from the method will be set as the innerHTMl of the card",
-              "attribute": "renderer"
+              "description": "A custom tooltip to set on the button",
+              "attribute": "customTooltip"
             },
             {
               "kind": "field",
-              "name": "rendererTemplate",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "description": "Whether the button is disabled or not",
+              "attribute": "disabled"
+            },
+            {
+              "kind": "field",
+              "name": "forceBorder",
+              "type": {
+                "text": "string | boolean"
+              },
+              "description": "By default, action buttons have no border and custom buttons do. You can force a border by setting the `[force-border]` attribute and you can force no border by setting `[force-border=\"disabled\"]`",
+              "attribute": "forceBorder"
+            },
+            {
+              "kind": "field",
+              "name": "handler",
               "type": {
                 "text": "string"
               },
-              "description": "Points to an external template element to be used as the template for the card's renderer",
-              "attribute": "rendererTemplate"
+              "description": "A custom function to call on button click",
+              "attribute": "handler"
+            },
+            {
+              "kind": "field",
+              "name": "icon",
+              "type": {
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"calendarselection\" | \"cancel\" | \"cancelrecord\" | \"cardresize\" | \"checked\" | \"checkmark\" | \"clearfilter\" | \"close\" | \"closefilterrow\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"firstpage\" | \"fixedmenu\" | \"filter\" | \"filtersummarycardmenu\" | \"filtersummarymenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"lens\" | \"closelens\" | \"link\" | \"menu\" | \"nextpage\" | \"openfilterrow\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"search\" | \"sort\" | \"sortmenu\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
+              },
+              "description": "The icon for the button to enable styling",
+              "attribute": "icon"
             }
           ],
           "slots": [
             {
-              "description": "Card content.",
+              "description": "Button content.",
               "name": ""
+            },
+            {
+              "description": "Button icon. Replaces the default slot.",
+              "name": "icon"
+            },
+            {
+              "description": "Button label. Use to add a label when using the \"icon\" slot.",
+              "name": "label"
             }
           ]
         }
@@ -315,9 +482,147 @@
       "exports": [
         {
           "kind": "js",
-          "name": "ZGCard",
+          "name": "ZGButton",
           "declaration": {
-            "name": "ZGCard",
+            "name": "ZGButton",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "The `<zg-batch-edit>` element is used to define the batch edit region.  \n`<zg-batch-edit>` is created internally and should not be placed directly in the user's HTML; however,\nthe user can style the `<zg-batch-edit>` using the `zg-batch-edit` selector.",
+          "name": "ZGBatchEdit",
+          "cssProperties": [
+            {
+              "description": "Styles the border of the batch edit styling element",
+              "name": "--zing-grid-batch-edit-style-border"
+            },
+            {
+              "description": "Styles the box-shadow of the frozen column styling element",
+              "name": "--zing-grid-batch-edit-style-box-shadow"
+            },
+            {
+              "description": "Sets the border width of the dirty cell marker",
+              "name": "--zg-cell-dirty-edit-border-width"
+            },
+            {
+              "description": "Sets the color of the dirty cell marker",
+              "name": "--zg-cell-dirty-edit-border-color"
+            },
+            {
+              "description": "Sets the background color of the dirty row on row delete",
+              "name": "--zg-row-dirty-delete-background-color"
+            },
+            {
+              "description": "Sets the  color of the dirty row on row delete",
+              "name": "--zg-row-dirty-delete-color"
+            },
+            {
+              "description": "Sets the background color of the dirty row on row insert",
+              "name": "--zg-row-dirty-insert-background-color"
+            },
+            {
+              "description": "Sets the color of the dirty row on row insert",
+              "name": "--zg-row-dirty-insert-color"
+            }
+          ],
+          "tagName": "zg-batch-edit",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGBatchEdit",
+          "declaration": {
+            "name": "ZGBatchEdit",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "The `<zg-calendar-selection>` element is a date range picker overlay that appears when clicking the calendar selection button in a filter summary row.\nIt allows users to select a \"From\" and \"To\" date range to filter date-type columns.\nThe element is dynamically inserted by the library.\nThe element can be styled using CSS.",
+          "name": "ZGCalendarSelection",
+          "cssProperties": [
+            {
+              "description": "Styles the background of the calendar selection overlay",
+              "name": "--zg-calendar-selection-background"
+            },
+            {
+              "description": "Styles the color of borders and dividers in the calendar selection overlay",
+              "name": "--zg-calendar-selection-border-color"
+            },
+            {
+              "description": "Styles the text color of the calendar selection overlay",
+              "name": "--zg-calendar-selection-color"
+            },
+            {
+              "description": "Styles the background of unselected interactive cells and buttons (nav arrows, month/year buttons, day/month/year cells)",
+              "name": "--zg-calendar-selection-tertiary"
+            },
+            {
+              "description": "Styles the hover background of interactive cells and buttons",
+              "name": "--zg-calendar-selection-tertiary_hover"
+            },
+            {
+              "description": "Styles the pressed/active background of interactive cells and buttons",
+              "name": "--zg-calendar-selection-tertiary_active"
+            },
+            {
+              "description": "Styles the accent color of the active/open state (month/year picker button when its panel is open)",
+              "name": "--zg-calendar-selection-primary_active"
+            },
+            {
+              "description": "Styles the primary accent color used for selected dates, focus outlines, and the apply button",
+              "name": "--zg-calendar-selection-primary"
+            },
+            {
+              "description": "Styles the text color rendered on top of the primary accent (selected dates, apply button)",
+              "name": "--zg-calendar-selection-selected-color"
+            },
+            {
+              "description": "Styles the secondary fill used for days within the selected range",
+              "name": "--zg-calendar-selection-secondary"
+            },
+            {
+              "description": "Styles the hover background of days within the selected range",
+              "name": "--zg-calendar-selection-secondary_hover"
+            },
+            {
+              "description": "Styles the pressed/active background of days within the selected range",
+              "name": "--zg-calendar-selection-secondary_active"
+            },
+            {
+              "description": "Styles the text color of the cancel button",
+              "name": "--zg-calendar-selection-cancel-color"
+            },
+            {
+              "description": "Styles the hover background of the primary accent (apply button)",
+              "name": "--zg-calendar-selection-primary_hover"
+            }
+          ],
+          "tagName": "zg-calendar-selection",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGCalendarSelection",
+          "declaration": {
+            "name": "ZGCalendarSelection",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -618,372 +923,148 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "A custom, styled button that can be used both for internal grid-related action and for user-specific\nactions. It is stylable via CSS. Some buttons are automatically inserted when a feature that uses it enabled, like `pager`, while\nothers are inserted manually by the user.",
-          "name": "ZGButton",
+          "description": "The container for a card template that holds a custom template for card mode.  This custom template\nwill be rendered per row.  `<zg-card>` can be styled via CSS or the `--zg-card-*` selectors.  Please reference\nthe \"Template\" section for more details on templates.",
+          "name": "ZGCard",
           "cssProperties": [
             {
-              "description": "Styles the background of button",
-              "name": "--zg-button-background"
+              "description": "Styles the background of cards in 'card' layout-mode",
+              "name": "--zg-cell-background_layout_card"
             },
             {
-              "description": "Styles the border of a button",
-              "name": "--zg-button-border"
+              "description": "Styles the border of cards in 'card' layout-mode",
+              "name": "--zg-cell-border_layout_card"
             },
             {
-              "description": "Styles the bottom border of a button",
-              "name": "--zg-button-border-bottom"
+              "description": "Styles the bottom border of cards in 'card' layout-mode",
+              "name": "--zg-cell-border-bottom_layout_card"
             },
             {
-              "description": "Styles the left border of a button",
-              "name": "--zg-button-border-left"
+              "description": "Styles the left border of cards in 'card' layout-mode",
+              "name": "--zg-cell-border-left_layout_card"
             },
             {
-              "description": "Styles the right border of a button",
-              "name": "--zg-button-border-right"
+              "description": "Styles the right border of cards in 'card' layout-mode",
+              "name": "--zg-cell-border-right_layout_card"
             },
             {
-              "description": "Styles the top border of a button",
-              "name": "--zg-button-border-top"
+              "description": "Styles the top border of cards in 'card' layout-mode",
+              "name": "--zg-cell-border-top_layout_card"
             },
             {
-              "description": "Styles the box-shadow of the button",
-              "name": "--zg-button-box-shadow"
+              "description": "Sets the font color of cards in 'card' layout-mode",
+              "name": "--zg-cell-color_layout_card"
             },
             {
-              "description": "Sets the font color of button",
-              "name": "--zg-button-color"
+              "description": "Sets the font family of cards in 'card' layout-mode",
+              "name": "--zg-cell-font-family_layout_card"
             },
             {
-              "description": "Sets the font family of button",
-              "name": "--zg-button-font-family"
+              "description": "Sets the font size of cards in 'card' layout-mode",
+              "name": "--zg-cell-font-size_layout_card"
             },
             {
-              "description": "Sets the font size of button",
-              "name": "--zg-button-font-size"
+              "description": "Sets the font family of cards in 'card' layout-mode",
+              "name": "--zg-cell-font-style_layout_card"
             },
             {
-              "description": "Sets the font style of button",
-              "name": "--zg-button-font-style"
+              "description": "Sets the font weight of cards in 'card' layout-mode",
+              "name": "--zg-cell-font-weight_layout_card"
             },
             {
-              "description": "Sets the font weight of button",
-              "name": "--zg-button-font-weight"
+              "description": "Sets the height of cards in 'card' layout-mode",
+              "name": "--zg-cell-height_layout_card"
             },
             {
-              "description": "Sets the line height of button",
-              "name": "--zg-button-line-height"
+              "description": "Sets the line height of cards in 'card' layout-mode",
+              "name": "--zg-cell-line-height_layout_card"
             },
             {
-              "description": "Sets the margin of button",
-              "name": "--zg-button-margin"
+              "description": "Sets the padding of cards in 'card' layout-mode",
+              "name": "--zg-cell-padding_layout_card"
             },
             {
-              "description": "Sets the padding of button",
-              "name": "--zg-button-padding"
+              "description": "Sets the transition of cards in 'card' layout-mode",
+              "name": "--zg-cell-transition_layout_card"
             },
             {
-              "description": "Styles the background of the icon in a button on hover state",
-              "name": "--zg-button-icon-background_hover"
-            },
-            {
-              "description": "Styles the background of button on hover",
-              "name": "--zg-button-background_hover"
-            },
-            {
-              "description": "Styles the border of a button on hover state",
-              "name": "--zg-button-border_hover"
-            },
-            {
-              "description": "Styles the bottom border of a button on hover",
-              "name": "--zg-button-border-bottom_hover"
-            },
-            {
-              "description": "Styles the left border of a button on hover",
-              "name": "--zg-button-border-left_hover"
-            },
-            {
-              "description": "Styles the right border of a button on hover",
-              "name": "--zg-button-border-right_hover"
-            },
-            {
-              "description": "Styles the top border of a button on hover",
-              "name": "--zg-button-border-top_hover"
-            },
-            {
-              "description": "Styles the box-shadow of the button on hover",
-              "name": "--zg-button-box-shadow_hover"
-            },
-            {
-              "description": "Styles the color of the button on hover",
-              "name": "--zg-button-color_hover"
-            },
-            {
-              "description": "Sets the transition speed of button",
-              "name": "--zg-button-transition_speed"
-            },
-            {
-              "description": "Styles the background of button on focus",
-              "name": "--zg-button-background_focus"
-            },
-            {
-              "description": "Styles the border of a button on focus state",
-              "name": "--zg-button-border_focus"
-            },
-            {
-              "description": "Styles the bottom border of a button on focus",
-              "name": "--zg-button-border-bottom_focus"
-            },
-            {
-              "description": "Styles the left border of a button on focus",
-              "name": "--zg-button-border-left_focus"
-            },
-            {
-              "description": "Styles the right border of a button on focus",
-              "name": "--zg-button-border-right_focus"
-            },
-            {
-              "description": "Styles the top border of a button on focus",
-              "name": "--zg-button-border-top_focus"
-            },
-            {
-              "description": "Styles the box-shadow of the button on focus",
-              "name": "--zg-button-box-shadow_focus"
-            },
-            {
-              "description": "Styles the color of the button on focus",
-              "name": "--zg-button-color_focus"
-            },
-            {
-              "description": "Styles of background of button on active state",
-              "name": "--zg-button-background_active"
-            },
-            {
-              "description": "Styles the border of a button on active state",
-              "name": "--zg-button-border_active"
-            },
-            {
-              "description": "Styles the bottom border of a button on active state",
-              "name": "--zg-button-border-bottom_active"
-            },
-            {
-              "description": "Styles the left border of a button on active state",
-              "name": "--zg-button-border-left_active"
-            },
-            {
-              "description": "Styles the right border of a button on active state",
-              "name": "--zg-button-border-right_active"
-            },
-            {
-              "description": "Styles the top border of a button on active state",
-              "name": "--zg-button-border-top_active"
-            },
-            {
-              "description": "Styles the box-shadow of the button on activation",
-              "name": "--zg-button-box-shadow_active"
-            },
-            {
-              "description": "Styles the color of the button on active state",
-              "name": "--zg-button-color_active"
-            },
-            {
-              "description": "Styles the opacity of disabled button or button on hover",
-              "name": "--zg-button-opacity_disabled"
-            },
-            {
-              "description": "Styles the background of custom button",
-              "name": "--zg-button-background_custom"
-            },
-            {
-              "description": "Styles the border of custom button",
-              "name": "--zg-button-border_custom"
-            },
-            {
-              "description": "Applies a box shadow behind custom button",
-              "name": "--zg-button-box-shadow_custom"
-            },
-            {
-              "description": "Styles the background of custom button on focus",
-              "name": "--zg-button-background_custom_focus"
-            },
-            {
-              "description": "Styles the border of custom button on focus",
-              "name": "--zg-button-border_custom_focus"
-            },
-            {
-              "description": "Applies a box shadow behind custom button on focus",
-              "name": "--zg-button-box-shadow_custom_focus"
-            },
-            {
-              "description": "Sets the font color of custom button on focus",
-              "name": "--zg-button-color_custom_focus"
-            },
-            {
-              "description": "Styles the background of icon in custom button on hover",
-              "name": "--zg-button-icon-background_custom_hover"
-            },
-            {
-              "description": "Styles the background of custom button on hover",
-              "name": "--zg-button-background_custom_hover"
-            },
-            {
-              "description": "Styles the border of custom button on hover",
-              "name": "--zg-button-border_custom_hover"
-            },
-            {
-              "description": "Applies a box shadow behing custom button on hover",
-              "name": "--zg-button-box-shadow_custom_hover"
-            },
-            {
-              "description": "Sets the font color of custom button on hover",
-              "name": "--zg-button-color_custom_hover"
-            },
-            {
-              "description": "Styles the background of custom button on active state",
-              "name": "--zg-button-background_custom_active"
-            },
-            {
-              "description": "Styles the border of custom button on active state",
-              "name": "--zg-button-border_custom_active"
-            },
-            {
-              "description": "Applies a box shadow behind custom button on active state",
-              "name": "--zg-button-box-shadow_custom_active"
-            },
-            {
-              "description": "Sets the font color of custom button on active state",
-              "name": "--zg-button-color_custom_active"
+              "description": "Sets the word break of items in cards in 'card' layout-mode",
+              "name": "--zg-cell-word-break_layout_card"
             }
           ],
-          "tagName": "zg-button",
+          "tagName": "zg-card",
           "customElement": true,
           "attributes": [
             {
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checkbox\" | \"closerowdetails\" | \"closerowgroup\" | \"copycell\" | \"createrecord\" | \"createrecordend\" | \"createrecordstart\" | \"deselect\" | \"duplicaterecord\" | \"editcell\" | \"editrecord\" | \"editrow\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"freezecolumnleft\" | \"freezecolumnright\" | \"unfreezecolumn\" | \"freezerowtop\" | \"freezerowbottom\" | \"hidecolumn\" | \"unfreezerow\" | \"getselection\" | \"insertrecord\" | \"layoutrow\" | \"layoutcard\" | \"lastpage\" | \"menu\" | \"nextpage\" | \"openrowdetails\" | \"openrowgroup\" | \"page\" | \"pastecell\" | \"prevpage\" | \"reload\" | \"removerecord\" | \"undoremoverecord\" | \"resetstate\" | \"search\" | \"selectall\" | \"selectcell\" | \"selectrow\" | \"sortcolumn\" | \"submitrecord\" | \"clearfilter\" | \"closefilterrow\" | \"openfilterrow\" | \"about\""
+                "text": "string"
               },
-              "description": "The action of the button",
-              "name": "action"
+              "description": "Sets the custom editor",
+              "name": "editor"
             },
             {
               "type": {
                 "text": "string"
               },
-              "description": "Set to a template or a function to return true or false to set the disabled state. The function's callback receives rowData and zg-cell object if in a cell",
-              "name": "custom-disabled"
+              "description": "Points to an external template element to be used as the template for the card's editor",
+              "name": "editor-template"
             },
             {
               "type": {
                 "text": "string"
               },
-              "description": "A custom tooltip to set on the button",
-              "name": "custom-tooltip"
-            },
-            {
-              "type": {
-                "text": "boolean"
-              },
-              "description": "Whether the button is disabled or not",
-              "name": "disabled"
-            },
-            {
-              "type": {
-                "text": "string | boolean"
-              },
-              "description": "By default, action buttons have no border and custom buttons do. You can force a border by setting the `[force-border]` attribute and you can force no border by setting `[force-border=\"disabled\"]`",
-              "name": "force-border"
+              "description": "Whatever is returned from the method will be set as the innerHTMl of the card",
+              "name": "renderer"
             },
             {
               "type": {
                 "text": "string"
               },
-              "description": "A custom function to call on button click",
-              "name": "handler"
-            },
-            {
-              "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"firstpage\" | \"fixedmenu\" | \"filter\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
-              },
-              "description": "The icon for the button to enable styling",
-              "name": "icon"
+              "description": "Points to an external template element to be used as the template for the card's renderer",
+              "name": "renderer-template"
             }
           ],
           "members": [
             {
               "kind": "field",
-              "name": "action",
-              "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checkbox\" | \"closerowdetails\" | \"closerowgroup\" | \"copycell\" | \"createrecord\" | \"createrecordend\" | \"createrecordstart\" | \"deselect\" | \"duplicaterecord\" | \"editcell\" | \"editrecord\" | \"editrow\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"freezecolumnleft\" | \"freezecolumnright\" | \"unfreezecolumn\" | \"freezerowtop\" | \"freezerowbottom\" | \"hidecolumn\" | \"unfreezerow\" | \"getselection\" | \"insertrecord\" | \"layoutrow\" | \"layoutcard\" | \"lastpage\" | \"menu\" | \"nextpage\" | \"openrowdetails\" | \"openrowgroup\" | \"page\" | \"pastecell\" | \"prevpage\" | \"reload\" | \"removerecord\" | \"undoremoverecord\" | \"resetstate\" | \"search\" | \"selectall\" | \"selectcell\" | \"selectrow\" | \"sortcolumn\" | \"submitrecord\" | \"clearfilter\" | \"closefilterrow\" | \"openfilterrow\" | \"about\""
-              },
-              "description": "The action of the button",
-              "attribute": "action"
-            },
-            {
-              "kind": "field",
-              "name": "customDisabled",
+              "name": "editor",
               "type": {
                 "text": "string"
               },
-              "description": "Set to a template or a function to return true or false to set the disabled state. The function's callback receives rowData and zg-cell object if in a cell",
-              "attribute": "customDisabled"
+              "description": "Sets the custom editor",
+              "attribute": "editor"
             },
             {
               "kind": "field",
-              "name": "customTooltip",
+              "name": "editorTemplate",
               "type": {
                 "text": "string"
               },
-              "description": "A custom tooltip to set on the button",
-              "attribute": "customTooltip"
+              "description": "Points to an external template element to be used as the template for the card's editor",
+              "attribute": "editorTemplate"
             },
             {
               "kind": "field",
-              "name": "disabled",
-              "type": {
-                "text": "boolean"
-              },
-              "description": "Whether the button is disabled or not",
-              "attribute": "disabled"
-            },
-            {
-              "kind": "field",
-              "name": "forceBorder",
-              "type": {
-                "text": "string | boolean"
-              },
-              "description": "By default, action buttons have no border and custom buttons do. You can force a border by setting the `[force-border]` attribute and you can force no border by setting `[force-border=\"disabled\"]`",
-              "attribute": "forceBorder"
-            },
-            {
-              "kind": "field",
-              "name": "handler",
+              "name": "renderer",
               "type": {
                 "text": "string"
               },
-              "description": "A custom function to call on button click",
-              "attribute": "handler"
+              "description": "Whatever is returned from the method will be set as the innerHTMl of the card",
+              "attribute": "renderer"
             },
             {
               "kind": "field",
-              "name": "icon",
+              "name": "rendererTemplate",
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"firstpage\" | \"fixedmenu\" | \"filter\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
+                "text": "string"
               },
-              "description": "The icon for the button to enable styling",
-              "attribute": "icon"
+              "description": "Points to an external template element to be used as the template for the card's renderer",
+              "attribute": "rendererTemplate"
             }
           ],
           "slots": [
             {
-              "description": "Button content.",
+              "description": "Card content.",
               "name": ""
-            },
-            {
-              "description": "Button icon. Replaces the default slot.",
-              "name": "icon"
-            },
-            {
-              "description": "Button label. Use to add a label when using the \"icon\" slot.",
-              "name": "label"
             }
           ]
         }
@@ -991,9 +1072,272 @@
       "exports": [
         {
           "kind": "js",
-          "name": "ZGButton",
+          "name": "ZGCard",
           "declaration": {
-            "name": "ZGButton",
+            "name": "ZGCard",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "The `<zg-card-resize>` element is a container for the menu that appears when clicking the control bar's card resize button.\nThe element is dynamically inserted by the library.\nThe element can be styled using CSS.",
+          "name": "ZGCardResize",
+          "cssProperties": [
+            {
+              "description": "Styles background of card resize menu dropdown",
+              "name": "--zg-card-resize-background"
+            },
+            {
+              "description": "Styles the border of card resize menu dropdown",
+              "name": "--zg-card-resize-border"
+            },
+            {
+              "description": "Applies a box shadow to card resize menu dropdown",
+              "name": "--zg-card-resize-box-shadow"
+            },
+            {
+              "description": "Applies a baseline color to the menu",
+              "name": "--zg-card-resize-color"
+            },
+            {
+              "description": "Sets the padding of the card resize menu dropdown",
+              "name": "--zg-card-resize-padding"
+            },
+            {
+              "description": "Sets the font size of card resize menu dropdown",
+              "name": "--zg-card-resize-font-size"
+            },
+            {
+              "description": "Sets the width of card resize menu dropdown",
+              "name": "--zg-card-resize-width"
+            },
+            {
+              "description": "Sets the font color of the card resize menu header",
+              "name": "--zg-card-resize-header-color"
+            },
+            {
+              "description": "Sets the font size of the card resize menu header",
+              "name": "--zg-card-resize-header-font-size"
+            },
+            {
+              "description": "Sets the font weight of the card resize menu header",
+              "name": "--zg-card-resize-header-font-weight"
+            },
+            {
+              "description": "Styles the toggle switch's background when unchecked (\"Fixed\")",
+              "name": "--zg-card-resize-toggle-background_off"
+            },
+            {
+              "description": "Styles the toggle switch's background when checked (\"Responsive\")",
+              "name": "--zg-card-resize-toggle-background_on"
+            },
+            {
+              "description": "Sets the font size of the label next to the toggle switch (\"Responsive\" or \"Fixed\")",
+              "name": "--zg-card-resize-toggle-label-font-size"
+            },
+            {
+              "description": "Sets the font size of the \"Card Range\" and \"Card Size Scale\" subheaders",
+              "name": "--zg-card-resize-section-header-font-size"
+            },
+            {
+              "description": "Sets the font weight of the \"Card Range\" and \"Card Size Scale\" subheaders",
+              "name": "--zg-card-resize-range-header-font-weight"
+            },
+            {
+              "description": "Styles the divider line between the \"Card Range\" and \"Card Size Scale\" sections",
+              "name": "--zg-card-resize-divider-color"
+            },
+            {
+              "description": "Sets the font color of the Min/Max/Card Size/Cards per row value text",
+              "name": "--zg-card-resize-value-color"
+            },
+            {
+              "description": "Sets the font size of the slider step labels (ticks)",
+              "name": "--zg-card-resize-size-ticks-font-size"
+            },
+            {
+              "description": "Sets the opacity of the slider step labels (ticks)",
+              "name": "--zg-card-resize-size-ticks-opacity"
+            },
+            {
+              "description": "Styles the background of the slider's unfilled track",
+              "name": "--zg-card-resize-slider-track-background"
+            },
+            {
+              "description": "Styles the background of the slider's filled portion",
+              "name": "--zg-card-resize-slider-fill-background"
+            },
+            {
+              "description": "Styles the background of the slider thumb(s)",
+              "name": "--zg-card-resize-thumb-background"
+            }
+          ],
+          "tagName": "zg-card-resize",
+          "customElement": true,
+          "cssParts": [
+            {
+              "description": "The container for the menu",
+              "name": "card-resize"
+            },
+            {
+              "description": "The divider line between the \"Card Range\" and \"Card Size Scale\" sections",
+              "name": "divider"
+            },
+            {
+              "description": "The section shown when the toggle is off (\"Fixed\")",
+              "name": "fixed-section"
+            },
+            {
+              "description": "The header for the menu",
+              "name": "header"
+            },
+            {
+              "description": "The header label for the menu",
+              "name": "header-label"
+            },
+            {
+              "description": "The single-thumb preferred size slider's filled portion",
+              "name": "preferred-fill"
+            },
+            {
+              "description": "The \"Card Size Scale\" subheader",
+              "name": "preferred-header"
+            },
+            {
+              "description": "The single-thumb preferred size slider's thumb input",
+              "name": "preferred-input"
+            },
+            {
+              "description": "The \"Current Size\" value label",
+              "name": "preferred-label"
+            },
+            {
+              "description": "The single-thumb preferred size slider's wrapper",
+              "name": "preferred-slider"
+            },
+            {
+              "description": "An individual preferred size slider step label (XS, S, M, L, XL)",
+              "name": "preferred-tick"
+            },
+            {
+              "description": "The wrapper around the preferred size slider's step labels",
+              "name": "preferred-ticks"
+            },
+            {
+              "description": "The single-thumb preferred size slider's unfilled track",
+              "name": "preferred-track"
+            },
+            {
+              "description": "The dual-thumb range slider's filled portion, between the two thumbs",
+              "name": "range-fill"
+            },
+            {
+              "description": "The \"Card Range\" subheader",
+              "name": "range-header"
+            },
+            {
+              "description": "The dual-thumb range slider's \"Max\" thumb input",
+              "name": "range-max-input"
+            },
+            {
+              "description": "The \"Max\" value label",
+              "name": "range-max-label"
+            },
+            {
+              "description": "The dual-thumb range slider's \"Min\" thumb input",
+              "name": "range-min-input"
+            },
+            {
+              "description": "The \"Min\" value label",
+              "name": "range-min-label"
+            },
+            {
+              "description": "The dual-thumb Min/Max range slider's wrapper",
+              "name": "range-slider"
+            },
+            {
+              "description": "An individual range slider step label (1-6)",
+              "name": "range-tick"
+            },
+            {
+              "description": "The wrapper around the range slider's step labels",
+              "name": "range-ticks"
+            },
+            {
+              "description": "The dual-thumb range slider's unfilled track",
+              "name": "range-track"
+            },
+            {
+              "description": "The wrapper around the Min/Max value labels",
+              "name": "range-values"
+            },
+            {
+              "description": "The section shown when the toggle is on (\"Responsive\")",
+              "name": "responsive-section"
+            },
+            {
+              "description": "The single-thumb size slider's filled portion",
+              "name": "size-fill"
+            },
+            {
+              "description": "The single-thumb size slider's thumb input",
+              "name": "size-input"
+            },
+            {
+              "description": "The \"Cards per row\" value label",
+              "name": "size-label"
+            },
+            {
+              "description": "The single-thumb size slider's wrapper",
+              "name": "size-slider"
+            },
+            {
+              "description": "An individual size slider step label (1-6)",
+              "name": "size-tick"
+            },
+            {
+              "description": "The wrapper around the size slider's step labels",
+              "name": "size-ticks"
+            },
+            {
+              "description": "The single-thumb size slider's unfilled track",
+              "name": "size-track"
+            },
+            {
+              "description": "The Responsive/Fixed toggle switch",
+              "name": "toggle"
+            },
+            {
+              "description": "The toggle switch's underlying checkbox input",
+              "name": "toggle-input"
+            },
+            {
+              "description": "The label next to the toggle switch (\"Responsive\" or \"Fixed\")",
+              "name": "toggle-label"
+            },
+            {
+              "description": "The row holding the Responsive/Fixed toggle and its label",
+              "name": "toggle-row"
+            },
+            {
+              "description": "The toggle switch's track/thumb",
+              "name": "toggle-track"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGCardResize",
+          "declaration": {
+            "name": "ZGCardResize",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -1209,6 +1553,14 @@
               "name": "--zg-cell-content-padding_layout_card"
             },
             {
+              "description": "Styles the background of cells in the column being dragged/reordered via [column-drag]",
+              "name": "--zg-cell-drag-highlight-background"
+            },
+            {
+              "description": "Styles the background of the card item hovered or actively being dragged/reordered while [column-drag] is active in card layout",
+              "name": "--zg-cell-drag-highlight-background_layout_card"
+            },
+            {
               "description": "Styles the background of cells on hover",
               "name": "--zg-cell-background_hover"
             },
@@ -1353,57 +1705,6 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "The column resize handle appears when hovering over header to\nresize the column.",
-          "name": "ZGColumnResize",
-          "cssProperties": [
-            {
-              "description": "Sets the background of the resize handle",
-              "name": "--zg-column-resize-background"
-            },
-            {
-              "description": "Sets the height of the resize handle",
-              "name": "--zg-column-resize-height"
-            },
-            {
-              "description": "Sets the top position of the resize handle",
-              "name": "--zg-column-resize-top"
-            },
-            {
-              "description": "Sets the width of the resize handle",
-              "name": "--zg-column-resize-width"
-            }
-          ],
-          "tagName": "zg-column-resize",
-          "customElement": true,
-          "cssParts": [
-            {
-              "description": "The resize handle container",
-              "name": "handle"
-            },
-            {
-              "description": "The resize icon",
-              "name": "icon"
-            }
-          ]
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZGColumnResize",
-          "declaration": {
-            "name": "ZGColumnResize",
-            "module": "dist/zinggrid.min.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/zinggrid.min.js",
-      "declarations": [
-        {
-          "kind": "class",
           "description": "The `<zg-column>` tag is used to associate the columns of the grid to the values \nin a dataset.  Attributes on the tag are used to configure both the data type, style, and function \nof the grid column.  It is possible to build grids without explicit `<zg-column>` tags, and in that \ncase ZingGrid will add a column for each index in the dataset. However, developers are encouraged to \nexplore the features available with `<zg-column>` to utilize the powerful features ZingGrid has to offer.",
           "name": "ZGColumn",
           "slots": [
@@ -1440,6 +1741,13 @@
               },
               "description": "Presence of attribute forces a border on the button.  Setting to `disabled` removes the default border.",
               "name": "button-border"
+            },
+            {
+              "type": {
+                "text": "\"mobile\" | \"tablet\" | \"desktop\" | number | string"
+              },
+              "description": "Sets the minimum viewport tier (mobile|tablet-portrait|tablet-landscape|desktop|desktop-large, or its 1-5 rank number - or, if `viewportTypes` is set, its custom labels/ranks instead) at which this card field is visible. Fields without a `card-density-breakpoint` are always visible.",
+              "name": "card-density-breakpoint"
             },
             {
               "type": {
@@ -1555,6 +1863,13 @@
             },
             {
               "type": {
+                "text": "\"disabled\" | boolean"
+              },
+              "description": "Modifies the default column drag icon persistence.  Set to `disabled` to turn off persistence on a single column.",
+              "name": "drag-persistent"
+            },
+            {
+              "type": {
                 "text": "boolean | string"
               },
               "description": "Overrides editor type (can be custom) or set false to disable editor",
@@ -1646,10 +1961,17 @@
             },
             {
               "type": {
-                "text": "\"bar\" | \"default\" | \"histogram\" | \"pie\""
+                "text": "\"bar\" | \"default\" | \"histogram\" | \"pie\" | \"ring\" | \"toggle\""
               },
-              "description": "Sets the filter summary chart type (bar | default | histogram | pie)",
+              "description": "Sets the filter summary chart type (bar | default | histogram | pie | ring | toggle). When a chart (bar, pie, or ring) can't render because it has too many nodes, it calls back to `histogram`.",
               "name": "filter-summary-chart"
+            },
+            {
+              "type": {
+                "text": "\"disabled\" | boolean"
+              },
+              "description": "Adds a lens icon to each filter summary chart. When clicked, an overlay displays a larger, fully interactive version of the chart for easier viewing and filtering. Or set to \"disabled\" to disable for this column only.",
+              "name": "filter-summary-lens"
             },
             {
               "type": {
@@ -1660,10 +1982,17 @@
             },
             {
               "type": {
-                "text": "\"alphabetical\" | \"'count\" | \"value\" | \"none\""
+                "text": "\"alphabetical\" | \"'count\" | \"gradient\" | \"value\" | \"none\""
               },
               "description": "Sets the node sort order for filter summary chart (alphabetical | count-asc | count-desc | default | value | none)",
               "name": "filter-summary-node-sort"
+            },
+            {
+              "type": {
+                "text": "number"
+              },
+              "description": "Sets the thickness of the ring chart. Accepts a number between 0 and 1.",
+              "name": "filter-summary-ring-thickness"
             },
             {
               "type": {
@@ -2178,6 +2507,13 @@
             },
             {
               "type": {
+                "text": "\"bottom\" | \"sidebar\""
+              },
+              "description": "Sets how the row details open in card mode. \"bottom\" opens the details inside the card itself and allows multiple cards to be open at once. \"sidebar\" opens a shared drawer on the right side of the grid, showing one card's details at a time",
+              "name": "type-row-details-card-mode"
+            },
+            {
+              "type": {
                 "text": "string"
               },
               "description": "Renderer callback for row details",
@@ -2278,6 +2614,7 @@
               "type": {
                 "text": "string"
               },
+              "description": "Sets the validation method for the column.  Overrides the default for the column type.",
               "name": "validator"
             },
             {
@@ -2333,6 +2670,15 @@
               },
               "description": "Presence of attribute forces a border on the button.  Setting to `disabled` removes the default border.",
               "attribute": "buttonBorder"
+            },
+            {
+              "kind": "field",
+              "name": "cardDensityBreakpoint",
+              "type": {
+                "text": "\"mobile\" | \"tablet\" | \"desktop\" | number | string"
+              },
+              "description": "Sets the minimum viewport tier (mobile|tablet-portrait|tablet-landscape|desktop|desktop-large, or its 1-5 rank number - or, if `viewportTypes` is set, its custom labels/ranks instead) at which this card field is visible. Fields without a `card-density-breakpoint` are always visible.",
+              "attribute": "cardDensityBreakpoint"
             },
             {
               "kind": "field",
@@ -2480,6 +2826,15 @@
             },
             {
               "kind": "field",
+              "name": "dragPersistent",
+              "type": {
+                "text": "\"disabled\" | boolean"
+              },
+              "description": "Modifies the default column drag icon persistence.  Set to `disabled` to turn off persistence on a single column.",
+              "attribute": "dragPersistent"
+            },
+            {
+              "kind": "field",
               "name": "editor",
               "type": {
                 "text": "boolean | string"
@@ -2608,10 +2963,19 @@
               "kind": "field",
               "name": "filterSummaryChart",
               "type": {
-                "text": "\"bar\" | \"default\" | \"histogram\" | \"pie\""
+                "text": "\"bar\" | \"default\" | \"histogram\" | \"pie\" | \"ring\" | \"toggle\""
               },
-              "description": "Sets the filter summary chart type (bar | default | histogram | pie)",
+              "description": "Sets the filter summary chart type (bar | default | histogram | pie | ring | toggle). When a chart (bar, pie, or ring) can't render because it has too many nodes, it calls back to `histogram`.",
               "attribute": "filterSummaryChart"
+            },
+            {
+              "kind": "field",
+              "name": "filterSummaryLens",
+              "type": {
+                "text": "\"disabled\" | boolean"
+              },
+              "description": "Adds a lens icon to each filter summary chart. When clicked, an overlay displays a larger, fully interactive version of the chart for easier viewing and filtering. Or set to \"disabled\" to disable for this column only.",
+              "attribute": "filterSummaryLens"
             },
             {
               "kind": "field",
@@ -2626,10 +2990,19 @@
               "kind": "field",
               "name": "filterSummaryNodeSort",
               "type": {
-                "text": "\"alphabetical\" | \"'count\" | \"value\" | \"none\""
+                "text": "\"alphabetical\" | \"'count\" | \"gradient\" | \"value\" | \"none\""
               },
               "description": "Sets the node sort order for filter summary chart (alphabetical | count-asc | count-desc | default | value | none)",
               "attribute": "filterSummaryNodeSort"
+            },
+            {
+              "kind": "field",
+              "name": "filterSummaryRingThickness",
+              "type": {
+                "text": "number"
+              },
+              "description": "Sets the thickness of the ring chart. Accepts a number between 0 and 1.",
+              "attribute": "filterSummaryRingThickness"
             },
             {
               "kind": "field",
@@ -3281,6 +3654,15 @@
             },
             {
               "kind": "field",
+              "name": "typeRowDetailsCardMode",
+              "type": {
+                "text": "\"bottom\" | \"sidebar\""
+              },
+              "description": "Sets how the row details open in card mode. \"bottom\" opens the details inside the card itself and allows multiple cards to be open at once. \"sidebar\" opens a shared drawer on the right side of the grid, showing one card's details at a time",
+              "attribute": "typeRowDetailsCardMode"
+            },
+            {
+              "kind": "field",
               "name": "typeRowDetailsRenderer",
               "type": {
                 "text": "string"
@@ -3411,6 +3793,7 @@
               "type": {
                 "text": "string"
               },
+              "description": "Sets the validation method for the column.  Overrides the default for the column type.",
               "attribute": "validator"
             },
             {
@@ -3440,6 +3823,57 @@
           "name": "ZGColumn",
           "declaration": {
             "name": "ZGColumn",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "The column resize handle appears when hovering over header to\nresize the column.",
+          "name": "ZGColumnResize",
+          "cssProperties": [
+            {
+              "description": "Sets the background of the resize handle",
+              "name": "--zg-column-resize-background"
+            },
+            {
+              "description": "Sets the height of the resize handle",
+              "name": "--zg-column-resize-height"
+            },
+            {
+              "description": "Sets the top position of the resize handle",
+              "name": "--zg-column-resize-top"
+            },
+            {
+              "description": "Sets the width of the resize handle",
+              "name": "--zg-column-resize-width"
+            }
+          ],
+          "tagName": "zg-column-resize",
+          "customElement": true,
+          "cssParts": [
+            {
+              "description": "The resize handle container",
+              "name": "handle"
+            },
+            {
+              "description": "The resize icon",
+              "name": "icon"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGColumnResize",
+          "declaration": {
+            "name": "ZGColumnResize",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -4278,6 +4712,14 @@
               "name": "--zg-filter-menu-body-padding"
             },
             {
+              "description": "Sets the margin of the separators between filter sections, and between the last section and the \"Add filter\" button, when multiple filters have been added",
+              "name": "--zg-filter-menu-separator-margin"
+            },
+            {
+              "description": "Sets the fill color of the \"X\" icon that removes a filter section",
+              "name": "--zg-filter-menu-remove-field-color"
+            },
+            {
               "description": "Sets the background of filter-menu list body",
               "name": "--zg-filter-menu-list-background"
             },
@@ -4332,6 +4774,22 @@
             {
               "description": "Sets the padding of filter-menu footer",
               "name": "--zg-filter-menu-footer-padding"
+            },
+            {
+              "description": "Styles the background of the \"Add filter\" button",
+              "name": "--zg-filter-menu-add-field-background"
+            },
+            {
+              "description": "Styles the border of the \"Add filter\" button",
+              "name": "--zg-filter-menu-add-field-border"
+            },
+            {
+              "description": "Styles the font color of the \"Add filter\" button",
+              "name": "--zg-filter-menu-add-field-color"
+            },
+            {
+              "description": "Sets the margin of the separator between the filter-menu body and the footer buttons",
+              "name": "--zg-filter-menu-footer-separator-margin"
             },
             {
               "description": "Styles the font color of text in the select dropdown filter menu",
@@ -4443,14 +4901,136 @@
           "kind": "class",
           "description": "`<zg-filter-summary>` is the container for a single cell in a filter summary row that may contain a filter summary chart.\n`<zg-filter-summary>` is created internally and should not be placed directly in the user's HTML; however,\nthe user can style the `<zg-filter-summary>` using the `zg-filter-summary` selector.",
           "name": "ZGFilterSummary",
+          "cssProperties": [
+            {
+              "description": "Styles the color of filter summary labels",
+              "name": "--zg-filter-summary-color"
+            },
+            {
+              "description": "Styles the color of filter summary top label",
+              "name": "--zg-filter-summary-top-color"
+            },
+            {
+              "description": "Styles the color of filter summary bottom labels",
+              "name": "--zg-filter-summary-bottom-color"
+            },
+            {
+              "description": "Styles the color of filter summary bottom max label",
+              "name": "--zg-filter-summary-bottom-max-color"
+            },
+            {
+              "description": "Styles the color of filter summary bottom min label",
+              "name": "--zg-filter-summary-bottom-min-color"
+            },
+            {
+              "description": "Styles the color of filter summary bottom NaN label",
+              "name": "--zg-filter-summary-bottom-nan-color"
+            },
+            {
+              "description": "Styles fill of filter summary primary nodes",
+              "name": "--zg-filter-summary-primary-node-fill"
+            },
+            {
+              "description": "Styles fill of filter summary nodes in color column type",
+              "name": "--zg-filter-summary-node-fill-overwrite"
+            },
+            {
+              "description": "Styles fill of filter summary toggle knob",
+              "name": "--zg-filter-summary-toggle-knob-fill"
+            },
+            {
+              "description": "Styles fill of filter summary boolean false nodes",
+              "name": "--zg-filter-summary-false-node-fill"
+            },
+            {
+              "description": "Styles fill of filter summary NaN nodes",
+              "name": "--zg-filter-summary-nan-node-fill"
+            },
+            {
+              "description": "Styles fill of filter summary secondary nodes",
+              "name": "--zg-filter-summary-secondary-node-fill"
+            },
+            {
+              "description": "Styles the color of filter summary axis line",
+              "name": "--zg-filter-summary-axis-color"
+            },
+            {
+              "description": "Styles the color of underline that appears when hovering filter summary histogram axis",
+              "name": "--zg-filter-summary-node-hover"
+            },
+            {
+              "description": "Styles the background of histogram chart selection element",
+              "name": "--zg-filter-summary-selection-fill"
+            },
+            {
+              "description": "Styles the outline color of histogram chart selection element",
+              "name": "--zg-filter-summary-selection-stroke"
+            },
+            {
+              "description": "Styles the color of clear button in summary charts",
+              "name": "--zg-filter-summary-clear-icon-color"
+            },
+            {
+              "description": "Styles fill of filter summary nodes (primary, false, NaN)",
+              "name": "--zg-filter-summary-node-fill"
+            },
+            {
+              "description": "Styles the color of toggle button for filter summary row",
+              "name": "--zg-filter-summary-toggle-icon-color"
+            },
+            {
+              "description": "Styles background of filter summary row",
+              "name": "--zg-filter-summary-background"
+            },
+            {
+              "description": "Styles bottom border of filter summary row",
+              "name": "--zg-filter-summary-border-bottom"
+            },
+            {
+              "description": "Styles left border of filter summary row",
+              "name": "--zg-filter-summary-border-left"
+            },
+            {
+              "description": "Styles right border of filter summary row",
+              "name": "--zg-filter-summary-border-right"
+            },
+            {
+              "description": "Styles top border of filter summary row",
+              "name": "--zg-filter-summary-border-top"
+            },
+            {
+              "description": "Sets the padding of filter summary row",
+              "name": "--zg-filter-summary-padding"
+            },
+            {
+              "description": "Sets background color of filter summary row when column is sorted",
+              "name": "--zg-filter-summary-background_sorted"
+            },
+            {
+              "description": "Sets bottom border of filter summary row when column is sorted",
+              "name": "--zg-filter-summary-border-bottom_sorted"
+            },
+            {
+              "description": "Sets left border of filter summary row when column is sorted",
+              "name": "--zg-filter-summary-border-left_sorted"
+            },
+            {
+              "description": "Sets right border of filter summary row when column is sorted",
+              "name": "--zg-filter-summary-border-right_sorted"
+            },
+            {
+              "description": "Sets top border of filter summary row when column is sorted",
+              "name": "--zg-filter-summary-border-top_sorted"
+            }
+          ],
+          "tagName": "zg-filter-summary",
+          "customElement": true,
           "cssParts": [
             {
               "description": "Filter chart container.",
               "name": "chart"
             }
-          ],
-          "tagName": "zg-filter-summary",
-          "customElement": true
+          ]
         }
       ],
       "exports": [
@@ -4473,6 +5053,10 @@
           "description": "The `<zg-focus>` element is a generated element added to `<zing-grid>`\nwhen the `selector` attribute is defined.  It is used as a container for the focus of cell(s) \nand used as a CSS target for styling by the developer.  It should not be accessed specifically\nbeyond styling.",
           "name": "ZGFocus",
           "cssProperties": [
+            {
+              "description": "Switches the outline to this border-style once keyboard focus has drilled past an open <zg-row-details> section (row layout's inline section, or card layout's bottom drawer) into its own content - distinguishing \"focus is somewhere inside here\" from the solid outline drawn around the section itself",
+              "name": "--zg-focus-border-style_content-drill"
+            },
             {
               "description": "Styles the border of cells on focus",
               "name": "--zg-focus-border"
@@ -4553,59 +5137,6 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "The `<zg-foot>` tag contains the foot cells (`<zg-foot-cell>`) of the data \ngrid specified via the `foot-cell` attribute found on `<zg-column>` tags.  The tag roughly\ncorresponds to the idea of the `<tfoot>` tag used in HTML tables.  The `<zg-foot>` tag is \ngenerated by the library and should not be placed in a grid manually by a developer, but\ninstead is used as a styling target for CSS.",
-          "name": "ZGFoot",
-          "cssProperties": [
-            {
-              "description": "Styles the left border of grid foot",
-              "name": "--zg-foot-border-left"
-            },
-            {
-              "description": "Styles the right border of grid foot",
-              "name": "--zg-foot-border-right"
-            },
-            {
-              "description": "Sets the padding of grid foot",
-              "name": "--zg-foot-padding"
-            },
-            {
-              "description": "Styles the top border of grid foot",
-              "name": "--zg-foot-border-top"
-            },
-            {
-              "description": "Styles the border of grid foot",
-              "name": "--zg-foot-border"
-            },
-            {
-              "description": "Styles the bottom border of grid foot",
-              "name": "--zg-foot-border-bottom"
-            },
-            {
-              "description": "Styles the background of grid foot",
-              "name": "--zg-foot-background"
-            }
-          ],
-          "tagName": "zg-foot",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "ZGFoot",
-          "declaration": {
-            "name": "ZGFoot",
-            "module": "dist/zinggrid.min.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/zinggrid.min.js",
-      "declarations": [
-        {
-          "kind": "class",
           "description": "The `<zg-footer>` cell is a simple container element for content placed at the bottom of a grid.  \nIt may contain `<zg-caption>` or `<zg-source>`, but also may contain arbitrarily defined elements inserted by the \ndeveloper.  The element and its contents are stylable directly using CSS.",
           "name": "ZGFooter",
           "cssProperties": [
@@ -4646,6 +5177,59 @@
           "name": "ZGFooter",
           "declaration": {
             "name": "ZGFooter",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "The `<zg-foot>` tag contains the foot cells (`<zg-foot-cell>`) of the data \ngrid specified via the `foot-cell` attribute found on `<zg-column>` tags.  The tag roughly\ncorresponds to the idea of the `<tfoot>` tag used in HTML tables.  The `<zg-foot>` tag is \ngenerated by the library and should not be placed in a grid manually by a developer, but\ninstead is used as a styling target for CSS.",
+          "name": "ZGFoot",
+          "cssProperties": [
+            {
+              "description": "Styles the left border of grid foot",
+              "name": "--zg-foot-border-left"
+            },
+            {
+              "description": "Styles the right border of grid foot",
+              "name": "--zg-foot-border-right"
+            },
+            {
+              "description": "Styles the top border of grid foot",
+              "name": "--zg-foot-border-top"
+            },
+            {
+              "description": "Styles the border of grid foot",
+              "name": "--zg-foot-border"
+            },
+            {
+              "description": "Styles the bottom border of grid foot",
+              "name": "--zg-foot-border-bottom"
+            },
+            {
+              "description": "Sets the padding of grid foot",
+              "name": "--zg-foot-padding"
+            },
+            {
+              "description": "Styles the background of grid foot",
+              "name": "--zg-foot-background"
+            }
+          ],
+          "tagName": "zg-foot",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGFoot",
+          "declaration": {
+            "name": "ZGFoot",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -5100,7 +5684,7 @@
           "attributes": [
             {
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"clearfilter\" | \"closefilterrow\" | \"openfilterrow\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"calendarselection\" | \"cancel\" | \"cancelrecord\" | \"cardresize\" | \"checked\" | \"checkmark\" | \"close\" | \"columndrag\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"filter\" | \"filtersummarycardmenu\" | \"filtersummarymenu\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"lens\" | \"closelens\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"clearfilter\" | \"closefilterrow\" | \"openfilterrow\" | \"search\" | \"sort\" | \"sortmenu\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
               },
               "description": "The name of the icon",
               "name": "name"
@@ -5111,7 +5695,7 @@
               "kind": "field",
               "name": "name",
               "type": {
-                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"cancel\" | \"cancelrecord\" | \"checked\" | \"checkmark\" | \"close\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"filter\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"clearfilter\" | \"closefilterrow\" | \"openfilterrow\" | \"search\" | \"sort\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
+                "text": "\"batchedit\" | \"batcheditcancel\" | \"batcheditsave\" | \"calendarselection\" | \"cancel\" | \"cancelrecord\" | \"cardresize\" | \"checked\" | \"checkmark\" | \"close\" | \"columndrag\" | \"createrecord\" | \"down\" | \"duplicaterecord\" | \"edit\" | \"editrecord\" | \"error\" | \"error-tmp\" | \"filter\" | \"filtersummarycardmenu\" | \"filtersummarymenu\" | \"firstpage\" | \"fixedmenu\" | \"info\" | \"lastpage\" | \"layoutcard\" | \"layoutrow\" | \"lens\" | \"closelens\" | \"link\" | \"menu\" | \"nextpage\" | \"outsidearrow\" | \"prevpage\" | \"reload\" | \"remove\" | \"removerecord\" | \"clearfilter\" | \"closefilterrow\" | \"openfilterrow\" | \"search\" | \"sort\" | \"sortmenu\" | \"submitrecord\" | \"success\" | \"unchecked\" | \"undoremoverecord\" | \"up\" | \"warning\""
               },
               "description": "The name of the icon",
               "attribute": "name"
@@ -6214,7 +6798,7 @@
           "attributes": [
             {
               "type": {
-                "text": "\"adapter\" | \"idKey\" | \"newIndexPath\" | \"recordPath\" | \"nodePath\" | \"searchKey\" | \"search\" | \"serverFilter\" | \"filterFunction\" | \"sortByKey\" | \"sortBy\" | \"sortDirKey\" | \"sortDir\" | \"batchEditStatus\" | \"startAtKey\" | \"startAtValue\" | \"limitToKey\" | \"limitTo\" | \"offsetKey\" | \"offsetValue\" | \"pageKey\" | \"countPath\" | \"cursor\" | \"loadByPage\" | \"loadByScroll\" | \"hasNextPath\" | \"nextPath\" | \"nextIDPath\" | \"nextIDKey\" | \"hasPrevPath\" | \"prevPath\" | \"prevIDPath\" | \"prevIDKey\" | \"pageBase\" | \"selectorKey\" | \"csvCaption\" | \"csvDelimiter\" | \"csvHeader\" | \"csvLineSeparator\" | \"tableHide\" | \"tableHead\" | \"tableDataFormat\" | \"tableHeadFormat\" | \"collection\" | \"subscription\" | \"dataTable\" | \"createOptions\" | \"readOptions\" | \"updateRowOptions\" | \"updateCellOptions\" | \"updateOptions\" | \"deleteOptions\" | \"src\" | \"createSrc\" | \"readSrc\" | \"updateRowSrc\" | \"updateCellSrc\" | \"deleteSrc\" | \"restmode\" | \"method\" | \"createMethod\" | \"readMethod\" | \"updateRowMethod\" | \"updateCellMethod\" | \"deleteMethod\" | \"headers\" | \"queryString\" | \"body\" | \"bodyMethodSuffix\" | \"createBody\" | \"readBody\" | \"updateRowBody\" | \"updateCellBody\" | \"deleteBody\" | \"createCustomFunction\" | \"readCustomFunction\" | \"updateCellCustomFunction\" | \"updateRowCustomFunction\" | \"deleteCustomFunction\" | \"serverErrorMessage\" | \"serverErrorPath\" | \"exclude\" | \"cdataEscape\" | \"requestType\" | \"responseType\" | \"dataType\" | \"urlSuffix\" | \"mode\""
+                "text": "\"adapter\" | \"idKey\" | \"newIndexPath\" | \"recordPath\" | \"nodePath\" | \"searchKey\" | \"search\" | \"serverFilter\" | \"filterFunction\" | \"sortByKey\" | \"sortBy\" | \"sortDirKey\" | \"sortDir\" | \"batchEditStatus\" | \"startAtKey\" | \"startAtValue\" | \"limitToKey\" | \"limitTo\" | \"offsetKey\" | \"offsetValue\" | \"pageKey\" | \"countPath\" | \"cursor\" | \"loadByPage\" | \"loadByScroll\" | \"hasNextPath\" | \"nextPath\" | \"nextIDPath\" | \"nextIDKey\" | \"hasPrevPath\" | \"prevPath\" | \"prevIDPath\" | \"prevIDKey\" | \"pageBase\" | \"selectorKey\" | \"csvCaption\" | \"csvDelimiter\" | \"csvHeader\" | \"csvLineSeparator\" | \"tableHide\" | \"tableHead\" | \"tableDataFormat\" | \"tableHeadFormat\" | \"collection\" | \"subscription\" | \"dataTable\" | \"createOptions\" | \"readOptions\" | \"updateRowOptions\" | \"updateCellOptions\" | \"updateOptions\" | \"deleteOptions\" | \"src\" | \"createSrc\" | \"readSrc\" | \"updateRowSrc\" | \"updateCellSrc\" | \"deleteSrc\" | \"restmode\" | \"method\" | \"createMethod\" | \"readMethod\" | \"updateRowMethod\" | \"updateCellMethod\" | \"deleteMethod\" | \"headers\" | \"queryString\" | \"body\" | \"bodyMethodSuffix\" | \"createBody\" | \"readBody\" | \"updateRowBody\" | \"updateCellBody\" | \"deleteBody\" | \"createCustomFunction\" | \"readCustomFunction\" | \"updateCellCustomFunction\" | \"updateRowCustomFunction\" | \"deleteCustomFunction\" | \"serverErrorMessage\" | \"serverErrorPath\" | \"exclude\" | \"cdataEscape\" | \"requestType\" | \"responseType\" | \"dataType\" | \"urlSuffix\" | \"mode\" | \"resetOnDataChange\""
               },
               "description": "Name of parameter",
               "name": "name"
@@ -6234,7 +6818,7 @@
               "kind": "field",
               "name": "name",
               "type": {
-                "text": "\"adapter\" | \"idKey\" | \"newIndexPath\" | \"recordPath\" | \"nodePath\" | \"searchKey\" | \"search\" | \"serverFilter\" | \"filterFunction\" | \"sortByKey\" | \"sortBy\" | \"sortDirKey\" | \"sortDir\" | \"batchEditStatus\" | \"startAtKey\" | \"startAtValue\" | \"limitToKey\" | \"limitTo\" | \"offsetKey\" | \"offsetValue\" | \"pageKey\" | \"countPath\" | \"cursor\" | \"loadByPage\" | \"loadByScroll\" | \"hasNextPath\" | \"nextPath\" | \"nextIDPath\" | \"nextIDKey\" | \"hasPrevPath\" | \"prevPath\" | \"prevIDPath\" | \"prevIDKey\" | \"pageBase\" | \"selectorKey\" | \"csvCaption\" | \"csvDelimiter\" | \"csvHeader\" | \"csvLineSeparator\" | \"tableHide\" | \"tableHead\" | \"tableDataFormat\" | \"tableHeadFormat\" | \"collection\" | \"subscription\" | \"dataTable\" | \"createOptions\" | \"readOptions\" | \"updateRowOptions\" | \"updateCellOptions\" | \"updateOptions\" | \"deleteOptions\" | \"src\" | \"createSrc\" | \"readSrc\" | \"updateRowSrc\" | \"updateCellSrc\" | \"deleteSrc\" | \"restmode\" | \"method\" | \"createMethod\" | \"readMethod\" | \"updateRowMethod\" | \"updateCellMethod\" | \"deleteMethod\" | \"headers\" | \"queryString\" | \"body\" | \"bodyMethodSuffix\" | \"createBody\" | \"readBody\" | \"updateRowBody\" | \"updateCellBody\" | \"deleteBody\" | \"createCustomFunction\" | \"readCustomFunction\" | \"updateCellCustomFunction\" | \"updateRowCustomFunction\" | \"deleteCustomFunction\" | \"serverErrorMessage\" | \"serverErrorPath\" | \"exclude\" | \"cdataEscape\" | \"requestType\" | \"responseType\" | \"dataType\" | \"urlSuffix\" | \"mode\""
+                "text": "\"adapter\" | \"idKey\" | \"newIndexPath\" | \"recordPath\" | \"nodePath\" | \"searchKey\" | \"search\" | \"serverFilter\" | \"filterFunction\" | \"sortByKey\" | \"sortBy\" | \"sortDirKey\" | \"sortDir\" | \"batchEditStatus\" | \"startAtKey\" | \"startAtValue\" | \"limitToKey\" | \"limitTo\" | \"offsetKey\" | \"offsetValue\" | \"pageKey\" | \"countPath\" | \"cursor\" | \"loadByPage\" | \"loadByScroll\" | \"hasNextPath\" | \"nextPath\" | \"nextIDPath\" | \"nextIDKey\" | \"hasPrevPath\" | \"prevPath\" | \"prevIDPath\" | \"prevIDKey\" | \"pageBase\" | \"selectorKey\" | \"csvCaption\" | \"csvDelimiter\" | \"csvHeader\" | \"csvLineSeparator\" | \"tableHide\" | \"tableHead\" | \"tableDataFormat\" | \"tableHeadFormat\" | \"collection\" | \"subscription\" | \"dataTable\" | \"createOptions\" | \"readOptions\" | \"updateRowOptions\" | \"updateCellOptions\" | \"updateOptions\" | \"deleteOptions\" | \"src\" | \"createSrc\" | \"readSrc\" | \"updateRowSrc\" | \"updateCellSrc\" | \"deleteSrc\" | \"restmode\" | \"method\" | \"createMethod\" | \"readMethod\" | \"updateRowMethod\" | \"updateCellMethod\" | \"deleteMethod\" | \"headers\" | \"queryString\" | \"body\" | \"bodyMethodSuffix\" | \"createBody\" | \"readBody\" | \"updateRowBody\" | \"updateCellBody\" | \"deleteBody\" | \"createCustomFunction\" | \"readCustomFunction\" | \"updateCellCustomFunction\" | \"updateRowCustomFunction\" | \"deleteCustomFunction\" | \"serverErrorMessage\" | \"serverErrorPath\" | \"exclude\" | \"cdataEscape\" | \"requestType\" | \"responseType\" | \"dataType\" | \"urlSuffix\" | \"mode\" | \"resetOnDataChange\""
               },
               "description": "Name of parameter",
               "attribute": "name"
@@ -6428,6 +7012,10 @@
               "name": "--zg-row-card-border-top_even"
             },
             {
+              "description": "Styles the background of a card while its row details are open in 'card' layout-mode. Applies whether the details render in the row's own bottom drawer or the shared `[row-details-card-mode=\"sidebar\"]` drawer",
+              "name": "--zg-row-details-background_opened"
+            },
+            {
               "description": "Styles the border of row",
               "name": "--zg-row-border"
             },
@@ -6476,6 +7064,18 @@
           "description": "`<zg-row-details>` is the container for a row expansion;",
           "name": "ZGRowDetails",
           "cssProperties": [
+            {
+              "description": "Styles the border above the card's row details button in 'card' layout-mode",
+              "name": "--zg-row-details-card-footer-border-top"
+            },
+            {
+              "description": "Styles the background of the card's row details footer when it is hovered in 'card' layout-mode. Must be a solid color, as the footer sits above the details panel",
+              "name": "--zg-row-details-card-footer-background_hover"
+            },
+            {
+              "description": "Styles the background of the card's row details footer on hover while its details are open, in both 'bottom' and 'sidebar' card-mode. In 'bottom' mode the footer sits on top of --zg-row-details-background_opened once open rather than the card's normal background, so its hover color is computed against that instead of the generic --zg-row-details-card-footer-background_hover (which assumes the plain card background and, left alone, renders identically to the open background in themes where both default to the same gray). Reused as-is in 'sidebar' mode so the toggle's hover feedback matches once its drawer is open, even though the card itself doesn't take on that background locally there",
+              "name": "--zg-row-details-card-footer-background_hover_opened"
+            },
             {
               "description": "Styles the background of zg-row-details",
               "name": "--zg-row-details-background"
@@ -6543,6 +7143,58 @@
             {
               "description": "Sets the word break of items in zg-row-details",
               "name": "--zg-row-details-word-break"
+            },
+            {
+              "description": "Styles the background of a card's own row details section while it is open in 'card' layout-mode. Not applied to the shared `[row-details-card-mode=\"sidebar\"]` drawer, which keeps its own `--zg-row-details-card-sidebar-background`",
+              "name": "--zg-row-details-background_opened"
+            },
+            {
+              "description": "Styles the border of a card and its own row details section while it is open in 'card' layout-mode. Also applied to the shared `[row-details-card-mode=\"sidebar\"]` drawer (see below)",
+              "name": "--zg-row-details-border_opened"
+            },
+            {
+              "description": "Sets the width of the row details drawer in card mode",
+              "name": "--zg-row-details-card-sidebar-width"
+            },
+            {
+              "description": "Styles the color of the shadow cast by the row details drawer over the cards in card mode. Split out from --zg-row-details-card-sidebar-box-shadow so a [theme] can re-color the shadow without having to restate the offsets, which are flipped for [dir=\"rtl\"]",
+              "name": "--zg-row-details-card-sidebar-box-shadow-color"
+            },
+            {
+              "description": "Styles the shadow cast by the row details drawer over the cards in card mode",
+              "name": "--zg-row-details-card-sidebar-box-shadow"
+            },
+            {
+              "description": "Sets the padding of the row details drawer in card mode",
+              "name": "--zg-row-details-card-sidebar-padding"
+            },
+            {
+              "description": "Styles the background of the row details drawer in card mode. Falls back to the same chain the row's own details section uses, so the drawer picks up the active [theme]",
+              "name": "--zg-row-details-card-sidebar-background"
+            },
+            {
+              "description": "Styles the border of the row details drawer in 'sidebar' card mode. Shared with the card's own row details section (see above)",
+              "name": "--zg-row-details-border_opened"
+            },
+            {
+              "description": "Sets the font size of the row details drawer in card mode. Falls back to the same font size used by the card's own fields (see --zg-cell-content-font-size_layout_card), so the drawer's text matches the cards it belongs to, including under [compact]",
+              "name": "--zg-row-details-card-sidebar-font-size"
+            },
+            {
+              "description": "Sets the stack order of the row details drawer when it is bounded by the page, where it overlays the page rather than the grid",
+              "name": "--zg-row-details-card-sidebar-page-z-index"
+            },
+            {
+              "description": "Styles the border above the row details drawer's close button in card mode",
+              "name": "--zg-row-details-card-sidebar-footer-border-top"
+            },
+            {
+              "description": "Sets the height of the row details drawer's footer in card mode. Matches the height of the card's own row details button cell. Includes the footer's top border",
+              "name": "--zg-row-details-card-sidebar-footer-height"
+            },
+            {
+              "description": "Styles the background of the row details drawer's footer when its close button is hovered in card mode. Must be a solid color, as the footer is sticky over the drawer's content",
+              "name": "--zg-row-details-card-sidebar-footer-background_hover"
             }
           ],
           "tagName": "zg-row-details",
@@ -6950,6 +7602,361 @@
           "name": "ZGSeparator",
           "declaration": {
             "name": "ZGSeparator",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "The `<zg-sort-menu>` element is a container for the menu that appears when clicking the control bar's sort button.\nThe element is dynamically inserted by the library.\nThe element can be styled using CSS.",
+          "name": "ZGSortMenu",
+          "cssProperties": [
+            {
+              "description": "Styles background of sort menu dropdown",
+              "name": "--zg-sort-menu-background"
+            },
+            {
+              "description": "Styles the border of sort menu dropdown",
+              "name": "--zg-sort-menu-border"
+            },
+            {
+              "description": "Styles the bottom border of sort menu dropdown",
+              "name": "--zg-sort-menu-border-bottom"
+            },
+            {
+              "description": "Styles the left border of sort menu dropdown",
+              "name": "--zg-sort-menu-border-left"
+            },
+            {
+              "description": "Styles the right border of sort menu dropdown",
+              "name": "--zg-sort-menu-border-right"
+            },
+            {
+              "description": "Styles the top border of sort menu dropdown",
+              "name": "--zg-sort-menu-border-top"
+            },
+            {
+              "description": "Applies a box shadow to sort menu dropdown",
+              "name": "--zg-sort-menu-box-shadow"
+            },
+            {
+              "description": "Applies a baseline color to the menu",
+              "name": "--zg-sort-menu-color"
+            },
+            {
+              "description": "Sets the padding of the sort menu dropdown",
+              "name": "--zg-sort-menu-padding"
+            },
+            {
+              "description": "Sets the font size of sort menu dropdown",
+              "name": "--zg-sort-menu-font-size"
+            },
+            {
+              "description": "Styles the background of sort-menu header",
+              "name": "--zg-sort-menu-header-background"
+            },
+            {
+              "description": "Styles the border of sort-menu header",
+              "name": "--zg-sort-menu-header-border"
+            },
+            {
+              "description": "Styles the bottom border of sort-menu header",
+              "name": "--zg-sort-menu-header-border-bottom"
+            },
+            {
+              "description": "Styles the left border of sort-menu header",
+              "name": "--zg-sort-menu-header-border-left"
+            },
+            {
+              "description": "Styles the right border of sort-menu header",
+              "name": "--zg-sort-menu-header-border-right"
+            },
+            {
+              "description": "Styles the top border of sort-menu header",
+              "name": "--zg-sort-menu-header-border-top"
+            },
+            {
+              "description": "Sets the font color of sort-menu header",
+              "name": "--zg-sort-menu-header-color"
+            },
+            {
+              "description": "Sets the font size of sort-menu header",
+              "name": "--zg-sort-menu-header-font-size"
+            },
+            {
+              "description": "Sets the font weight of sort-menu header",
+              "name": "--zg-sort-menu-header-font-weight"
+            },
+            {
+              "description": "Sets the margin of sort-menu header",
+              "name": "--zg-sort-menu-header-margin"
+            },
+            {
+              "description": "Sets the padding of sort-menu header",
+              "name": "--zg-sort-menu-header-padding"
+            },
+            {
+              "description": "Styles the background of sort-menu body",
+              "name": "--zg-sort-menu-body-background"
+            },
+            {
+              "description": "Styles the border of sort-menu body",
+              "name": "--zg-sort-menu-body-border"
+            },
+            {
+              "description": "Styles the bottom border of sort-menu body",
+              "name": "--zg-sort-menu-body-border-bottom"
+            },
+            {
+              "description": "Styles the left border of sort-menu body",
+              "name": "--zg-sort-menu-body-border-left"
+            },
+            {
+              "description": "Styles the right border of sort-menu body",
+              "name": "--zg-sort-menu-body-border-right"
+            },
+            {
+              "description": "Styles the top border of sort-menu body",
+              "name": "--zg-sort-menu-body-border-top"
+            },
+            {
+              "description": "Sets the margin of sort-menu body",
+              "name": "--zg-sort-menu-body-margin"
+            },
+            {
+              "description": "Sets the padding of sort-menu body",
+              "name": "--zg-sort-menu-body-padding"
+            },
+            {
+              "description": "Styles the background of sort-menu footer",
+              "name": "--zg-sort-menu-footer-background"
+            },
+            {
+              "description": "Styles the border of sort-menu footer",
+              "name": "--zg-sort-menu-footer-border"
+            },
+            {
+              "description": "Styles the bottom border of sort-menu footer",
+              "name": "--zg-sort-menu-footer-border-bottom"
+            },
+            {
+              "description": "Styles the left border of sort-menu footer",
+              "name": "--zg-sort-menu-footer-border-left"
+            },
+            {
+              "description": "Styles the right border of sort-menu footer",
+              "name": "--zg-sort-menu-footer-border-right"
+            },
+            {
+              "description": "Styles the top border of sort-menu footer",
+              "name": "--zg-sort-menu-footer-border-top"
+            },
+            {
+              "description": "Sets the horizontal alignment of contents in sort-menu footer",
+              "name": "--zg-sort-menu-footer-justify-content"
+            },
+            {
+              "description": "Sets the margin of sort-menu footer",
+              "name": "--zg-sort-menu-footer-margin"
+            },
+            {
+              "description": "Sets the padding of sort-menu footer",
+              "name": "--zg-sort-menu-footer-padding"
+            },
+            {
+              "description": "Sets the default background for the \"reset\" and \"apply\" footer buttons; overridden per-button by --zg-sort-menu-apply-background / --zg-sort-menu-reset-background",
+              "name": "--zg-sort-menu-button-background"
+            },
+            {
+              "description": "Styles the background of the \"apply\" button",
+              "name": "--zg-sort-menu-apply-background"
+            },
+            {
+              "description": "Sets the default border for all sides of the \"reset\" and \"apply\" footer buttons; overridden per-button by --zg-sort-menu-apply-border / --zg-sort-menu-reset-border",
+              "name": "--zg-sort-menu-button-border"
+            },
+            {
+              "description": "Sets the default bottom border for the \"reset\" and \"apply\" footer buttons; overridden per-button by --zg-sort-menu-apply-border-bottom / --zg-sort-menu-reset-border-bottom",
+              "name": "--zg-sort-menu-button-border-bottom"
+            },
+            {
+              "description": "Sets the default border for all sides of the \"apply\" button; overridden per-side by --zg-sort-menu-apply-border-bottom / -left / -right / -top",
+              "name": "--zg-sort-menu-apply-border"
+            },
+            {
+              "description": "Styles the bottom border of the \"apply\" button",
+              "name": "--zg-sort-menu-apply-border-bottom"
+            },
+            {
+              "description": "Sets the default left border for the \"reset\" and \"apply\" footer buttons; overridden per-button by --zg-sort-menu-apply-border-left / --zg-sort-menu-reset-border-left",
+              "name": "--zg-sort-menu-button-border-left"
+            },
+            {
+              "description": "Styles the left border of the \"apply\" button",
+              "name": "--zg-sort-menu-apply-border-left"
+            },
+            {
+              "description": "Sets the default right border for the \"reset\" and \"apply\" footer buttons; overridden per-button by --zg-sort-menu-apply-border-right / --zg-sort-menu-reset-border-right",
+              "name": "--zg-sort-menu-button-border-right"
+            },
+            {
+              "description": "Styles the right border of the \"apply\" button",
+              "name": "--zg-sort-menu-apply-border-right"
+            },
+            {
+              "description": "Sets the default top border for the \"reset\" and \"apply\" footer buttons; overridden per-button by --zg-sort-menu-apply-border-top / --zg-sort-menu-reset-border-top",
+              "name": "--zg-sort-menu-button-border-top"
+            },
+            {
+              "description": "Styles the top border of the \"apply\" button",
+              "name": "--zg-sort-menu-apply-border-top"
+            },
+            {
+              "description": "Sets the default font color for the \"reset\" and \"apply\" footer buttons; overridden per-button by --zg-sort-menu-apply-color / --zg-sort-menu-reset-color",
+              "name": "--zg-sort-menu-button-color"
+            },
+            {
+              "description": "Sets the font color of the \"apply\" button",
+              "name": "--zg-sort-menu-apply-color"
+            },
+            {
+              "description": "Styles the background of the \"reset\" button",
+              "name": "--zg-sort-menu-reset-background"
+            },
+            {
+              "description": "Sets the default border for all sides of the \"reset\" button; overridden per-side by --zg-sort-menu-reset-border-bottom / -left / -right / -top",
+              "name": "--zg-sort-menu-reset-border"
+            },
+            {
+              "description": "Styles the bottom border of the \"reset\" button",
+              "name": "--zg-sort-menu-reset-border-bottom"
+            },
+            {
+              "description": "Styles the left border of the \"reset\" button",
+              "name": "--zg-sort-menu-reset-border-left"
+            },
+            {
+              "description": "Styles the right border of the \"reset\" button",
+              "name": "--zg-sort-menu-reset-border-right"
+            },
+            {
+              "description": "Styles the top border of the \"reset\" button",
+              "name": "--zg-sort-menu-reset-border-top"
+            },
+            {
+              "description": "Sets the font color of the \"reset\" button",
+              "name": "--zg-sort-menu-reset-color"
+            },
+            {
+              "description": "Sets the margin of the separator between the sort-menu body and the footer buttons",
+              "name": "--zg-sort-menu-footer-separator-margin"
+            },
+            {
+              "description": "Styles the background of the select dropdowns in the sort menu",
+              "name": "--zg-sort-menu-select-background"
+            },
+            {
+              "description": "Styles the border of the select dropdowns in the sort menu",
+              "name": "--zg-sort-menu-select-border"
+            },
+            {
+              "description": "Sets the default border radius for sort-menu's editable fields (currently the select dropdowns); overridden by --zg-sort-menu-select-border-radius",
+              "name": "--zg-sort-menu-border-radius"
+            },
+            {
+              "description": "Sets the border radius of the select dropdowns in the sort menu",
+              "name": "--zg-sort-menu-select-border-radius"
+            },
+            {
+              "description": "Styles the font color of text in the select dropdowns in the sort menu",
+              "name": "--zg-sort-menu-select-color"
+            },
+            {
+              "description": "Sets the font size of the select dropdowns in the sort menu",
+              "name": "--zg-sort-menu-select-font-size"
+            },
+            {
+              "description": "Sets the height of the select dropdowns in the sort menu",
+              "name": "--zg-sort-menu-select-height"
+            },
+            {
+              "description": "Sets the margin of the select dropdowns in the sort menu",
+              "name": "--zg-sort-menu-select-margin"
+            },
+            {
+              "description": "Sets the width of the select dropdowns in the sort menu",
+              "name": "--zg-sort-menu-select-width"
+            }
+          ],
+          "tagName": "zg-sort-menu",
+          "customElement": true,
+          "cssParts": [
+            {
+              "description": "The body for the menu",
+              "name": "body"
+            },
+            {
+              "description": "The Sort Direction select's wrapper in the section",
+              "name": "body-direction"
+            },
+            {
+              "description": "The Field Index select's wrapper in the section",
+              "name": "body-field-index"
+            },
+            {
+              "description": "The Field Index / Sort Direction section in the menu",
+              "name": "body-section"
+            },
+            {
+              "description": "The Sort Direction select in the section",
+              "name": "direction-select"
+            },
+            {
+              "description": "The Field Index select in the section",
+              "name": "field-index-select"
+            },
+            {
+              "description": "The footer for the menu",
+              "name": "footer"
+            },
+            {
+              "description": "The \"apply\" button in the menu",
+              "name": "footer-apply"
+            },
+            {
+              "description": "The \"reset\" button in the menu",
+              "name": "footer-reset"
+            },
+            {
+              "description": "The separator between the body and the footer buttons",
+              "name": "footer-separator"
+            },
+            {
+              "description": "The header for the menu",
+              "name": "header"
+            },
+            {
+              "description": "The header label for the menu",
+              "name": "header-label"
+            },
+            {
+              "description": "The container for the menu",
+              "name": "sort-menu"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ZGSortMenu",
+          "declaration": {
+            "name": "ZGSortMenu",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -7687,6 +8694,41 @@
             },
             {
               "type": {
+                "text": "\"responsive\" | \"fixed\" | boolean   *"
+              },
+              "description": "Enables resizing of cards in card mode. Presence of the attribute sizes cards responsively, within a Min/Max cards-per-row range. The \"fixed\" sizes cards to a single fixed cards-per-row count instead.",
+              "name": "card-resizable"
+            },
+            {
+              "type": {
+                "text": "number"
+              },
+              "description": "Sets the value for \"Fixed\" cards-per-row. Only applies when `cardResizable` is in \"fixed\" mode.",
+              "name": "card-resizable-fixed"
+            },
+            {
+              "type": {
+                "text": "\"XS\" | \"S\" | \"M\" | \"L\" | \"XL\""
+              },
+              "description": "Sets the value for \"Card Size Scale\" (\"XS\" | \"S\" | \"M\" | \"L\" | \"XL\"). Only applies when `cardResizable` is in \"responsive\" mode.",
+              "name": "card-resizable-responsive"
+            },
+            {
+              "type": {
+                "text": "number"
+              },
+              "description": "Sets the max value for \"Card Range\" (1-6). Only applies when `cardResizable` is in \"responsive\" mode.",
+              "name": "card-resizable-responsive-max"
+            },
+            {
+              "type": {
+                "text": "number"
+              },
+              "description": "Sets the min value for \"Card Range\" (1-6). Only applies when `cardResizable` is in \"responsive\" mode.",
+              "name": "card-resizable-responsive-min"
+            },
+            {
+              "type": {
                 "text": "\"all\" | \"ellipsis\" | \"normal\" | \"word\""
               },
               "description": "The type of word-break style for body cells",
@@ -7773,7 +8815,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "Enables column dragging",
+              "description": "Enables column dragging. In card mode, enables dragging card items.",
               "name": "column-drag"
             },
             {
@@ -7782,6 +8824,13 @@
               },
               "description": "The columndrag type",
               "name": "column-drag-action"
+            },
+            {
+              "type": {
+                "text": "boolean"
+              },
+              "description": "Presence of attribute displays the column drag icon for all columns without hover",
+              "name": "column-drag-persistent"
             },
             {
               "type": {
@@ -7988,10 +9037,24 @@
             },
             {
               "type": {
-                "text": "\"bar\" | \"default\" | \"histogram\" | \"pie\""
+                "text": "\"bar\" | \"default\" | \"calendar\" | \"histogram\" | \"pie\" | \"ring\" | \"toggle\""
               },
-              "description": "Sets the filter summary chart type (bar | default | histogram | pie)",
+              "description": "Sets the filter summary chart type (bar | default | histogram | pie | ring | toggle). When a chart (bar, pie, or ring) can't render because it has too many nodes, it calls back to `histogram`.",
               "name": "filter-summary-chart"
+            },
+            {
+              "type": {
+                "text": "boolean"
+              },
+              "description": "Adds a lens icon to each filter summary chart. When clicked, an overlay displays a larger, fully interactive version of the chart for easier viewing and filtering.",
+              "name": "filter-summary-lens"
+            },
+            {
+              "type": {
+                "text": "\"cumulative\" | \"exclusive\""
+              },
+              "description": "Controls whether applying a filter summary in one column clears the active filter summary in other columns (cumulative | exclusive)",
+              "name": "filter-summary-mode"
             },
             {
               "type": {
@@ -8002,10 +9065,24 @@
             },
             {
               "type": {
-                "text": "\"alphabetical\" | \"'count\" | \"value\" | \"none\""
+                "text": "\"alphabetical\" | \"'count\" | \"gradient\" | \"value\" | \"none\""
               },
               "description": "Sets the node sort order for filter summary chart (alphabetical | count-asc | count-desc | default | value | none)",
               "name": "filter-summary-node-sort"
+            },
+            {
+              "type": {
+                "text": "number"
+              },
+              "description": "Sets the thickness of the ring chart. Accepts a number between 0 and 1.",
+              "name": "filter-summary-ring-thickness"
+            },
+            {
+              "type": {
+                "text": "boolean"
+              },
+              "description": "When true, the filter summary row starts collapsed (hidden) on initial render",
+              "name": "filter-summary-row-collapsed"
             },
             {
               "type": {
@@ -8020,6 +9097,20 @@
               },
               "description": "Sets the CSS class to set on the cells in `<zg-foot>`",
               "name": "foot-class"
+            },
+            {
+              "type": {
+                "text": "number"
+              },
+              "description": "Sets the number of bottom frozen cards",
+              "name": "frozen-cards-bottom"
+            },
+            {
+              "type": {
+                "text": "number"
+              },
+              "description": "Sets the number of top frozen cards",
+              "name": "frozen-cards-top"
             },
             {
               "type": {
@@ -8060,7 +9151,7 @@
               "type": {
                 "text": "\"both\" | \"horz\" | \"horizontal\" | \"vert\" | \"vertical\""
               },
-              "description": "Sets vertical, horizontal, or both grid lines to the grid (both | horz | horizontal | vert | vertical)",
+              "description": "Sets vertical, horizontal, or both grid lines to the grid (both | horz | horizontal | vert | vertical). In card mode, sets horizontal lines between card items.",
               "name": "gridlines"
             },
             {
@@ -8349,6 +9440,20 @@
               },
               "description": "Sets the CSS class to set on `<zg-row>`",
               "name": "row-class"
+            },
+            {
+              "type": {
+                "text": "\"bottom\" | \"sidebar\""
+              },
+              "description": "Sets how the row details open in card mode. \"bottom\" opens the details inside the card itself and allows multiple cards to be open at once. \"sidebar\" opens a shared drawer on the right side of the grid, showing one card's details at a time",
+              "name": "row-details-card-mode"
+            },
+            {
+              "type": {
+                "text": "\"grid\" | \"page\""
+              },
+              "description": "Sets what bounds the row details drawer opened by `[row-details-card-mode=\"sidebar\"]` in card mode. \"grid\" contains the drawer within the grid's dimensions. \"page\" contains it within the width of the page instead",
+              "name": "row-details-card-sidebar-boundary"
             },
             {
               "type": {
@@ -8651,6 +9756,51 @@
               "attribute": "card"
             },
             {
+              "kind": "field",
+              "name": "cardResizable",
+              "type": {
+                "text": "\"responsive\" | \"fixed\" | boolean   *"
+              },
+              "description": "Enables resizing of cards in card mode. Presence of the attribute sizes cards responsively, within a Min/Max cards-per-row range. The \"fixed\" sizes cards to a single fixed cards-per-row count instead.",
+              "attribute": "cardResizable"
+            },
+            {
+              "kind": "field",
+              "name": "cardResizableFixed",
+              "type": {
+                "text": "number"
+              },
+              "description": "Sets the value for \"Fixed\" cards-per-row. Only applies when `cardResizable` is in \"fixed\" mode.",
+              "attribute": "cardResizableFixed"
+            },
+            {
+              "kind": "field",
+              "name": "cardResizableResponsive",
+              "type": {
+                "text": "\"XS\" | \"S\" | \"M\" | \"L\" | \"XL\""
+              },
+              "description": "Sets the value for \"Card Size Scale\" (\"XS\" | \"S\" | \"M\" | \"L\" | \"XL\"). Only applies when `cardResizable` is in \"responsive\" mode.",
+              "attribute": "cardResizableResponsive"
+            },
+            {
+              "kind": "field",
+              "name": "cardResizableResponsiveMax",
+              "type": {
+                "text": "number"
+              },
+              "description": "Sets the max value for \"Card Range\" (1-6). Only applies when `cardResizable` is in \"responsive\" mode.",
+              "attribute": "cardResizableResponsiveMax"
+            },
+            {
+              "kind": "field",
+              "name": "cardResizableResponsiveMin",
+              "type": {
+                "text": "number"
+              },
+              "description": "Sets the min value for \"Card Range\" (1-6). Only applies when `cardResizable` is in \"responsive\" mode.",
+              "attribute": "cardResizableResponsiveMin"
+            },
+            {
               "kind": "method",
               "name": "cell",
               "parameters": [
@@ -8838,7 +9988,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "Enables column dragging",
+              "description": "Enables column dragging. In card mode, enables dragging card items.",
               "attribute": "columnDrag"
             },
             {
@@ -8849,6 +9999,15 @@
               },
               "description": "The columndrag type",
               "attribute": "columnDragAction"
+            },
+            {
+              "kind": "field",
+              "name": "columnDragPersistent",
+              "type": {
+                "text": "boolean"
+              },
+              "description": "Presence of attribute displays the column drag icon for all columns without hover",
+              "attribute": "columnDragPersistent"
             },
             {
               "kind": "field",
@@ -9256,9 +10415,9 @@
               "kind": "field",
               "name": "filterSummaryChart",
               "type": {
-                "text": "\"bar\" | \"default\" | \"histogram\" | \"pie\""
+                "text": "\"bar\" | \"default\" | \"calendar\" | \"histogram\" | \"pie\" | \"ring\" | \"toggle\""
               },
-              "description": "Sets the filter summary chart type (bar | default | histogram | pie)",
+              "description": "Sets the filter summary chart type (bar | default | histogram | pie | ring | toggle). When a chart (bar, pie, or ring) can't render because it has too many nodes, it calls back to `histogram`.",
               "attribute": "filterSummaryChart"
             },
             {
@@ -9288,6 +10447,24 @@
             },
             {
               "kind": "field",
+              "name": "filterSummaryLens",
+              "type": {
+                "text": "boolean"
+              },
+              "description": "Adds a lens icon to each filter summary chart. When clicked, an overlay displays a larger, fully interactive version of the chart for easier viewing and filtering.",
+              "attribute": "filterSummaryLens"
+            },
+            {
+              "kind": "field",
+              "name": "filterSummaryMode",
+              "type": {
+                "text": "\"cumulative\" | \"exclusive\""
+              },
+              "description": "Controls whether applying a filter summary in one column clears the active filter summary in other columns (cumulative | exclusive)",
+              "attribute": "filterSummaryMode"
+            },
+            {
+              "kind": "field",
               "name": "filterSummaryMultiNode",
               "type": {
                 "text": "\"disabled\""
@@ -9299,10 +10476,28 @@
               "kind": "field",
               "name": "filterSummaryNodeSort",
               "type": {
-                "text": "\"alphabetical\" | \"'count\" | \"value\" | \"none\""
+                "text": "\"alphabetical\" | \"'count\" | \"gradient\" | \"value\" | \"none\""
               },
               "description": "Sets the node sort order for filter summary chart (alphabetical | count-asc | count-desc | default | value | none)",
               "attribute": "filterSummaryNodeSort"
+            },
+            {
+              "kind": "field",
+              "name": "filterSummaryRingThickness",
+              "type": {
+                "text": "number"
+              },
+              "description": "Sets the thickness of the ring chart. Accepts a number between 0 and 1.",
+              "attribute": "filterSummaryRingThickness"
+            },
+            {
+              "kind": "field",
+              "name": "filterSummaryRowCollapsed",
+              "type": {
+                "text": "boolean"
+              },
+              "description": "When true, the filter summary row starts collapsed (hidden) on initial render",
+              "attribute": "filterSummaryRowCollapsed"
             },
             {
               "kind": "field",
@@ -9383,6 +10578,24 @@
                   "text": "string"
                 }
               }
+            },
+            {
+              "kind": "field",
+              "name": "frozenCardsBottom",
+              "type": {
+                "text": "number"
+              },
+              "description": "Sets the number of bottom frozen cards",
+              "attribute": "frozenCardsBottom"
+            },
+            {
+              "kind": "field",
+              "name": "frozenCardsTop",
+              "type": {
+                "text": "number"
+              },
+              "description": "Sets the number of top frozen cards",
+              "attribute": "frozenCardsTop"
             },
             {
               "kind": "field",
@@ -9467,6 +10680,51 @@
             },
             {
               "kind": "method",
+              "name": "getCardResizable",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "getCardResizableFixed",
+              "return": {
+                "type": {
+                  "text": "number"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "getCardResizableResponsive",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "getCardResizableResponsiveMax",
+              "return": {
+                "type": {
+                  "text": "number"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "getCardResizableResponsiveMin",
+              "return": {
+                "type": {
+                  "text": "number"
+                }
+              }
+            },
+            {
+              "kind": "method",
               "name": "getCellBreak",
               "return": {
                 "type": {
@@ -9516,6 +10774,15 @@
               "return": {
                 "type": {
                   "text": "string"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "getColumnDragPersistent",
+              "return": {
+                "type": {
+                  "text": "boolean"
                 }
               }
             },
@@ -9632,6 +10899,78 @@
               "name": "getFilter",
               "return": {
                 "type": {
+                  "text": "boolean | string"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "getFilterOn",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "getFilterSummaryChart",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "getFilterSummaryLens",
+              "return": {
+                "type": {
+                  "text": "boolean"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "getFilterSummaryMode",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "getFilterSummaryMultiNode",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "getFilterSummaryNodeSort",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "getFilterSummaryRingThickness",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "getFilterSummaryRowCollapsed",
+              "return": {
+                "type": {
                   "text": "boolean"
                 }
               }
@@ -9642,6 +10981,24 @@
               "return": {
                 "type": {
                   "text": "string"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "getFrozenCardsBottom",
+              "return": {
+                "type": {
+                  "text": "number"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "getFrozenCardsTop",
+              "return": {
+                "type": {
+                  "text": "number"
                 }
               }
             },
@@ -9900,6 +11257,24 @@
             },
             {
               "kind": "method",
+              "name": "getRowDetailsCardMode",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "getRowDetailsCardSidebarBoundary",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              }
+            },
+            {
+              "kind": "method",
               "name": "getRowDetailsRenderer",
               "return": {
                 "type": {
@@ -10111,7 +11486,7 @@
               "type": {
                 "text": "\"both\" | \"horz\" | \"horizontal\" | \"vert\" | \"vertical\""
               },
-              "description": "Sets vertical, horizontal, or both grid lines to the grid (both | horz | horizontal | vert | vertical)",
+              "description": "Sets vertical, horizontal, or both grid lines to the grid (both | horz | horizontal | vert | vertical). In card mode, sets horizontal lines between card items.",
               "attribute": "gridlines"
             },
             {
@@ -10747,6 +12122,24 @@
             },
             {
               "kind": "field",
+              "name": "rowDetailsCardMode",
+              "type": {
+                "text": "\"bottom\" | \"sidebar\""
+              },
+              "description": "Sets how the row details open in card mode. \"bottom\" opens the details inside the card itself and allows multiple cards to be open at once. \"sidebar\" opens a shared drawer on the right side of the grid, showing one card's details at a time",
+              "attribute": "rowDetailsCardMode"
+            },
+            {
+              "kind": "field",
+              "name": "rowDetailsCardSidebarBoundary",
+              "type": {
+                "text": "\"grid\" | \"page\""
+              },
+              "description": "Sets what bounds the row details drawer opened by `[row-details-card-mode=\"sidebar\"]` in card mode. \"grid\" contains the drawer within the grid's dimensions. \"page\" contains it within the width of the page instead",
+              "attribute": "rowDetailsCardSidebarBoundary"
+            },
+            {
+              "kind": "field",
               "name": "rowDetailsRenderer",
               "type": {
                 "text": "string"
@@ -11066,6 +12459,96 @@
             },
             {
               "kind": "method",
+              "name": "setCardResizable",
+              "parameters": [
+                {
+                  "name": "mType",
+                  "description": "Value to set for card-resizable (\"responsive\" | \"fixed\")",
+                  "type": {
+                    "text": "string | boolean"
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setCardResizableFixed",
+              "parameters": [
+                {
+                  "name": "nFixed",
+                  "description": "Value to set for card-resizable-fixed",
+                  "type": {
+                    "text": "number"
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setCardResizableResponsive",
+              "parameters": [
+                {
+                  "name": "sScale",
+                  "description": "Value to set for card-resizable-responsive (\"XS\" | \"S\" | \"M\" | \"L\" | \"XL\")",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setCardResizableResponsiveMax",
+              "parameters": [
+                {
+                  "name": "nMax",
+                  "description": "Value to set for card-resizable-responsive-max",
+                  "type": {
+                    "text": "number"
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setCardResizableResponsiveMin",
+              "parameters": [
+                {
+                  "name": "nMin",
+                  "description": "Value to set for card-resizable-responsive-min",
+                  "type": {
+                    "text": "number"
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
               "name": "setCardTemplate",
               "parameters": [
                 {
@@ -11181,6 +12664,27 @@
                   "name": "type",
                   "type": {
                     "text": "\"reorder\" | \"hide\" | \"both\""
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setColumnDragPersistent",
+              "parameters": [
+                {
+                  "name": "bType"
+                },
+                {
+                  "description": "Boolean value to indicate add or remove",
+                  "name": "activate",
+                  "type": {
+                    "text": "boolean"
                   }
                 }
               ],
@@ -11448,6 +12952,150 @@
             },
             {
               "kind": "method",
+              "name": "setFilterOn",
+              "parameters": [
+                {
+                  "name": "sFilterOn",
+                  "description": "Value to set",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setFilterSummaryChart",
+              "parameters": [
+                {
+                  "name": "sChart",
+                  "description": "Chart type to set",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setFilterSummaryLens",
+              "parameters": [
+                {
+                  "name": "bVal",
+                  "description": "Whether to enable the lens overlay",
+                  "type": {
+                    "text": "boolean"
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setFilterSummaryMode",
+              "parameters": [
+                {
+                  "name": "sMode",
+                  "description": "Mode to set",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setFilterSummaryMultiNode",
+              "parameters": [
+                {
+                  "name": "sVal",
+                  "description": "Value to set",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setFilterSummaryNodeSort",
+              "parameters": [
+                {
+                  "name": "sSort",
+                  "description": "Sort order to set",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setFilterSummaryRingThickness",
+              "parameters": [
+                {
+                  "name": "sVal",
+                  "description": "Ring thickness to set (0–1, e.g. \"0.5\")",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setFilterSummaryRowCollapsed",
+              "parameters": [
+                {
+                  "name": "bVal",
+                  "description": "Whether to collapse the filter summary row",
+                  "type": {
+                    "text": "boolean"
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
               "name": "setFootClass",
               "parameters": [
                 {
@@ -11458,6 +13106,42 @@
                   "name": "type",
                   "type": {
                     "text": "string"
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setFrozenCardsBottom",
+              "parameters": [
+                {
+                  "name": "nValue",
+                  "description": "The number of cards to freeze to the bottom",
+                  "type": {
+                    "text": "number"
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setFrozenCardsTop",
+              "parameters": [
+                {
+                  "name": "nValue",
+                  "description": "The number of cards to freeze to the top",
+                  "type": {
+                    "text": "number"
                   }
                 }
               ],
@@ -12121,6 +13805,48 @@
             },
             {
               "kind": "method",
+              "name": "setRowDetailsCardMode",
+              "parameters": [
+                {
+                  "name": "sMode"
+                },
+                {
+                  "description": "How the row details open in `card` layout-mode",
+                  "name": "mode",
+                  "type": {
+                    "text": "\"bottom\" | \"sidebar\""
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setRowDetailsCardSidebarBoundary",
+              "parameters": [
+                {
+                  "name": "sBoundary"
+                },
+                {
+                  "description": "What bounds the row details drawer in `[row-details-card-mode=\"sidebar\"]`",
+                  "name": "boundary",
+                  "type": {
+                    "text": "\"grid\" | \"page\""
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
               "name": "setRowDetailsRenderer",
               "parameters": [
                 {
@@ -12509,6 +14235,24 @@
                   "name": "activate",
                   "type": {
                     "text": "boolean"
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "text": "ZingGrid"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setViewportTypes",
+              "parameters": [
+                {
+                  "name": "oValue",
+                  "description": "Custom viewport breakpoints, keyed by label",
+                  "type": {
+                    "text": "object"
                   }
                 }
               ],
@@ -13116,12 +14860,12 @@
               "name": "column:filter:menu:open"
             },
             {
-              "description": "Fires the event when the filter summary row is closed.",
-              "name": "column:filter:summary:close"
+              "description": "Fires the event when the filter summary lens is closed on a column.",
+              "name": "column:filter:summary:lens:close"
             },
             {
-              "description": "Fires the event when the filter summary row is opened.",
-              "name": "column:filter:summary:open"
+              "description": "Fires the event when the filter summary lens is opened on a column.",
+              "name": "column:filter:summary:lens:open"
             },
             {
               "description": "Fires event when mouseout on a column.",
@@ -13296,6 +15040,14 @@
               "name": "row:detailsopen"
             },
             {
+              "description": "Fires the event when the filter summary row is closed.",
+              "name": "row:filter:summary:close"
+            },
+            {
+              "description": "Fires the event when the filter summary row is opened.",
+              "name": "row:filter:summary:open"
+            },
+            {
               "description": "Fires when the frozen row state changes",
               "name": "row:frozen"
             },
@@ -13333,22 +15085,6 @@
       "exports": [
         {
           "kind": "custom-element-definition",
-          "name": "zg-batch-edit",
-          "declaration": {
-            "name": "ZGBatchEdit",
-            "module": "dist/zinggrid.min.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/zinggrid.min.js",
-      "deprecated": false,
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "custom-element-definition",
           "name": "zg-body",
           "declaration": {
             "name": "ZGBody",
@@ -13365,9 +15101,41 @@
       "exports": [
         {
           "kind": "custom-element-definition",
-          "name": "zg-card",
+          "name": "zg-button",
           "declaration": {
-            "name": "ZGCard",
+            "name": "ZGButton",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-batch-edit",
+          "declaration": {
+            "name": "ZGBatchEdit",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-calendar-selection",
+          "declaration": {
+            "name": "ZGCalendarSelection",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -13397,9 +15165,25 @@
       "exports": [
         {
           "kind": "custom-element-definition",
-          "name": "zg-button",
+          "name": "zg-card",
           "declaration": {
-            "name": "ZGButton",
+            "name": "ZGCard",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-card-resize",
+          "declaration": {
+            "name": "ZGCardResize",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -13477,9 +15261,9 @@
       "exports": [
         {
           "kind": "custom-element-definition",
-          "name": "zg-column-resize",
+          "name": "zg-column",
           "declaration": {
-            "name": "ZGColumnResize",
+            "name": "ZGColumn",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -13493,9 +15277,9 @@
       "exports": [
         {
           "kind": "custom-element-definition",
-          "name": "zg-column",
+          "name": "zg-column-resize",
           "declaration": {
-            "name": "ZGColumn",
+            "name": "ZGColumnResize",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -13637,9 +15421,9 @@
       "exports": [
         {
           "kind": "custom-element-definition",
-          "name": "zg-foot",
+          "name": "zg-footer",
           "declaration": {
-            "name": "ZGFoot",
+            "name": "ZGFooter",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -13653,9 +15437,9 @@
       "exports": [
         {
           "kind": "custom-element-definition",
-          "name": "zg-footer",
+          "name": "zg-foot",
           "declaration": {
-            "name": "ZGFooter",
+            "name": "ZGFoot",
             "module": "dist/zinggrid.min.js"
           }
         }
@@ -14008,6 +15792,22 @@
           "name": "zg-separator",
           "declaration": {
             "name": "ZGSeparator",
+            "module": "dist/zinggrid.min.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/zinggrid.min.js",
+      "deprecated": false,
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "zg-sort-menu",
+          "declaration": {
+            "name": "ZGSortMenu",
             "module": "dist/zinggrid.min.js"
           }
         }
